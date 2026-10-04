@@ -1,6 +1,9 @@
 <div align="center">
 
-<img src=".claude-plugin/icon.png" width="112" alt="brand-identity icon">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/logo-dark.png">
+  <img src="docs/images/logo-light.png" width="96" alt="brand-identity logo">
+</picture>
 
 # brand-identity
 
