@@ -1,7 +1,12 @@
+<div align="center">
+
 # brand-identity
 
 [![Tests](https://github.com/fatihaydost/brand-identity-skill/actions/workflows/test.yml/badge.svg)](https://github.com/fatihaydost/brand-identity-skill/actions/workflows/test.yml)
+[![Release](https://img.shields.io/github/v/release/fatihaydost/brand-identity-skill)](https://github.com/fatihaydost/brand-identity-skill/releases/latest)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+</div>
 
 A skill for Claude Code that designs a brand identity as one system: **logo, typography and colour palette built
 together from one idea**, measured, shown side by side as identity cards, and handed over as a brand guidelines kit
@@ -89,7 +94,9 @@ duration bar. **C · Night Floor**: two L-pieces lock into one square, dark-firs
 /plugin install brand-identity@brand-identity-skill
 ```
 
-**Or as a plain skill:**
+**Or as a plain skill**, from the `brand-identity.zip` of the
+[latest release](https://github.com/fatihaydost/brand-identity-skill/releases/latest) (unzip it into
+`~/.claude/skills/`), or from a clone:
 
 ```bash
 git clone https://github.com/fatihaydost/brand-identity-skill

@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "A brand-identity skill for Claude and Agent Skills-compatible agents.",
-    "version": "0.2.0"
+    "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "brand-identity",
       "source": "./",
       "description": "Brand identity sets from one brief: logo, typography and colour palette built together, measured (contrast, colour-blindness, glyph coverage, licences, small-size logo renders), compared side by side as identity cards, shown on your own site, then a brand guidelines kit for the one you pick.",
-      "version": "0.2.0",
+      "version": "1.0.0",
       "category": "design",
       "keywords": [
         "brand",

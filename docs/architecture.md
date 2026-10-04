@@ -58,7 +58,7 @@ Board + table (+ site preview). **Stop and wait for the user's pick.** Then the 
 ## 2. Repository layout (repo root = plugin root = marketplace root)
 
 ```
-.claude-plugin/{plugin.json, marketplace.json}      # name "brand-identity", version 0.2.0
+.claude-plugin/{plugin.json, marketplace.json}      # name "brand-identity", version 1.0.0
 .claude/ (.gitkeep, eval guard)   .github/workflows/test.yml
 README.md  LICENSE  THIRD_PARTY_NOTICES.md  TRADEMARKS.md  requirements.txt  requirements-dev.txt
 docs/{architecture.md, testing.md}
