@@ -1,0 +1,237 @@
+{
+  "schema": "brand-identity/palette@1",
+  "name": "Workshop Ledger",
+  "direction": "Rust ink on kraft paper, ochre for marks.",
+  "brand": [
+    {
+      "id": "brand-1",
+      "name": "Ledger Rust",
+      "hex": "#8a3a14",
+      "source": "chosen",
+      "locked": true,
+      "usage": "wordmark, headings",
+      "print": {
+        "lab_d50": [
+          35.5,
+          33.3,
+          39.0
+        ],
+        "cmyk": null,
+        "pantone_ref": null
+      }
+    },
+    {
+      "id": "brand-2",
+      "name": "Ochre Rule",
+      "hex": "#c98a1c",
+      "source": "chosen",
+      "locked": true,
+      "usage": "the underline, highlights",
+      "print": {
+        "lab_d50": [
+          62.7,
+          18.7,
+          62.2
+        ],
+        "cmyk": null,
+        "pantone_ref": null
+      }
+    }
+  ],
+  "scales": {
+    "primary": {
+      "anchor": "800",
+      "steps": {
+        "50": "#fff5f1",
+        "100": "#feeae2",
+        "200": "#f6d7cb",
+        "300": "#ecbca9",
+        "400": "#ea9472",
+        "500": "#e07b51",
+        "600": "#c05f34",
+        "700": "#a5491e",
+        "800": "#8a3a14",
+        "900": "#752f0d",
+        "950": "#3c2015"
+      }
+    },
+    "neutral": {
+      "tint_of": "primary",
+      "steps": {
+        "50": "#fcfaf9",
+        "100": "#f5f2f1",
+        "200": "#e9e5e4",
+        "300": "#d8d3d1",
+        "400": "#a99f9b",
+        "500": "#7d706b",
+        "600": "#5f524d",
+        "700": "#4c3d38",
+        "800": "#352823",
+        "900": "#251814",
+        "950": "#160d09"
+      }
+    },
+    "accent": {
+      "anchor": "500",
+      "steps": {
+        "50": "#fff6ea",
+        "100": "#fcecd6",
+        "200": "#f5dab3",
+        "300": "#f4bd6b",
+        "400": "#df9d30",
+        "500": "#c98a1c",
+        "600": "#a96f09",
+        "700": "#8e5906",
+        "800": "#764804",
+        "900": "#653b03",
+        "950": "#3b2208"
+      }
+    },
+    "success": {
+      "hue": 170.0,
+      "steps": {
+        "50": "#ecfcf5",
+        "100": "#d6f8eb",
+        "200": "#98f4d5",
+        "300": "#66e2bc",
+        "400": "#3fc6a0",
+        "500": "#2bb28e",
+        "600": "#0d9373",
+        "700": "#08795e",
+        "800": "#06644d",
+        "900": "#045440",
+        "950": "#073025"
+      }
+    },
+    "warning": {
+      "hue": 60.0,
+      "steps": {
+        "50": "#fff6ee",
+        "100": "#ffebdb",
+        "200": "#fed6b6",
+        "300": "#f9b986",
+        "400": "#f29237",
+        "500": "#db8025",
+        "600": "#b76609",
+        "700": "#975306",
+        "800": "#7d4404",
+        "900": "#693803",
+        "950": "#3d2005"
+      }
+    },
+    "danger": {
+      "hue": 27.0,
+      "steps": {
+        "50": "#fff5f3",
+        "100": "#ffe9e6",
+        "200": "#fed3cd",
+        "300": "#feb2a8",
+        "400": "#fe8477",
+        "500": "#f86156",
+        "600": "#e0312e",
+        "700": "#b4312b",
+        "800": "#922c27",
+        "900": "#7a2520",
+        "950": "#471713"
+      }
+    },
+    "info": {
+      "hue": 250.0,
+      "steps": {
+        "50": "#f2f8ff",
+        "100": "#e3f0ff",
+        "200": "#c7e2fe",
+        "300": "#9ecdfe",
+        "400": "#66b2fd",
+        "500": "#3e9ef7",
+        "600": "#2681d2",
+        "700": "#196aaf",
+        "800": "#125792",
+        "900": "#0f487a",
+        "950": "#0c2a46"
+      }
+    }
+  },
+  "modes": {
+    "light": {
+      "background": "#f3ecdf",
+      "surface": "#ffffff",
+      "surfaceAlt": "#e9e2d5",
+      "border": "#d5cbb9",
+      "text": "#251814",
+      "textMuted": "#5f524d",
+      "primary": "#8a3a14",
+      "onPrimary": "#ffffff",
+      "accent": "#c98a1c",
+      "onAccent": "#160d09",
+      "link": "#8a3a14",
+      "focus": "#8a3a14",
+      "success": "#08795e",
+      "warning": "#975306",
+      "danger": "#b4312b",
+      "info": "#196aaf"
+    },
+    "dark": {
+      "background": "#160d09",
+      "surface": "#251814",
+      "surfaceAlt": "#352823",
+      "border": "#4c3d38",
+      "text": "#f5f2f1",
+      "textMuted": "#a99f9b",
+      "primary": "#e07b51",
+      "onPrimary": "#160d09",
+      "accent": "#c98a1c",
+      "onAccent": "#160d09",
+      "link": "#e07b51",
+      "focus": "#e07b51",
+      "success": "#3fc6a0",
+      "warning": "#f29237",
+      "danger": "#fe8477",
+      "info": "#66b2fd"
+    }
+  },
+  "rationale": [],
+  "feels": [
+    "warm",
+    "honest",
+    "handmade"
+  ],
+  "audit": null,
+  "build": {
+    "generator": "brand-identity/palette_build.py",
+    "seed": "#8a3a14",
+    "accent": {
+      "hex": "#c98a1c",
+      "how": "given",
+      "strategy": null
+    },
+    "neutral": {
+      "tint_hue": 42.8,
+      "chroma": 0.022
+    },
+    "grounds": {
+      "light": "#f3ecdf",
+      "dark": "neutral-950"
+    },
+    "adjustments": [
+      {
+        "mode": "dark",
+        "role": "primary",
+        "scale": "primary",
+        "from_step": "800",
+        "to_step": "500",
+        "reason": "step 800 is below 4.5:1 on the dark background (lightened derivative)"
+      }
+    ],
+    "warnings": [],
+    "semantic_shifts": [
+      {
+        "scale": "warning",
+        "hue_from": 70.0,
+        "hue_to": 60.0,
+        "min_delta_e2000": 10.38,
+        "reason": "role colour too close to a brand role (CIEDE2000 < 10)"
+      }
+    ]
+  }
+}

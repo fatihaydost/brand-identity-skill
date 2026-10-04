@@ -1,0 +1,229 @@
+{
+  "schema": "brand-identity/palette@1",
+  "name": "Night Ride",
+  "direction": "Night-road navy with one reflective yellow.",
+  "brand": [
+    {
+      "id": "brand-1",
+      "name": "Night Navy",
+      "hex": "#18233d",
+      "source": "chosen",
+      "locked": true,
+      "usage": "logo, dark grounds",
+      "print": {
+        "lab_d50": [
+          13.8,
+          2.1,
+          -18.5
+        ],
+        "cmyk": null,
+        "pantone_ref": null
+      }
+    },
+    {
+      "id": "brand-2",
+      "name": "Reflector Yellow",
+      "hex": "#e9d43a",
+      "source": "chosen",
+      "locked": true,
+      "usage": "highlights on dark grounds only",
+      "print": {
+        "lab_d50": [
+          84.8,
+          -4.0,
+          73.0
+        ],
+        "cmyk": null,
+        "pantone_ref": null
+      }
+    }
+  ],
+  "scales": {
+    "primary": {
+      "anchor": "950",
+      "steps": {
+        "50": "#f5f7fd",
+        "100": "#ebeff6",
+        "200": "#d9dee8",
+        "300": "#c1c7d4",
+        "400": "#a2abbe",
+        "500": "#8c97b0",
+        "600": "#6b7b9d",
+        "700": "#536386",
+        "800": "#415072",
+        "900": "#334262",
+        "950": "#18233d"
+      }
+    },
+    "neutral": {
+      "tint_of": "primary",
+      "steps": {
+        "50": "#f9fafc",
+        "100": "#f2f3f5",
+        "200": "#e5e6e8",
+        "300": "#d3d4d7",
+        "400": "#9fa1a6",
+        "500": "#707379",
+        "600": "#52555b",
+        "700": "#3e4148",
+        "800": "#292b31",
+        "900": "#191c22",
+        "950": "#0d0f14"
+      }
+    },
+    "accent": {
+      "anchor": "300",
+      "steps": {
+        "50": "#fafccf",
+        "100": "#f8f797",
+        "200": "#f3e969",
+        "300": "#e9d43a",
+        "400": "#d3b213",
+        "500": "#c19c10",
+        "600": "#a47b0b",
+        "700": "#8b6207",
+        "800": "#764e04",
+        "900": "#643f03",
+        "950": "#3e2101"
+      }
+    },
+    "success": {
+      "hue": 170.0,
+      "steps": {
+        "50": "#ecfcf5",
+        "100": "#d6f8eb",
+        "200": "#98f4d5",
+        "300": "#66e2bc",
+        "400": "#3fc6a0",
+        "500": "#2bb28e",
+        "600": "#0d9373",
+        "700": "#08795e",
+        "800": "#06644d",
+        "900": "#045440",
+        "950": "#073025"
+      }
+    },
+    "warning": {
+      "hue": 70.0,
+      "steps": {
+        "50": "#fff6ec",
+        "100": "#ffebd6",
+        "200": "#f9d9b4",
+        "300": "#f3bd7f",
+        "400": "#e59b37",
+        "500": "#cf8925",
+        "600": "#ad6e0a",
+        "700": "#8f5a06",
+        "800": "#764a04",
+        "900": "#633d03",
+        "950": "#3a2305"
+      }
+    },
+    "danger": {
+      "hue": 27.0,
+      "steps": {
+        "50": "#fff5f3",
+        "100": "#ffe9e6",
+        "200": "#fed3cd",
+        "300": "#feb2a8",
+        "400": "#fe8477",
+        "500": "#f86156",
+        "600": "#e0312e",
+        "700": "#b4312b",
+        "800": "#922c27",
+        "900": "#7a2520",
+        "950": "#471713"
+      }
+    },
+    "info": {
+      "hue": 250.0,
+      "steps": {
+        "50": "#f2f8ff",
+        "100": "#e3f0ff",
+        "200": "#c7e2fe",
+        "300": "#9ecdfe",
+        "400": "#66b2fd",
+        "500": "#3e9ef7",
+        "600": "#2681d2",
+        "700": "#196aaf",
+        "800": "#125792",
+        "900": "#0f487a",
+        "950": "#0c2a46"
+      }
+    }
+  },
+  "modes": {
+    "light": {
+      "background": "#ffffff",
+      "surface": "#f9fafc",
+      "surfaceAlt": "#f2f3f5",
+      "border": "#e5e6e8",
+      "text": "#191c22",
+      "textMuted": "#52555b",
+      "primary": "#18233d",
+      "onPrimary": "#ffffff",
+      "accent": "#e9d43a",
+      "onAccent": "#0d0f14",
+      "link": "#18233d",
+      "focus": "#18233d",
+      "success": "#08795e",
+      "warning": "#8f5a06",
+      "danger": "#b4312b",
+      "info": "#196aaf"
+    },
+    "dark": {
+      "background": "#0d0f14",
+      "surface": "#191c22",
+      "surfaceAlt": "#292b31",
+      "border": "#3e4148",
+      "text": "#f2f3f5",
+      "textMuted": "#9fa1a6",
+      "primary": "#8c97b0",
+      "onPrimary": "#0d0f14",
+      "accent": "#e9d43a",
+      "onAccent": "#0d0f14",
+      "link": "#8c97b0",
+      "focus": "#8c97b0",
+      "success": "#3fc6a0",
+      "warning": "#e59b37",
+      "danger": "#fe8477",
+      "info": "#66b2fd"
+    }
+  },
+  "rationale": [],
+  "feels": [
+    "cool",
+    "alert",
+    "precise"
+  ],
+  "audit": null,
+  "build": {
+    "generator": "brand-identity/palette_build.py",
+    "seed": "#18233d",
+    "accent": {
+      "hex": "#e9d43a",
+      "how": "given",
+      "strategy": null
+    },
+    "neutral": {
+      "tint_hue": 265.6,
+      "chroma": 0.012
+    },
+    "grounds": {
+      "light": "white",
+      "dark": "neutral-950"
+    },
+    "adjustments": [
+      {
+        "mode": "dark",
+        "role": "primary",
+        "scale": "primary",
+        "from_step": "950",
+        "to_step": "500",
+        "reason": "step 950 is below 4.5:1 on the dark background (lightened derivative)"
+      }
+    ],
+    "warnings": [],
+    "semantic_shifts": []
+  }
+}

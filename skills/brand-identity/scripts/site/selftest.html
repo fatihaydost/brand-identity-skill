@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>brand-identity self-test</title>
+<!-- Offline page for `site_palette.py check`: extract must find these roles (background, text, primary). -->
+<style>
+:root{--background:#fbfaf7;--text:#23201c;--primary:#1f5f7a;--on-primary:#ffffff;--border:#e2ddd3}
+body{margin:0;background:var(--background);color:var(--text);font:17px/1.5 system-ui,sans-serif}
+header{padding:18px 40px;border-bottom:1px solid var(--border)}
+main{padding:40px;max-width:720px}
+.btn{display:inline-block;background:var(--primary);color:var(--on-primary);padding:12px 22px;border-radius:8px;text-decoration:none}
+</style></head><body>
+<header><a href="/">Self-test</a></header>
+<main><h1>Self-test page</h1>
+<p>This paragraph is long enough to be measured as body copy by the extractor, so the text role has evidence.
+The page uses named custom properties for every role, a primary button and a hairline border.</p>
+<p>A second paragraph keeps the text vote clearly ahead of anything else on this small page.</p>
+<a class="btn" href="#go">Primary action</a></main>
+</body></html>

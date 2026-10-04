@@ -1,0 +1,162 @@
+{
+  "skill_name": "brand-identity",
+  "evals": [
+    {
+      "id": 1,
+      "name": "create-no-site-full",
+      "prompt": "We're launching Pedalka, a cargo-bike delivery co-op in Istanbul that brings goods from wholesalers to small neighbourhood shops. No website yet. We need the whole identity: logo, fonts and colour palette, and I'd like three directions to compare. The brand writes in Turkish and English, and our app is full of delivery times and prices. Audience: shop owners, mostly over 40. Three words: quick, neighbourly, sturdy. Competitors (names only, don't look them up): Kargoist, Yoldaş Kurye, BiKurye - all of them use a red or orange arrow.",
+      "expected_output": "init with en+tr and --numbers, one sets.json with three sets, logos then build, review.png looked at, board + review + table written, AI-default flags justified or one default-free set, checkpoint message per set, then a stop: no kit.",
+      "files": [],
+      "expectations": [
+        "brand.py init ran with Turkish and English languages and --numbers",
+        "One sets.json holds three sets, each with a one-sentence mechanism",
+        "brand.py logos ran before brand.py build, and review.png was looked at",
+        "board.png, review.png and table.md exist in the work folder",
+        "Every defaults_used[] entry has a non-empty brief-grounded why, and at least one set is free of AI defaults (or its matches are justified)",
+        "Each set says where it differs from Kargoist, Yoldaş Kurye and BiKurye",
+        "One set is marked recommended; the reply ends by asking the user to pick",
+        "No kit/ folder and no brand.py kit run before the pick"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "create-site-keep-logo",
+      "prompt": "We're Mulberry, a third-wave coffee shop. Our site is `site/index.html` (a local file, do not go online). Keep our logo exactly as it is - `site/logo.svg` - but we want new fonts and a new colour palette that fit it: warm, but not the cliché coffee brown. Three directions please, shown on our site. English only; the menu shows prices.",
+      "expected_output": "init with logo=keep, site extract on the local file (no live competitor run), new type and palette built around the mark, site previews, board/review/table, the logo file byte-identical afterwards, checkpoint and stop.",
+      "files": [
+        "../../evals/fixtures/site-cafe/index.html",
+        "../../evals/fixtures/site-cafe/logo.svg"
+      ],
+      "expectations": [
+        "brand.py init used --state logo=keep",
+        "brand.py site extract ran on the local file; no live competitor run",
+        "site/logo.svg is byte-identical after the run (same sha256) and was never written or edited",
+        "sets.json contains no new symbol_svg; the kept mark is used as-is",
+        "table.md has Type and Palette columns and no Logo column",
+        "Site previews (PNG) exist for the sets",
+        "At least one direction moves clearly away from coffee brown",
+        "No kit before the user picks"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "type-only",
+      "prompt": "We only need typography, nothing else. Ledgerline is a bookkeeping app for freelancers; the interface is in German, Turkish and English and it is full of figures (invoices, tax totals). Logo and colours are not part of this job - leave them out. Give me three font directions: a display face for headings and a text face for the interface.",
+      "expected_output": "init with logo and palette set to none (or keep), --numbers and de+tr+en languages, a font search, three type sets with no symbols, table.md with only the Type component column, coverage and tabular figures reported, checkpoint and stop.",
+      "files": [],
+      "expectations": [
+        "brand.py init set logo and palette to none (or keep), with --numbers and de, tr, en languages",
+        "brand.py fonts search ran",
+        "sets.json has no symbol SVGs; no logo or palette is proposed",
+        "table.md has only the Type component column (Set · Mechanism · Type · Where it differs · Risks / flags)",
+        "German and Turkish coverage and tabular figures are reported as measured results",
+        "Each family's licence or source is stated",
+        "No kit before the user picks"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "palette-only-with-existing-logo",
+      "prompt": "We're Logline, a log search tool for developers. Our page is `site/index.html` (colours are CSS custom properties in :root; local file, do not go online). The logo `brand/logo.svg` stays exactly as it is and we keep our system fonts. We only want a new colour palette: every dev tool is blue and we get lost in the sea of blue. Two directions, shown on the page.",
+      "expected_output": "init with logo=keep, type kept or none, --sets 2; no font search; two built palettes; table with only the Palette column; the kept logo file byte-identical; checkpoint and stop.",
+      "files": [
+        "../../evals/fixtures/site-saas/index.html",
+        "../../evals/fixtures/logline-logo.svg"
+      ],
+      "expectations": [
+        "brand.py init used logo=keep, type=keep (or none) and --sets 2",
+        "No font search ran",
+        "brand/logo.svg and site/index.html are unchanged",
+        "Both sets have a built palette.json (scales and modes)",
+        "table.md has only the Palette component column",
+        "At least one direction leaves plain category blue, with the reason stated",
+        "Contrast is given as ratios; no 'converts' or 'builds trust' claims",
+        "No kit before the user picks"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "refresh-logo",
+      "prompt": "Kestrel is a same-day courier in Leeds. Our logo `brand/kestrel-logo.svg` is from 2011: people know the bird, but the gradient swoosh and the drop shadow feel dated. Refresh the logo and keep what people recognise. Our colours stay as they are (navy #1d3557 and signal orange #e76f51); a new typeface for the wordmark is fine. Three options, English only.",
+      "expected_output": "init with logo=refresh, symbols drawn as primitives in sets.json (no <text>), logos run and the contact sheet looked at, build, the original SVG untouched, the given colours kept in the palettes, checkpoint and stop.",
+      "files": [
+        "../../evals/fixtures/kestrel-logo-2011.svg"
+      ],
+      "expectations": [
+        "brand.py init used --state logo=refresh",
+        "Symbols are drawn in sets.json from primitives, with no <text>",
+        "brand.py logos ran and logo-sheet.png was looked at",
+        "brand/kestrel-logo.svg is unchanged",
+        "The palettes keep #1d3557 and #e76f51",
+        "Each option says what equity it keeps (the bird) and what it drops (gradient, swoosh, shadow)",
+        "No kit before the user picks"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "mix-sets",
+      "prompt": "We looked at the three Ferrow directions in `brand-identity/ferrow/`. I like the logo and the fonts of A (Spoke Line) but the colours of B (Workshop Ledger). Can you put that combination together so I can see it next to the others?",
+      "expected_output": "brand.py mix with A:logo, A:type and B:palette into a new set, board re-rendered, cohesion warning reported, no hand-edited sets.json, no kit before the user confirms.",
+      "files": [
+        "templates/demo/",
+        "templates/sets.example.json"
+      ],
+      "expectations": [
+        "brand.py mix ran with A:logo, A:type and B:palette into a new set",
+        "brand.py init did not run and sets.json was not rewritten by hand",
+        "The new set's identity.json and a re-rendered board.png exist",
+        "The reply reports the logo recoloured to B's palette, the measured checks and the mixed-set cohesion warning",
+        "No kit before the user confirms"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "kit-after-approval",
+      "prompt": "We went through the three Ferrow directions in `brand-identity/ferrow/` together and I pick A, Spoke Line. Build the brand guidelines kit for it.",
+      "expected_output": "brand.py kit on sets/A only: PDF, page PNGs, logo files, tokens, fonts.md with licences and no font files; the reply says where everything is and reports the kit gates.",
+      "files": [
+        "templates/demo/",
+        "templates/sets.example.json"
+      ],
+      "expectations": [
+        "brand.py kit ran on sets/A only",
+        "kit/ferrow-guidelines.pdf, kit/pages/*.png, kit/logo/, kit/tokens/tokens.css and kit/fonts.md exist",
+        "fonts.md names the licences; no font files are shipped in kit/",
+        "No Pantone or CMYK values are invented",
+        "The reply says where each output is and reports the kit gates"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "critique-identity",
+      "prompt": "Critique our identity without mercy: the site is `site/index.html` (local, do not go online), the logo is `site/logo.svg`, headings are set in Lobster and body text in Lato. We write English and Turkish. I don't want a redesign, just tell me what is broken and what to fix first.",
+      "expected_output": "brand.py critique with --logo and --fonts (and the site), findings per component with measured contrast ratios, the logo's live <text> flagged, top three measurable fixes, no new identity built, user files untouched.",
+      "files": [
+        "../../evals/fixtures/site-dental/index.html",
+        "../../evals/fixtures/site-dental/logo.svg"
+      ],
+      "expectations": [
+        "brand.py critique ran with --logo and --fonts",
+        "No init, logos, build, mix or kit ran (no redesign)",
+        "site/ files were not written or edited",
+        "Failing colour pairs are named with contrast ratios; no APCA numbers",
+        "The logo's live <text> (not outlined) is flagged",
+        "Exactly three prioritised, measurable fixes are listed; a refresh is offered, not built"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "fast-intake",
+      "prompt": "Ich brauche ein Branding für meine Bäckerei.",
+      "expected_output": "The skill fires and asks one message in German: per component new / refresh / keep / none, number of sets (default 3), site or files, languages, numbers; sector is not asked again. No sets.json written, nothing built.",
+      "files": [],
+      "expectations": [
+        "The skill fires",
+        "One intake message: per component new / refresh / keep / none, number of sets (3 default), site or files, languages",
+        "The business type (a bakery) is not asked again",
+        "Nothing is built: no sets.json written, no logos, build, mix or kit",
+        "The reply is in German"
+      ]
+    }
+  ]
+}

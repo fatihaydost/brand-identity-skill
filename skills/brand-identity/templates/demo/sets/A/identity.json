@@ -1,0 +1,139 @@
+{
+  "schema": "brand-identity/identity@1",
+  "brand": {
+    "name": "Ferrow",
+    "tagline": "Fixed today, riding tomorrow.",
+    "languages": [
+      "en",
+      "de"
+    ],
+    "sector": "urban bicycle repair and rental co-op",
+    "numbers": true
+  },
+  "set": {
+    "id": "A",
+    "name": "Spoke Line",
+    "recommended": true,
+    "mechanism": "One spoke does all the work: a single straight stroke crosses the wheel in the mark, sets the geometric type and is the only orange in the palette.",
+    "expression_move": "The orange spoke is the only saturated colour anywhere.",
+    "differs_by": "Local repair shops use hand-drawn script and red; this is a calm geometric sans on workshop green with one signal orange."
+  },
+  "axes": {
+    "warm_cool": 1,
+    "playful_serious": 0,
+    "quiet_loud": -1
+  },
+  "components": {
+    "logo": {
+      "mode": "new",
+      "status": "proposed",
+      "source": null,
+      "sha256": null
+    },
+    "type": {
+      "mode": "new",
+      "status": "proposed",
+      "source": null,
+      "sha256": null
+    },
+    "palette": {
+      "mode": "new",
+      "status": "proposed",
+      "source": null,
+      "sha256": null
+    }
+  },
+  "type": {
+    "pairing_mode": "single-family",
+    "display": {
+      "family": "Outfit",
+      "source": "google",
+      "license": "OFL-1.1",
+      "weights": [
+        700
+      ],
+      "location": {
+        "wght": 700
+      },
+      "features": [],
+      "case": "lower",
+      "tracking": -20,
+      "fallback": "system-ui, sans-serif",
+      "file": null
+    },
+    "text": {
+      "family": "Outfit",
+      "source": "google",
+      "license": "OFL-1.1",
+      "weights": [
+        400,
+        600
+      ],
+      "location": {
+        "wght": 400
+      },
+      "features": [
+        "tnum"
+      ],
+      "case": "as-is",
+      "tracking": 0,
+      "fallback": "system-ui, sans-serif",
+      "file": null
+    },
+    "mono": null
+  },
+  "logo": {
+    "type": "symbol+wordmark",
+    "concept": "A wheel with a single spoke: the shop fixes the one thing that is broken.",
+    "symbol": "logo/symbol.svg",
+    "wordmark": {
+      "text": "Ferrow",
+      "role": "display",
+      "location": null,
+      "tracking": -20,
+      "case": "lower"
+    },
+    "monogram": null,
+    "lockups": [
+      "horizontal",
+      "stacked"
+    ],
+    "colors": {
+      "ring": "primary",
+      "spoke": "accent",
+      "wordmark": "text"
+    },
+    "tags": [
+      "abstract-geometric"
+    ],
+    "clear_space": {
+      "unit": "cap-height",
+      "multiple": 1,
+      "inferred": true
+    },
+    "min_size": {
+      "px": 24,
+      "mm": 8
+    }
+  },
+  "palette": "palette.json",
+  "palette_build": {
+    "strategy": null,
+    "accent": null,
+    "light_bg": null,
+    "dark_bg": null,
+    "neutral_tint": null,
+    "neutral_chroma": null,
+    "extra": []
+  },
+  "defaults_used": [],
+  "rationale": [
+    {
+      "claim": "Demo data: a fictional brand used to exercise the card, board and kit templates.",
+      "evidence": "practice",
+      "source": "templates/demo"
+    }
+  ],
+  "derived": [],
+  "audit": null
+}

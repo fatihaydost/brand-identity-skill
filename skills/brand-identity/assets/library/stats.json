@@ -1,0 +1,1954 @@
+{
+ "schema": "brand-color/library@1",
+ "count": 318,
+ "industries": 21,
+ "turkish_brands": 102,
+ "families": [
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "teal",
+  "blue",
+  "purple",
+  "pink",
+  "brown",
+  "neutral"
+ ],
+ "method": "Measured from rendered public websites with site_palette.py competitors; hue families from OKLCH (neutral C < 0.045). Approximations, not official brand specifications.",
+ "overall": {
+  "n": 318,
+  "primary_family": {
+   "blue": 0.277,
+   "red": 0.27,
+   "neutral": 0.132,
+   "green": 0.088,
+   "yellow": 0.06,
+   "orange": 0.044,
+   "purple": 0.044,
+   "teal": 0.044,
+   "pink": 0.038,
+   "brown": 0.003
+  },
+  "family_presence": {
+   "blue": 0.443,
+   "red": 0.406,
+   "green": 0.17,
+   "yellow": 0.164,
+   "teal": 0.132,
+   "neutral": 0.132,
+   "purple": 0.101,
+   "orange": 0.094,
+   "pink": 0.082,
+   "brown": 0.031
+  },
+  "mean_n_hues": 1.58,
+  "dark_ground_share": 0.094,
+  "lightness_structures": {
+   "light ground, mid primary": 163,
+   "light ground, dark primary": 90,
+   "light ground, light primary": 35,
+   "dark ground, light primary": 15,
+   "dark ground, mid primary": 10,
+   "dark ground, dark primary": 5
+  },
+  "primary_lightness": {
+   "p25": 0.403,
+   "median": 0.554,
+   "p75": 0.662
+  },
+  "primary_contrast": {
+   "p25": 3.79,
+   "median": 5.225,
+   "p75": 10.688,
+   "below_3": 0.173
+  },
+  "countries": {
+   "TR": 102,
+   "US": 97,
+   "GB": 39,
+   "DE": 13,
+   "FR": 9,
+   "CH": 8,
+   "IT": 6,
+   "ES": 5,
+   "NL": 4,
+   "JP": 4,
+   "AU": 3,
+   "CA": 3,
+   "IE": 3,
+   "SE": 3,
+   "FI": 2,
+   "SG": 2,
+   "KR": 2,
+   "CZ": 2,
+   "BR": 1,
+   "NZ": 1,
+   "LV": 1,
+   "PT": 1,
+   "IN": 1,
+   "CN": 1,
+   "LT": 1,
+   "AT": 1,
+   "IL": 1,
+   "DK": 1,
+   "NO": 1
+  },
+  "unused_families": [],
+  "rare_families": [
+   "orange",
+   "teal",
+   "purple",
+   "pink",
+   "brown"
+  ],
+  "hue_gaps": [],
+  "exemplary": [
+   "Commonwealth Bank",
+   "ING Türkiye",
+   "Santander UK",
+   "TD Bank",
+   "Wells Fargo",
+   "Cash App",
+   "Monzo",
+   "Nubank",
+   "Stripe",
+   "Wise",
+   "Aviva",
+   "Lemonade",
+   "Orange",
+   "T-Mobile",
+   "Telekom",
+   "Vodafone UK",
+   "airBaltic",
+   "Qantas",
+   "Ryanair",
+   "Virgin Atlantic",
+   "Amazon",
+   "Vinted",
+   "Decathlon",
+   "IKEA",
+   "Nike",
+   "Vakko",
+   "Charlotte Tilbury",
+   "Clinique",
+   "Glossier",
+   "Gratis",
+   "The Ordinary",
+   "Coca-Cola",
+   "Liquid Death",
+   "Oatly",
+   "Tony's Chocolonely",
+   "Burger King",
+   "Deliveroo",
+   "Starbucks",
+   "Sweetgreen",
+   "Wolt",
+   "HubSpot",
+   "Linear",
+   "Mailchimp",
+   "Slack",
+   "IDEO",
+   "Landor",
+   "Ogilvy",
+   "Duolingo",
+   "Harvard University",
+   "GSK",
+   "Johnson & Johnson",
+   "Rivian",
+   "Škoda",
+   "Eni",
+   "Octopus Energy",
+   "Shell",
+   "Airbnb",
+   "Aman",
+   "Mews",
+   "Netflix",
+   "Spotify",
+   "The Guardian",
+   "Twitch",
+   "Boston Consulting Group",
+   "EY"
+  ]
+ },
+ "by_industry": {
+  "banking": {
+   "n": 22,
+   "primary_family": {
+    "blue": 0.409,
+    "red": 0.227,
+    "green": 0.182,
+    "yellow": 0.091,
+    "orange": 0.045,
+    "purple": 0.045
+   },
+   "family_presence": {
+    "blue": 0.5,
+    "red": 0.455,
+    "green": 0.273,
+    "yellow": 0.136,
+    "orange": 0.136,
+    "teal": 0.045,
+    "purple": 0.045
+   },
+   "mean_n_hues": 1.64,
+   "dark_ground_share": 0.0,
+   "lightness_structures": {
+    "light ground, mid primary": 14,
+    "light ground, dark primary": 6,
+    "light ground, light primary": 2
+   },
+   "primary_lightness": {
+    "p25": 0.456,
+    "median": 0.552,
+    "p75": 0.587
+   },
+   "primary_contrast": {
+    "p25": 4.522,
+    "median": 5.165,
+    "p75": 6.905,
+    "below_3": 0.182
+   },
+   "countries": {
+    "TR": 11,
+    "US": 4,
+    "GB": 4,
+    "AU": 1,
+    "DE": 1,
+    "CA": 1
+   },
+   "unused_families": [
+    "pink",
+    "brown"
+   ],
+   "rare_families": [
+    "orange",
+    "yellow",
+    "teal",
+    "purple"
+   ],
+   "hue_gaps": [
+    {
+     "from": 311,
+     "to": 4,
+     "width": 53,
+     "families": [
+      "purple",
+      "pink"
+     ]
+    },
+    {
+     "from": 195,
+     "to": 245,
+     "width": 50,
+     "families": [
+      "teal",
+      "blue"
+     ]
+    },
+    {
+     "from": 263,
+     "to": 311,
+     "width": 48,
+     "families": [
+      "blue",
+      "purple"
+     ]
+    }
+   ],
+   "exemplary": [
+    "Commonwealth Bank",
+    "ING Türkiye",
+    "Santander UK",
+    "TD Bank",
+    "Wells Fargo"
+   ]
+  },
+  "fintech": {
+   "n": 15,
+   "primary_family": {
+    "blue": 0.333,
+    "green": 0.267,
+    "red": 0.133,
+    "teal": 0.133,
+    "purple": 0.133
+   },
+   "family_presence": {
+    "blue": 0.467,
+    "green": 0.267,
+    "teal": 0.267,
+    "yellow": 0.2,
+    "purple": 0.2,
+    "red": 0.133,
+    "pink": 0.067
+   },
+   "mean_n_hues": 1.67,
+   "dark_ground_share": 0.133,
+   "lightness_structures": {
+    "light ground, mid primary": 6,
+    "light ground, light primary": 4,
+    "light ground, dark primary": 3,
+    "dark ground, mid primary": 1,
+    "dark ground, light primary": 1
+   },
+   "primary_lightness": {
+    "p25": 0.522,
+    "median": 0.57,
+    "p75": 0.77
+   },
+   "primary_contrast": {
+    "p25": 2.645,
+    "median": 4.25,
+    "p75": 8.255,
+    "below_3": 0.267
+   },
+   "countries": {
+    "US": 6,
+    "TR": 3,
+    "GB": 3,
+    "NL": 1,
+    "DE": 1,
+    "BR": 1
+   },
+   "unused_families": [
+    "orange",
+    "brown"
+   ],
+   "rare_families": [
+    "red",
+    "pink"
+   ],
+   "hue_gaps": [
+    {
+     "from": 34,
+     "to": 92,
+     "width": 58,
+     "families": [
+      "red",
+      "orange",
+      "yellow"
+     ]
+    },
+    {
+     "from": 339,
+     "to": 29,
+     "width": 50,
+     "families": [
+      "pink",
+      "red"
+     ]
+    },
+    {
+     "from": 191,
+     "to": 231,
+     "width": 40,
+     "families": [
+      "teal",
+      "blue"
+     ]
+    }
+   ],
+   "exemplary": [
+    "Cash App",
+    "Monzo",
+    "Nubank",
+    "Stripe",
+    "Wise"
+   ]
+  },
+  "insurance": {
+   "n": 10,
+   "primary_family": {
+    "blue": 0.5,
+    "red": 0.3,
+    "yellow": 0.1,
+    "pink": 0.1
+   },
+   "family_presence": {
+    "blue": 0.6,
+    "red": 0.3,
+    "teal": 0.3,
+    "pink": 0.2,
+    "orange": 0.1,
+    "yellow": 0.1,
+    "brown": 0.1
+   },
+   "mean_n_hues": 1.7,
+   "dark_ground_share": 0.0,
+   "lightness_structures": {
+    "light ground, mid primary": 6,
+    "light ground, dark primary": 3,
+    "light ground, light primary": 1
+   },
+   "primary_lightness": {
+    "p25": 0.363,
+    "median": 0.56,
+    "p75": 0.582
+   },
+   "primary_contrast": {
+    "p25": 4.455,
+    "median": 4.885,
+    "p75": 11.213,
+    "below_3": 0.1
+   },
+   "countries": {
+    "TR": 4,
+    "US": 3,
+    "GB": 2,
+    "FR": 1
+   },
+   "unused_families": [
+    "green",
+    "purple"
+   ],
+   "rare_families": [
+    "orange",
+    "yellow",
+    "brown"
+   ],
+   "hue_gaps": [
+    {
+     "from": 96,
+     "to": 209,
+     "width": 113,
+     "families": [
+      "yellow",
+      "green",
+      "teal"
+     ]
+    },
+    {
+     "from": 273,
+     "to": 344,
+     "width": 71,
+     "families": [
+      "blue",
+      "purple",
+      "pink"
+     ]
+    }
+   ],
+   "exemplary": [
+    "Aviva",
+    "Lemonade"
+   ]
+  },
+  "telecom": {
+   "n": 14,
+   "primary_family": {
+    "blue": 0.357,
+    "pink": 0.214,
+    "red": 0.214,
+    "purple": 0.071,
+    "teal": 0.071,
+    "orange": 0.071
+   },
+   "family_presence": {
+    "blue": 0.429,
+    "yellow": 0.286,
+    "red": 0.286,
+    "purple": 0.214,
+    "teal": 0.214,
+    "pink": 0.214,
+    "orange": 0.071
+   },
+   "mean_n_hues": 1.64,
+   "dark_ground_share": 0.0,
+   "lightness_structures": {
+    "light ground, mid primary": 9,
+    "light ground, dark primary": 4,
+    "light ground, light primary": 1
+   },
+   "primary_lightness": {
+    "p25": 0.437,
+    "median": 0.581,
+    "p75": 0.595
+   },
+   "primary_contrast": {
+    "p25": 4.103,
+    "median": 4.595,
+    "p75": 8.805,
+    "below_3": 0.143
+   },
+   "countries": {
+    "GB": 5,
+    "TR": 4,
+    "US": 3,
+    "FR": 1,
+    "DE": 1
+   },
+   "unused_families": [
+    "green",
+    "brown"
+   ],
+   "rare_families": [
+    "orange"
+   ],
+   "hue_gaps": [
+    {
+     "from": 112,
+     "to": 192,
+     "width": 80,
+     "families": [
+      "green",
+      "teal"
+     ]
+    },
+    {
+     "from": 43,
+     "to": 89,
+     "width": 46,
+     "families": [
+      "orange",
+      "yellow"
+     ]
+    }
+   ],
+   "exemplary": [
+    "Orange",
+    "T-Mobile",
+    "Telekom",
+    "Vodafone UK"
+   ]
+  },
+  "airline": {
+   "n": 11,
+   "primary_family": {
+    "yellow": 0.364,
+    "blue": 0.182,
+    "red": 0.182,
+    "teal": 0.091,
+    "orange": 0.091,
+    "green": 0.091
+   },
+   "family_presence": {
+    "blue": 0.545,
+    "yellow": 0.455,
+    "red": 0.273,
+    "teal": 0.182,
+    "purple": 0.182,
+    "orange": 0.091,
+    "green": 0.091
+   },
+   "mean_n_hues": 1.73,
+   "dark_ground_share": 0.0,
+   "lightness_structures": {
+    "light ground, mid primary": 5,
+    "light ground, light primary": 5,
+    "light ground, dark primary": 1
+   },
+   "primary_lightness": {
+    "p25": 0.565,
+    "median": 0.738,
+    "p75": 0.849
+   },
+   "primary_contrast": {
+    "p25": 1.475,
+    "median": 2.43,
+    "p75": 4.81,
+    "below_3": 0.545
+   },
+   "countries": {
+    "US": 2,
+    "NZ": 1,
+    "LV": 1,
+    "FI": 1,
+    "TR": 1,
+    "AU": 1,
+    "IE": 1,
+    "PT": 1,
+    "GB": 1,
+    "ES": 1
+   },
+   "unused_families": [
+    "pink",
+    "brown"
+   ],
+   "rare_families": [
+    "orange",
+    "green"
+   ],
+   "hue_gaps": [
+    {
+     "from": 133,
+     "to": 209,
+     "width": 76,
+     "families": [
+      "green",
+      "teal"
+     ]
+    },
+    {
+     "from": 268,
+     "to": 321,
+     "width": 53,
+     "families": [
+      "blue",
+      "purple"
+     ]
+    },
+    {
+     "from": 329,
+     "to": 22,
+     "width": 53,
+     "families": [
+      "purple",
+      "pink",
+      "red"
+     ]
+    }
+   ],
+   "exemplary": [
+    "airBaltic",
+    "Qantas",
+    "Ryanair",
+    "Virgin Atlantic"
+   ]
+  },
+  "ecommerce": {
+   "n": 12,
+   "primary_family": {
+    "blue": 0.25,
+    "orange": 0.25,
+    "neutral": 0.167,
+    "yellow": 0.083,
+    "red": 0.083,
+    "purple": 0.083,
+    "teal": 0.083
+   },
+   "family_presence": {
+    "blue": 0.583,
+    "red": 0.333,
+    "orange": 0.333,
+    "purple": 0.25,
+    "yellow": 0.167,
+    "green": 0.167,
+    "neutral": 0.167,
+    "teal": 0.083
+   },
+   "mean_n_hues": 1.92,
+   "dark_ground_share": 0.0,
+   "lightness_structures": {
+    "light ground, mid primary": 7,
+    "light ground, dark primary": 4,
+    "light ground, light primary": 1
+   },
+   "primary_lightness": {
+    "p25": 0.236,
+    "median": 0.541,
+    "p75": 0.691
+   },
+   "primary_contrast": {
+    "p25": 2.845,
+    "median": 4.92,
+    "p75": 16.922,
+    "below_3": 0.333
+   },
+   "countries": {
+    "US": 3,
+    "TR": 3,
+    "IN": 1,
+    "DE": 1,
+    "JP": 1,
+    "SG": 1,
+    "CN": 1,
+    "LT": 1
+   },
+   "unused_families": [
+    "pink",
+    "brown"
+   ],
+   "rare_families": [
+    "teal"
+   ],
+   "hue_gaps": [
+    {
+     "from": 318,
+     "to": 22,
+     "width": 64,
+     "families": [
+      "purple",
+      "pink",
+      "red"
+     ]
+    },
+    {
+     "from": 154,
+     "to": 206,
+     "width": 52,
+     "families": [
+      "green",
+      "teal"
+     ]
+    }
+   ],
+   "exemplary": [
+    "Amazon",
+    "Vinted"
+   ]
+  },
+  "retail": {
+   "n": 15,
+   "primary_family": {
+    "blue": 0.533,
+    "red": 0.133,
+    "orange": 0.133,
+    "neutral": 0.067,
+    "pink": 0.067,
+    "yellow": 0.067
+   },
+   "family_presence": {
+    "blue": 0.733,
+    "red": 0.6,
+    "yellow": 0.267,
+    "orange": 0.2,
+    "neutral": 0.067,
+    "pink": 0.067
+   },
+   "mean_n_hues": 1.93,
+   "dark_ground_share": 0.0,
+   "lightness_structures": {
+    "light ground, mid primary": 8,
+    "light ground, dark primary": 6,
+    "light ground, light primary": 1
+   },
+   "primary_lightness": {
+    "p25": 0.399,
+    "median": 0.51,
+    "p75": 0.575
+   },
+   "primary_contrast": {
+    "p25": 4.535,
+    "median": 6.32,
+    "p75": 9.44,
+    "below_3": 0.133
+   },
+   "countries": {
+    "TR": 9,
+    "DE": 3,
+    "FR": 1,
+    "SE": 1,
+    "GB": 1
+   },
+   "unused_families": [
+    "green",
+    "teal",
+    "purple",
+    "brown"
+   ],
+   "rare_families": [
+    "pink"
+   ],
+   "hue_gaps": [
+    {
+     "from": 99,
+     "to": 241,
+     "width": 142,
+     "families": [
+      "yellow",
+      "green",
+      "teal",
+      "blue"
+     ]
+    },
+    {
+     "from": 272,
+     "to": 0,
+     "width": 88,
+     "families": [
+      "blue",
+      "purple",
+      "pink"
+     ]
+    }
+   ],
+   "exemplary": [
+    "Decathlon",
+    "IKEA"
+   ]
+  },
+  "fashion": {
+   "n": 11,
+   "primary_family": {
+    "neutral": 0.818,
+    "blue": 0.182
+   },
+   "family_presence": {
+    "neutral": 0.818,
+    "red": 0.273,
+    "green": 0.182,
+    "blue": 0.182
+   },
+   "mean_n_hues": 0.64,
+   "dark_ground_share": 0.0,
+   "lightness_structures": {
+    "light ground, dark primary": 11
+   },
+   "primary_lightness": {
+    "p25": 0.182,
+    "median": 0.248,
+    "p75": 0.261
+   },
+   "primary_contrast": {
+    "p25": 15.645,
+    "median": 16.1,
+    "p75": 18.73,
+    "below_3": 0.0
+   },
+   "countries": {
+    "TR": 5,
+    "US": 4,
+    "ES": 1,
+    "DE": 1
+   },
+   "unused_families": [
+    "orange",
+    "yellow",
+    "teal",
+    "purple",
+    "pink",
+    "brown"
+   ],
+   "rare_families": [],
+   "hue_gaps": [
+    {
+     "from": 142,
+     "to": 261,
+     "width": 119,
+     "families": [
+      "green",
+      "teal",
+      "blue"
+     ]
+    },
+    {
+     "from": 29,
+     "to": 135,
+     "width": 106,
+     "families": [
+      "red",
+      "orange",
+      "yellow",
+      "green"
+     ]
+    },
+    {
+     "from": 277,
+     "to": 23,
+     "width": 106,
+     "families": [
+      "blue",
+      "purple",
+      "pink",
+      "red"
+     ]
+    }
+   ],
+   "exemplary": [
+    "Nike"
+   ]
+  },
+  "luxury": {
+   "n": 10,
+   "primary_family": {
+    "neutral": 0.6,
+    "red": 0.2,
+    "yellow": 0.2
+   },
+   "family_presence": {
+    "neutral": 0.6,
+    "red": 0.3,
+    "yellow": 0.2,
+    "blue": 0.1
+   },
+   "mean_n_hues": 0.6,
+   "dark_ground_share": 0.1,
+   "lightness_structures": {
+    "light ground, dark primary": 4,
+    "light ground, light primary": 3,
+    "light ground, mid primary": 2,
+    "dark ground, light primary": 1
+   },
+   "primary_lightness": {
+    "p25": 0.082,
+    "median": 0.619,
+    "p75": 0.794
+   },
+   "primary_contrast": {
+    "p25": 2.105,
+    "median": 9.205,
+    "p75": 20.738,
+    "below_3": 0.4
+   },
+   "countries": {
+    "CH": 4,
+    "TR": 3,
+    "ES": 1,
+    "US": 1,
+    "IT": 1
+   },
+   "unused_families": [
+    "orange",
+    "green",
+    "teal",
+    "purple",
+    "pink",
+    "brown"
+   ],
+   "rare_families": [
+    "blue"
+   ],
+   "hue_gaps": [
+    {
+     "from": 233,
+     "to": 22,
+     "width": 149,
+     "families": [
+      "blue",
+      "purple",
+      "pink",
+      "red"
+     ]
+    },
+    {
+     "from": 105,
+     "to": 233,
+     "width": 128,
+     "families": [
+      "yellow",
+      "green",
+      "teal",
+      "blue"
+     ]
+    },
+    {
+     "from": 36,
+     "to": 98,
+     "width": 62,
+     "families": [
+      "orange",
+      "yellow"
+     ]
+    }
+   ],
+   "exemplary": [
+    "Vakko"
+   ]
+  },
+  "beauty": {
+   "n": 17,
+   "primary_family": {
+    "red": 0.471,
+    "neutral": 0.294,
+    "blue": 0.059,
+    "green": 0.059,
+    "pink": 0.059,
+    "purple": 0.059
+   },
+   "family_presence": {
+    "red": 0.647,
+    "neutral": 0.294,
+    "orange": 0.176,
+    "pink": 0.176,
+    "blue": 0.118,
+    "purple": 0.118,
+    "brown": 0.118,
+    "yellow": 0.118,
+    "green": 0.059
+   },
+   "mean_n_hues": 1.41,
+   "dark_ground_share": 0.0,
+   "lightness_structures": {
+    "light ground, dark primary": 9,
+    "light ground, mid primary": 7,
+    "light ground, light primary": 1
+   },
+   "primary_lightness": {
+    "p25": 0.0,
+    "median": 0.416,
+    "p75": 0.655
+   },
+   "primary_contrast": {
+    "p25": 3.46,
+    "median": 8.93,
+    "p75": 21.0,
+    "below_3": 0.118
+   },
+   "countries": {
+    "US": 8,
+    "TR": 5,
+    "GB": 1,
+    "IT": 1,
+    "FR": 1,
+    "CA": 1
+   },
+   "unused_families": [
+    "teal"
+   ],
+   "rare_families": [
+    "yellow",
+    "green",
+    "blue",
+    "purple",
+    "brown"
+   ],
+   "hue_gaps": [
+    {
+     "from": 151,
+     "to": 249,
+     "width": 98,
+     "families": [
+      "green",
+      "teal",
+      "blue"
+     ]
+    },
+    {
+     "from": 84,
+     "to": 151,
+     "width": 67,
+     "families": [
+      "yellow",
+      "green"
+     ]
+    },
+    {
+     "from": 307,
+     "to": 350,
+     "width": 43,
+     "families": [
+      "purple",
+      "pink"
+     ]
+    }
+   ],
+   "exemplary": [
+    "Charlotte Tilbury",
+    "Clinique",
+    "Glossier",
+    "Gratis",
+    "The Ordinary"
+   ]
+  },
+  "food-beverage": {
+   "n": 17,
+   "primary_family": {
+    "red": 0.412,
+    "green": 0.176,
+    "blue": 0.118,
+    "yellow": 0.059,
+    "brown": 0.059,
+    "neutral": 0.059,
+    "purple": 0.059,
+    "pink": 0.059
+   },
+   "family_presence": {
+    "red": 0.529,
+    "blue": 0.353,
+    "green": 0.294,
+    "yellow": 0.235,
+    "orange": 0.176,
+    "brown": 0.176,
+    "pink": 0.118,
+    "purple": 0.118,
+    "teal": 0.059,
+    "neutral": 0.059
+   },
+   "mean_n_hues": 1.71,
+   "dark_ground_share": 0.0,
+   "lightness_structures": {
+    "light ground, mid primary": 11,
+    "light ground, dark primary": 4,
+    "light ground, light primary": 2
+   },
+   "primary_lightness": {
+    "p25": 0.474,
+    "median": 0.567,
+    "p75": 0.595
+   },
+   "primary_contrast": {
+    "p25": 3.82,
+    "median": 4.88,
+    "p75": 6.77,
+    "below_3": 0.118
+   },
+   "countries": {
+    "TR": 7,
+    "US": 4,
+    "IT": 1,
+    "DE": 1,
+    "GB": 1,
+    "SE": 1,
+    "AT": 1,
+    "NL": 1
+   },
+   "unused_families": [],
+   "rare_families": [
+    "teal",
+    "purple",
+    "pink"
+   ],
+   "hue_gaps": [
+    {
+     "from": 319,
+     "to": 18,
+     "width": 59,
+     "families": [
+      "purple",
+      "pink",
+      "red"
+     ]
+    },
+    {
+     "from": 174,
+     "to": 226,
+     "width": 52,
+     "families": [
+      "teal"
+     ]
+    },
+    {
+     "from": 263,
+     "to": 308,
+     "width": 45,
+     "families": [
+      "blue",
+      "purple"
+     ]
+    }
+   ],
+   "exemplary": [
+    "Coca-Cola",
+    "Liquid Death",
+    "Oatly",
+    "Tony's Chocolonely"
+   ]
+  },
+  "restaurant-delivery": {
+   "n": 20,
+   "primary_family": {
+    "red": 0.55,
+    "teal": 0.15,
+    "green": 0.15,
+    "orange": 0.1,
+    "blue": 0.05
+   },
+   "family_presence": {
+    "red": 0.65,
+    "green": 0.3,
+    "yellow": 0.2,
+    "teal": 0.2,
+    "brown": 0.15,
+    "orange": 0.15,
+    "blue": 0.15,
+    "pink": 0.1
+   },
+   "mean_n_hues": 1.65,
+   "dark_ground_share": 0.0,
+   "lightness_structures": {
+    "light ground, mid primary": 14,
+    "light ground, light primary": 3,
+    "light ground, dark primary": 3
+   },
+   "primary_lightness": {
+    "p25": 0.493,
+    "median": 0.575,
+    "p75": 0.617
+   },
+   "primary_contrast": {
+    "p25": 3.997,
+    "median": 4.855,
+    "p75": 6.162,
+    "below_3": 0.15
+   },
+   "countries": {
+    "US": 9,
+    "TR": 8,
+    "GB": 2,
+    "FI": 1
+   },
+   "unused_families": [
+    "purple"
+   ],
+   "rare_families": [
+    "pink"
+   ],
+   "hue_gaps": [
+    {
+     "from": 271,
+     "to": 345,
+     "width": 74,
+     "families": [
+      "blue",
+      "purple",
+      "pink"
+     ]
+    }
+   ],
+   "exemplary": [
+    "Burger King",
+    "Deliveroo",
+    "Starbucks",
+    "Sweetgreen",
+    "Wolt"
+   ]
+  },
+  "saas": {
+   "n": 23,
+   "primary_family": {
+    "blue": 0.348,
+    "neutral": 0.217,
+    "red": 0.217,
+    "purple": 0.087,
+    "green": 0.087,
+    "yellow": 0.043
+   },
+   "family_presence": {
+    "blue": 0.652,
+    "red": 0.348,
+    "purple": 0.304,
+    "neutral": 0.217,
+    "green": 0.217,
+    "pink": 0.174,
+    "yellow": 0.174,
+    "teal": 0.087,
+    "orange": 0.043
+   },
+   "mean_n_hues": 1.96,
+   "dark_ground_share": 0.13,
+   "lightness_structures": {
+    "light ground, mid primary": 12,
+    "light ground, dark primary": 7,
+    "dark ground, light primary": 2,
+    "dark ground, mid primary": 1,
+    "light ground, light primary": 1
+   },
+   "primary_lightness": {
+    "p25": 0.427,
+    "median": 0.546,
+    "p75": 0.655
+   },
+   "primary_contrast": {
+    "p25": 4.285,
+    "median": 5.26,
+    "p75": 13.1,
+    "below_3": 0.043
+   },
+   "countries": {
+    "US": 15,
+    "TR": 5,
+    "AU": 1,
+    "NL": 1,
+    "IL": 1
+   },
+   "unused_families": [
+    "brown"
+   ],
+   "rare_families": [
+    "orange",
+    "teal"
+   ],
+   "hue_gaps": [
+    {
+     "from": 150,
+     "to": 207,
+     "width": 57,
+     "families": [
+      "green",
+      "teal"
+     ]
+    }
+   ],
+   "exemplary": [
+    "HubSpot",
+    "Linear",
+    "Mailchimp",
+    "Slack"
+   ]
+  },
+  "agency": {
+   "n": 14,
+   "primary_family": {
+    "neutral": 0.429,
+    "yellow": 0.143,
+    "red": 0.143,
+    "pink": 0.071,
+    "green": 0.071,
+    "blue": 0.071,
+    "teal": 0.071
+   },
+   "family_presence": {
+    "neutral": 0.429,
+    "yellow": 0.214,
+    "blue": 0.143,
+    "red": 0.143,
+    "pink": 0.071,
+    "green": 0.071,
+    "orange": 0.071,
+    "teal": 0.071
+   },
+   "mean_n_hues": 0.79,
+   "dark_ground_share": 0.5,
+   "lightness_structures": {
+    "dark ground, dark primary": 3,
+    "light ground, mid primary": 3,
+    "dark ground, light primary": 3,
+    "light ground, dark primary": 3,
+    "dark ground, mid primary": 1,
+    "light ground, light primary": 1
+   },
+   "primary_lightness": {
+    "p25": 0.173,
+    "median": 0.599,
+    "p75": 0.866
+   },
+   "primary_contrast": {
+    "p25": 1.768,
+    "median": 6.375,
+    "p75": 15.562,
+    "below_3": 0.286
+   },
+   "countries": {
+    "US": 9,
+    "GB": 3,
+    "CA": 1,
+    "TR": 1
+   },
+   "unused_families": [
+    "purple",
+    "brown"
+   ],
+   "rare_families": [
+    "red",
+    "orange",
+    "green",
+    "teal",
+    "blue",
+    "pink"
+   ],
+   "hue_gaps": [
+    {
+     "from": 265,
+     "to": 357,
+     "width": 92,
+     "families": [
+      "blue",
+      "purple",
+      "pink"
+     ]
+    },
+    {
+     "from": 120,
+     "to": 195,
+     "width": 75,
+     "families": [
+      "green",
+      "teal"
+     ]
+    },
+    {
+     "from": 195,
+     "to": 252,
+     "width": 57,
+     "families": [
+      "teal",
+      "blue"
+     ]
+    }
+   ],
+   "exemplary": [
+    "IDEO",
+    "Landor",
+    "Ogilvy"
+   ]
+  },
+  "education": {
+   "n": 18,
+   "primary_family": {
+    "blue": 0.389,
+    "red": 0.333,
+    "green": 0.111,
+    "pink": 0.111,
+    "teal": 0.056
+   },
+   "family_presence": {
+    "blue": 0.556,
+    "red": 0.5,
+    "teal": 0.389,
+    "yellow": 0.167,
+    "green": 0.167,
+    "pink": 0.111,
+    "brown": 0.056
+   },
+   "mean_n_hues": 2.0,
+   "dark_ground_share": 0.0,
+   "lightness_structures": {
+    "light ground, mid primary": 11,
+    "light ground, dark primary": 6,
+    "light ground, light primary": 1
+   },
+   "primary_lightness": {
+    "p25": 0.415,
+    "median": 0.512,
+    "p75": 0.601
+   },
+   "primary_contrast": {
+    "p25": 4.39,
+    "median": 5.985,
+    "p75": 9.188,
+    "below_3": 0.167
+   },
+   "countries": {
+    "US": 9,
+    "TR": 7,
+    "CH": 1,
+    "GB": 1
+   },
+   "unused_families": [
+    "orange",
+    "purple"
+   ],
+   "rare_families": [
+    "pink",
+    "brown"
+   ],
+   "hue_gaps": [
+    {
+     "from": 282,
+     "to": 345,
+     "width": 63,
+     "families": [
+      "blue",
+      "purple",
+      "pink"
+     ]
+    },
+    {
+     "from": 37,
+     "to": 79,
+     "width": 42,
+     "families": [
+      "orange"
+     ]
+    }
+   ],
+   "exemplary": [
+    "Duolingo",
+    "Harvard University"
+   ]
+  },
+  "healthcare": {
+   "n": 16,
+   "primary_family": {
+    "blue": 0.438,
+    "red": 0.438,
+    "orange": 0.062,
+    "purple": 0.062
+   },
+   "family_presence": {
+    "blue": 0.562,
+    "red": 0.562,
+    "teal": 0.125,
+    "purple": 0.125,
+    "pink": 0.062,
+    "green": 0.062,
+    "orange": 0.062
+   },
+   "mean_n_hues": 1.56,
+   "dark_ground_share": 0.0,
+   "lightness_structures": {
+    "light ground, mid primary": 11,
+    "light ground, dark primary": 4,
+    "light ground, light primary": 1
+   },
+   "primary_lightness": {
+    "p25": 0.444,
+    "median": 0.51,
+    "p75": 0.571
+   },
+   "primary_contrast": {
+    "p25": 4.473,
+    "median": 6.605,
+    "p75": 8.095,
+    "below_3": 0.062
+   },
+   "countries": {
+    "TR": 6,
+    "US": 4,
+    "GB": 2,
+    "CH": 2,
+    "DK": 1,
+    "FR": 1
+   },
+   "unused_families": [
+    "yellow",
+    "brown"
+   ],
+   "rare_families": [
+    "orange",
+    "green",
+    "teal",
+    "purple",
+    "pink"
+   ],
+   "hue_gaps": [
+    {
+     "from": 65,
+     "to": 149,
+     "width": 84,
+     "families": [
+      "orange",
+      "yellow",
+      "green"
+     ]
+    },
+    {
+     "from": 297,
+     "to": 352,
+     "width": 55,
+     "families": [
+      "purple",
+      "pink"
+     ]
+    },
+    {
+     "from": 149,
+     "to": 195,
+     "width": 46,
+     "families": [
+      "green",
+      "teal"
+     ]
+    }
+   ],
+   "exemplary": [
+    "GSK",
+    "Johnson & Johnson"
+   ]
+  },
+  "automotive": {
+   "n": 20,
+   "primary_family": {
+    "blue": 0.35,
+    "neutral": 0.25,
+    "red": 0.2,
+    "teal": 0.05,
+    "yellow": 0.05,
+    "orange": 0.05,
+    "green": 0.05
+   },
+   "family_presence": {
+    "blue": 0.5,
+    "neutral": 0.25,
+    "red": 0.2,
+    "green": 0.15,
+    "teal": 0.1,
+    "yellow": 0.05,
+    "orange": 0.05
+   },
+   "mean_n_hues": 1.05,
+   "dark_ground_share": 0.2,
+   "lightness_structures": {
+    "light ground, mid primary": 8,
+    "light ground, dark primary": 6,
+    "dark ground, light primary": 3,
+    "light ground, light primary": 2,
+    "dark ground, mid primary": 1
+   },
+   "primary_lightness": {
+    "p25": 0.432,
+    "median": 0.538,
+    "p75": 0.688
+   },
+   "primary_contrast": {
+    "p25": 4.285,
+    "median": 5.66,
+    "p75": 13.953,
+    "below_3": 0.1
+   },
+   "countries": {
+    "TR": 4,
+    "DE": 3,
+    "JP": 3,
+    "KR": 2,
+    "US": 2,
+    "FR": 2,
+    "ES": 1,
+    "IT": 1,
+    "GB": 1,
+    "CZ": 1
+   },
+   "unused_families": [
+    "purple",
+    "pink",
+    "brown"
+   ],
+   "rare_families": [
+    "orange",
+    "yellow",
+    "teal"
+   ],
+   "hue_gaps": [
+    {
+     "from": 286,
+     "to": 25,
+     "width": 99,
+     "families": [
+      "purple",
+      "pink",
+      "red"
+     ]
+    },
+    {
+     "from": 79,
+     "to": 142,
+     "width": 63,
+     "families": [
+      "yellow",
+      "green"
+     ]
+    },
+    {
+     "from": 32,
+     "to": 74,
+     "width": 42,
+     "families": [
+      "red",
+      "orange"
+     ]
+    }
+   ],
+   "exemplary": [
+    "Rivian",
+    "Škoda"
+   ]
+  },
+  "energy": {
+   "n": 19,
+   "primary_family": {
+    "blue": 0.368,
+    "red": 0.368,
+    "green": 0.053,
+    "orange": 0.053,
+    "purple": 0.053,
+    "teal": 0.053,
+    "yellow": 0.053
+   },
+   "family_presence": {
+    "red": 0.474,
+    "blue": 0.474,
+    "yellow": 0.263,
+    "green": 0.263,
+    "teal": 0.211,
+    "purple": 0.158,
+    "orange": 0.105,
+    "pink": 0.053
+   },
+   "mean_n_hues": 1.95,
+   "dark_ground_share": 0.211,
+   "lightness_structures": {
+    "light ground, mid primary": 10,
+    "light ground, dark primary": 3,
+    "dark ground, dark primary": 2,
+    "light ground, light primary": 2,
+    "dark ground, mid primary": 2
+   },
+   "primary_lightness": {
+    "p25": 0.398,
+    "median": 0.56,
+    "p75": 0.615
+   },
+   "primary_contrast": {
+    "p25": 2.935,
+    "median": 4.78,
+    "p75": 5.275,
+    "below_3": 0.263
+   },
+   "countries": {
+    "TR": 7,
+    "GB": 5,
+    "IT": 2,
+    "FR": 2,
+    "NO": 1,
+    "US": 1,
+    "ES": 1
+   },
+   "unused_families": [
+    "brown"
+   ],
+   "rare_families": [
+    "orange",
+    "pink"
+   ],
+   "hue_gaps": [],
+   "exemplary": [
+    "Eni",
+    "Octopus Energy",
+    "Shell"
+   ]
+  },
+  "travel-hospitality": {
+   "n": 10,
+   "primary_family": {
+    "blue": 0.3,
+    "red": 0.2,
+    "green": 0.2,
+    "neutral": 0.1,
+    "purple": 0.1,
+    "pink": 0.1
+   },
+   "family_presence": {
+    "blue": 0.6,
+    "red": 0.4,
+    "green": 0.4,
+    "pink": 0.2,
+    "neutral": 0.1,
+    "teal": 0.1,
+    "purple": 0.1,
+    "orange": 0.1
+   },
+   "mean_n_hues": 1.9,
+   "dark_ground_share": 0.0,
+   "lightness_structures": {
+    "light ground, mid primary": 9,
+    "light ground, light primary": 1
+   },
+   "primary_lightness": {
+    "p25": 0.543,
+    "median": 0.575,
+    "p75": 0.682
+   },
+   "primary_contrast": {
+    "p25": 2.747,
+    "median": 4.45,
+    "p75": 5.11,
+    "below_3": 0.3
+   },
+   "countries": {
+    "TR": 5,
+    "SG": 1,
+    "US": 1,
+    "CH": 1,
+    "IE": 1,
+    "CZ": 1
+   },
+   "unused_families": [
+    "yellow",
+    "brown"
+   ],
+   "rare_families": [
+    "orange",
+    "teal",
+    "purple"
+   ],
+   "hue_gaps": [
+    {
+     "from": 46,
+     "to": 117,
+     "width": 71,
+     "families": [
+      "orange",
+      "yellow"
+     ]
+    },
+    {
+     "from": 185,
+     "to": 246,
+     "width": 61,
+     "families": [
+      "teal",
+      "blue"
+     ]
+    }
+   ],
+   "exemplary": [
+    "Airbnb",
+    "Aman",
+    "Mews"
+   ]
+  },
+  "media-entertainment": {
+   "n": 12,
+   "primary_family": {
+    "red": 0.333,
+    "blue": 0.167,
+    "green": 0.167,
+    "neutral": 0.083,
+    "teal": 0.083,
+    "yellow": 0.083,
+    "purple": 0.083
+   },
+   "family_presence": {
+    "blue": 0.583,
+    "red": 0.5,
+    "green": 0.25,
+    "neutral": 0.083,
+    "teal": 0.083,
+    "yellow": 0.083,
+    "purple": 0.083
+   },
+   "mean_n_hues": 1.58,
+   "dark_ground_share": 0.5,
+   "lightness_structures": {
+    "dark ground, light primary": 4,
+    "light ground, dark primary": 3,
+    "light ground, mid primary": 3,
+    "dark ground, mid primary": 2
+   },
+   "primary_lightness": {
+    "p25": 0.525,
+    "median": 0.611,
+    "p75": 0.778
+   },
+   "primary_contrast": {
+    "p25": 4.362,
+    "median": 10.395,
+    "p75": 12.853,
+    "below_3": 0.0
+   },
+   "countries": {
+    "US": 4,
+    "TR": 4,
+    "GB": 2,
+    "DE": 1,
+    "SE": 1
+   },
+   "unused_families": [
+    "orange",
+    "pink",
+    "brown"
+   ],
+   "rare_families": [
+    "yellow",
+    "teal",
+    "purple"
+   ],
+   "hue_gaps": [
+    {
+     "from": 296,
+     "to": 24,
+     "width": 88,
+     "families": [
+      "purple",
+      "pink",
+      "red"
+     ]
+    },
+    {
+     "from": 34,
+     "to": 93,
+     "width": 59,
+     "families": [
+      "red",
+      "orange",
+      "yellow"
+     ]
+    },
+    {
+     "from": 93,
+     "to": 149,
+     "width": 56,
+     "families": [
+      "yellow",
+      "green"
+     ]
+    }
+   ],
+   "exemplary": [
+    "Netflix",
+    "Spotify",
+    "The Guardian",
+    "Twitch"
+   ]
+  },
+  "professional-services": {
+   "n": 12,
+   "primary_family": {
+    "red": 0.25,
+    "blue": 0.25,
+    "purple": 0.083,
+    "green": 0.083,
+    "yellow": 0.083,
+    "teal": 0.083,
+    "pink": 0.083,
+    "orange": 0.083
+   },
+   "family_presence": {
+    "blue": 0.417,
+    "red": 0.333,
+    "teal": 0.25,
+    "purple": 0.167,
+    "green": 0.167,
+    "yellow": 0.083,
+    "pink": 0.083,
+    "orange": 0.083
+   },
+   "mean_n_hues": 1.42,
+   "dark_ground_share": 0.25,
+   "lightness_structures": {
+    "light ground, mid primary": 7,
+    "dark ground, mid primary": 2,
+    "light ground, light primary": 2,
+    "dark ground, light primary": 1
+   },
+   "primary_lightness": {
+    "p25": 0.49,
+    "median": 0.546,
+    "p75": 0.762
+   },
+   "primary_contrast": {
+    "p25": 4.485,
+    "median": 6.3,
+    "p75": 7.343,
+    "below_3": 0.167
+   },
+   "countries": {
+    "US": 5,
+    "GB": 5,
+    "IE": 1,
+    "NL": 1
+   },
+   "unused_families": [
+    "brown"
+   ],
+   "rare_families": [
+    "orange",
+    "yellow",
+    "pink"
+   ],
+   "hue_gaps": [
+    {
+     "from": 304,
+     "to": 358,
+     "width": 54,
+     "families": [
+      "purple",
+      "pink"
+     ]
+    },
+    {
+     "from": 187,
+     "to": 237,
+     "width": 50,
+     "families": [
+      "teal",
+      "blue"
+     ]
+    },
+    {
+     "from": 53,
+     "to": 101,
+     "width": 48,
+     "families": [
+      "orange",
+      "yellow"
+     ]
+    }
+   ],
+   "exemplary": [
+    "Boston Consulting Group",
+    "EY"
+   ]
+  }
+ }
+}

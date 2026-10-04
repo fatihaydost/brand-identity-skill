@@ -1,0 +1,5405 @@
+[
+ {
+  "brand": "JPMorgan Chase",
+  "url": "https://www.chase.com",
+  "country": "US",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "trustworthy",
+    "corporate",
+    "clear"
+   ]
+  },
+  "strategy_note": "Conforms to the banking blue code with a saturated mid blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Bank of America",
+  "url": "https://www.bankofamerica.com",
+  "country": "US",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "patriotic",
+    "corporate",
+    "trustworthy"
+   ]
+  },
+  "strategy_note": "Conforms to the banking navy code with a red accent from its flag-derived mark.",
+  "exemplary": false
+ },
+ {
+  "brand": "Wells Fargo",
+  "url": "https://www.wellsfargo.com",
+  "country": "US",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "heritage",
+    "warm",
+    "trustworthy"
+   ]
+  },
+  "strategy_note": "Differentiates from banking blue with red and gold, a heritage colour pair it has used for decades.",
+  "exemplary": true
+ },
+ {
+  "brand": "Barclays",
+  "url": "https://www.barclays.co.uk",
+  "country": "GB",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "trustworthy",
+    "clear",
+    "corporate"
+   ]
+  },
+  "strategy_note": "Conforms to the banking blue code with a bright mid blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Santander UK",
+  "url": "https://www.santander.co.uk",
+  "country": "GB",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "confident",
+    "warm",
+    "energetic"
+   ]
+  },
+  "strategy_note": "Owns red in a category dominated by blue; one of the clearest red banking identities.",
+  "exemplary": true
+ },
+ {
+  "brand": "NatWest",
+  "url": "https://www.natwest.com",
+  "country": "GB",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "modern",
+    "trustworthy"
+   ]
+  },
+  "strategy_note": "Differentiates with deep purple, an uncommon family among banks.",
+  "exemplary": false
+ },
+ {
+  "brand": "Deutsche Bank",
+  "url": "https://www.deutsche-bank.de",
+  "country": "DE",
+  "industry": "banking",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "corporate",
+    "serious",
+    "trustworthy"
+   ]
+  },
+  "strategy_note": "Conforms to the banking blue code with a strong royal blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Commonwealth Bank",
+  "url": "https://www.commbank.com.au",
+  "country": "AU",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "optimistic",
+    "clear"
+   ]
+  },
+  "strategy_note": "Owns yellow among banks, with black as its partner colour.",
+  "exemplary": true
+ },
+ {
+  "brand": "TD Bank",
+  "url": "https://www.td.com",
+  "country": "CA",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "trustworthy",
+    "clear"
+   ]
+  },
+  "strategy_note": "Owns green in banking, distinct from the blue majority.",
+  "exemplary": true
+ },
+ {
+  "brand": "Garanti BBVA",
+  "url": "https://www.garantibbva.com.tr",
+  "country": "TR",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "modern",
+    "trustworthy",
+    "corporate"
+   ]
+  },
+  "strategy_note": "Conforms to navy banking blue and adds the green inherited from the Garanti mark.",
+  "exemplary": false,
+  "role_note": "Navy primary with green accent confirmed on screenshot."
+ },
+ {
+  "brand": "Akbank",
+  "url": "https://www.akbank.com",
+  "country": "TR",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "energetic",
+    "modern",
+    "confident"
+   ]
+  },
+  "strategy_note": "Uses red, the second banking code in Turkey after navy.",
+  "exemplary": false
+ },
+ {
+  "brand": "Yapı Kredi",
+  "url": "https://www.yapikredi.com.tr",
+  "country": "TR",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "trustworthy",
+    "modern",
+    "corporate"
+   ]
+  },
+  "strategy_note": "Conforms to the navy banking code with a red secondary.",
+  "exemplary": false
+ },
+ {
+  "brand": "Ziraat Bankası",
+  "url": "https://www.ziraatbank.com.tr",
+  "country": "TR",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "traditional",
+    "public",
+    "trustworthy"
+   ]
+  },
+  "strategy_note": "Uses the red-and-white national palette common to Turkish state institutions.",
+  "exemplary": false
+ },
+ {
+  "brand": "Halkbank",
+  "url": "https://www.halkbank.com.tr",
+  "country": "TR",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "public",
+    "trustworthy",
+    "traditional"
+   ]
+  },
+  "strategy_note": "Conforms to banking blue with an orange accent.",
+  "exemplary": false,
+  "role_note": "Blue primary with orange accent confirmed on screenshot."
+ },
+ {
+  "brand": "VakıfBank",
+  "url": "https://www.vakifbank.com.tr",
+  "country": "TR",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "warm",
+    "traditional",
+    "trustworthy"
+   ]
+  },
+  "strategy_note": "Owns yellow among Turkish banks, set against black.",
+  "exemplary": false,
+  "role_note": "Yellow bar and buttons confirmed on screenshot."
+ },
+ {
+  "brand": "Monzo",
+  "url": "https://monzo.com",
+  "country": "GB",
+  "industry": "fintech",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "challenger",
+    "warm"
+   ]
+  },
+  "strategy_note": "Owns hot coral in banking, the canonical challenger move against blue.",
+  "exemplary": true,
+  "role_note": "Hot-coral card and hero confirmed as the brand colour; navy type and buttons."
+ },
+ {
+  "brand": "Wise",
+  "url": "https://wise.com",
+  "country": "GB",
+  "industry": "fintech",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "clear",
+    "honest",
+    "fresh"
+   ]
+  },
+  "strategy_note": "Owns a bright lime green with a forest-green partner.",
+  "exemplary": true
+ },
+ {
+  "brand": "Stripe",
+  "url": "https://stripe.com",
+  "country": "US",
+  "industry": "fintech",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "technical",
+    "premium",
+    "vivid"
+   ]
+  },
+  "strategy_note": "Owns a blurple with vivid gradients; a developer-finance code many copied.",
+  "exemplary": true
+ },
+ {
+  "brand": "PayPal",
+  "url": "https://www.paypal.com",
+  "country": "US",
+  "industry": "fintech",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "trustworthy",
+    "familiar",
+    "clear"
+   ]
+  },
+  "strategy_note": "Conforms to finance blue with navy and mid blue.",
+  "exemplary": false,
+  "role_note": "Measured on the PayPal TR service-notice page; PayPal navy and blue confirmed."
+ },
+ {
+  "brand": "N26",
+  "url": "https://n26.com",
+  "country": "DE",
+  "industry": "fintech",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "minimal",
+    "modern",
+    "calm"
+   ]
+  },
+  "strategy_note": "Uses a dark teal on warm sand, a muted neobank palette.",
+  "exemplary": false
+ },
+ {
+  "brand": "Cash App",
+  "url": "https://cash.app",
+  "country": "US",
+  "industry": "fintech",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "bold",
+    "youthful",
+    "direct"
+   ]
+  },
+  "strategy_note": "Owns an electric green as a full-page ground.",
+  "exemplary": true
+ },
+ {
+  "brand": "Robinhood",
+  "url": "https://robinhood.com",
+  "country": "US",
+  "industry": "fintech",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "bold",
+    "youthful",
+    "energetic"
+   ]
+  },
+  "strategy_note": "Uses neon lime on black, an investing-app challenger palette.",
+  "exemplary": false
+ },
+ {
+  "brand": "Adyen",
+  "url": "https://www.adyen.com",
+  "country": "NL",
+  "industry": "fintech",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "technical",
+    "corporate",
+    "clean"
+   ]
+  },
+  "strategy_note": "Uses a bright green action colour on a dark hero, away from finance blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Nubank",
+  "url": "https://nubank.com.br",
+  "country": "BR",
+  "industry": "fintech",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "bold",
+    "challenger"
+   ]
+  },
+  "strategy_note": "Owns purple in Latin American banking.",
+  "exemplary": true
+ },
+ {
+  "brand": "Starling Bank",
+  "url": "https://www.starlingbank.com",
+  "country": "GB",
+  "industry": "fintech",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "modern",
+    "challenger"
+   ]
+  },
+  "strategy_note": "Uses aqua with purple, a challenger neobank palette.",
+  "exemplary": false
+ },
+ {
+  "brand": "Mercury",
+  "url": "https://mercury.com",
+  "country": "US",
+  "industry": "fintech",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "calm",
+    "premium",
+    "technical"
+   ]
+  },
+  "strategy_note": "Dark ground with a periwinkle blue, a premium-calm fintech palette.",
+  "exemplary": false
+ },
+ {
+  "brand": "Brex",
+  "url": "https://www.brex.com",
+  "country": "US",
+  "industry": "fintech",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "bold",
+    "modern",
+    "corporate"
+   ]
+  },
+  "strategy_note": "Uses orange-red actions, away from finance blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "iyzico",
+  "url": "https://www.iyzico.com",
+  "country": "TR",
+  "industry": "fintech",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "modern",
+    "friendly",
+    "clear"
+   ]
+  },
+  "strategy_note": "A Turkish payments brand using a bright blue with a mint accent.",
+  "exemplary": false
+ },
+ {
+  "brand": "Param",
+  "url": "https://param.com.tr",
+  "country": "TR",
+  "industry": "fintech",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "modern",
+    "friendly",
+    "practical"
+   ]
+  },
+  "strategy_note": "A Turkish payments brand using violet with teal.",
+  "exemplary": false
+ },
+ {
+  "brand": "Midas",
+  "url": "https://www.getmidas.com",
+  "country": "TR",
+  "industry": "fintech",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "modern",
+    "clean",
+    "approachable"
+   ]
+  },
+  "strategy_note": "A Turkish investing app using an indigo-blue on cool grey.",
+  "exemplary": false
+ },
+ {
+  "brand": "AXA",
+  "url": "https://www.axa.com",
+  "country": "FR",
+  "industry": "insurance",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "corporate",
+    "trustworthy",
+    "global"
+   ]
+  },
+  "strategy_note": "Conforms to insurance blue with AXA's deep blue.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#00008f"
+  },
+  "role_note": "AXA blue (measured link colour, logo square) is the brand colour; the measured dark teal was a single content block."
+ },
+ {
+  "brand": "Progressive",
+  "url": "https://www.progressive.com",
+  "country": "US",
+  "industry": "insurance",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "clear",
+    "practical"
+   ]
+  },
+  "strategy_note": "Conforms to insurance blue with a calm mid blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Lemonade",
+  "url": "https://www.lemonade.com",
+  "country": "US",
+  "industry": "insurance",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "playful",
+    "modern",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Owns hot pink in insurance, a deliberate break from category blue.",
+  "exemplary": true
+ },
+ {
+  "brand": "Aviva",
+  "url": "https://www.aviva.co.uk",
+  "country": "GB",
+  "industry": "insurance",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "optimistic",
+    "clear"
+   ]
+  },
+  "strategy_note": "Owns yellow with a navy partner in UK insurance.",
+  "exemplary": true,
+  "role_note": "Yellow buttons and bar as primary with navy accent confirmed."
+ },
+ {
+  "brand": "MetLife",
+  "url": "https://www.metlife.com",
+  "country": "US",
+  "industry": "insurance",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "corporate",
+    "trustworthy",
+    "calm"
+   ]
+  },
+  "strategy_note": "Conforms to insurance blue with a deep navy.",
+  "exemplary": false
+ },
+ {
+  "brand": "Hiscox",
+  "url": "https://www.hiscox.co.uk",
+  "country": "GB",
+  "industry": "insurance",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "confident",
+    "specialist",
+    "bold"
+   ]
+  },
+  "strategy_note": "Uses red, the second insurance colour after blue, as a specialist insurer's signal.",
+  "exemplary": false
+ },
+ {
+  "brand": "Anadolu Sigorta",
+  "url": "https://www.anadolusigorta.com.tr",
+  "country": "TR",
+  "industry": "insurance",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "trustworthy",
+    "national",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Conforms to insurance blue with an orange accent.",
+  "exemplary": false
+ },
+ {
+  "brand": "Aksigorta",
+  "url": "https://www.aksigorta.com.tr",
+  "country": "TR",
+  "industry": "insurance",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "energetic",
+    "modern",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Uses red, the second insurance code in Turkey.",
+  "exemplary": false
+ },
+ {
+  "brand": "Türkiye Sigorta",
+  "url": "https://www.turkiyesigorta.com.tr",
+  "country": "TR",
+  "industry": "insurance",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "public",
+    "trustworthy",
+    "corporate"
+   ]
+  },
+  "strategy_note": "Conforms to insurance navy with a cyan accent.",
+  "exemplary": false,
+  "role_note": "Navy primary with cyan header bar as accent confirmed."
+ },
+ {
+  "brand": "Sompo Sigorta",
+  "url": "https://www.sompo.com.tr",
+  "country": "TR",
+  "industry": "insurance",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "trustworthy",
+    "corporate",
+    "warm"
+   ]
+  },
+  "strategy_note": "Uses a deep red from the Japanese parent's mark.",
+  "exemplary": false
+ },
+ {
+  "brand": "Verizon",
+  "url": "https://www.verizon.com",
+  "country": "US",
+  "industry": "telecom",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "bold",
+    "confident",
+    "direct"
+   ]
+  },
+  "strategy_note": "Uses red and black, the US telecom challenger palette.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#ee001e",
+   "accent": "#f8ff3c"
+  },
+  "role_note": "Verizon red (logo, buttons, hero) is the brand colour; the measured yellow is a promo bar, kept as accent."
+ },
+ {
+  "brand": "AT&T",
+  "url": "https://www.att.com",
+  "country": "US",
+  "industry": "telecom",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "familiar",
+    "corporate",
+    "clear"
+   ]
+  },
+  "strategy_note": "Conforms to telecom blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "T-Mobile",
+  "url": "https://www.t-mobile.com",
+  "country": "US",
+  "industry": "telecom",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "bold",
+    "energetic",
+    "challenger"
+   ]
+  },
+  "strategy_note": "Owns magenta, a registered colour mark in telecom.",
+  "exemplary": true
+ },
+ {
+  "brand": "Vodafone UK",
+  "url": "https://www.vodafone.co.uk",
+  "country": "GB",
+  "industry": "telecom",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "bold",
+    "warm",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Owns red in telecom.",
+  "exemplary": true
+ },
+ {
+  "brand": "Orange",
+  "url": "https://www.orange.fr",
+  "country": "FR",
+  "industry": "telecom",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "familiar",
+    "bold"
+   ]
+  },
+  "strategy_note": "Owns orange on black; the brand name is the colour.",
+  "exemplary": true,
+  "role_note": "Orange primary on black header confirmed."
+ },
+ {
+  "brand": "O2",
+  "url": "https://www.o2.co.uk",
+  "country": "GB",
+  "industry": "telecom",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "calm",
+    "clear",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Conforms to telecom blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "EE",
+  "url": "https://ee.co.uk",
+  "country": "GB",
+  "industry": "telecom",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "modern",
+    "bold",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Uses a deep teal with yellow, a distinct UK telecom palette.",
+  "exemplary": false
+ },
+ {
+  "brand": "Telekom",
+  "url": "https://www.telekom.de",
+  "country": "DE",
+  "industry": "telecom",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "bold",
+    "corporate",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Owns magenta in German telecom.",
+  "exemplary": true
+ },
+ {
+  "brand": "Three UK",
+  "url": "https://www.three.co.uk",
+  "country": "GB",
+  "industry": "telecom",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "playful",
+    "modern",
+    "direct"
+   ]
+  },
+  "strategy_note": "Uses pink on black, a challenger telecom palette.",
+  "exemplary": false,
+  "role_note": "Pink primary and black hero cards confirmed."
+ },
+ {
+  "brand": "BT",
+  "url": "https://www.bt.com",
+  "country": "GB",
+  "industry": "telecom",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "familiar",
+    "corporate",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Owns a violet-purple in UK telecom.",
+  "exemplary": false
+ },
+ {
+  "brand": "Turkcell",
+  "url": "https://www.turkcell.com.tr",
+  "country": "TR",
+  "industry": "telecom",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "national",
+    "friendly",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Uses navy with yellow, the Turkish telecom leader's palette.",
+  "exemplary": false,
+  "role_overrides": {
+   "background": "#ffffff"
+  },
+  "role_note": "Cookie overlay dimmed the page, so a grey was measured as ground; Turkcell navy and yellow confirmed on a white page."
+ },
+ {
+  "brand": "Türk Telekom",
+  "url": "https://www.turktelekom.com.tr",
+  "country": "TR",
+  "industry": "telecom",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "national",
+    "corporate",
+    "trustworthy"
+   ]
+  },
+  "strategy_note": "Uses navy with cyan, conforming to telecom blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Vodafone Türkiye",
+  "url": "https://www.vodafone.com.tr",
+  "country": "TR",
+  "industry": "telecom",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "bold",
+    "warm",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Uses Vodafone red, the global brand colour.",
+  "exemplary": false
+ },
+ {
+  "brand": "Ryanair",
+  "url": "https://www.ryanair.com",
+  "country": "IE",
+  "industry": "airline",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "direct",
+    "no-frills",
+    "energetic"
+   ]
+  },
+  "strategy_note": "Pairs the airline navy code with a loud yellow action colour that signals low fares.",
+  "exemplary": true,
+  "role_note": "Yellow CTA as primary and navy header as accent confirmed; navy is the larger brand surface."
+ },
+ {
+  "brand": "Southwest Airlines",
+  "url": "https://www.southwest.com",
+  "country": "US",
+  "industry": "airline",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "friendly",
+    "warm",
+    "energetic"
+   ]
+  },
+  "strategy_note": "Uses the airline blue for the brand and a warm yellow for actions.",
+  "exemplary": false
+ },
+ {
+  "brand": "JetBlue",
+  "url": "https://www.jetblue.com",
+  "country": "US",
+  "industry": "airline",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "friendly",
+    "modern",
+    "clear"
+   ]
+  },
+  "strategy_note": "Keeps airline blue for brand and actions alike, in a deep pure blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Finnair",
+  "url": "https://www.finnair.com",
+  "country": "FI",
+  "industry": "airline",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "nordic",
+    "calm",
+    "clean"
+   ]
+  },
+  "strategy_note": "Keeps airline blue for brand and actions alike, a navy and mid-blue pair.",
+  "exemplary": false,
+  "role_note": "Measured on the country-selector gate page; navy and blue match the brand."
+ },
+ {
+  "brand": "airBaltic",
+  "url": "https://www.airbaltic.com",
+  "country": "LV",
+  "industry": "airline",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "fresh",
+    "energetic",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Uses a lime-yellow with navy, a greener take on the low-cost yellow action colour.",
+  "exemplary": true,
+  "role_note": "Lime primary with navy accent confirmed on screenshot."
+ },
+ {
+  "brand": "Amazon",
+  "url": "https://www.amazon.com",
+  "country": "US",
+  "industry": "ecommerce",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "practical",
+    "efficient",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Yellow-orange action buttons on navy chrome; an owned marketplace colour pair.",
+  "exemplary": true,
+  "role_note": "Yellow buy/search buttons as primary confirmed; navy header is the accent surface."
+ },
+ {
+  "brand": "Temu",
+  "url": "https://www.temu.com",
+  "country": "CN",
+  "industry": "ecommerce",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "loud",
+    "bargain",
+    "energetic"
+   ]
+  },
+  "strategy_note": "Owns a saturated orange, the bargain-marketplace signal colour.",
+  "exemplary": false,
+  "role_note": "Measured on the sign-in gate page; Temu orange confirmed."
+ },
+ {
+  "brand": "IKEA",
+  "url": "https://www.ikea.com/us/en/",
+  "country": "SE",
+  "industry": "retail",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "democratic",
+    "friendly",
+    "practical"
+   ]
+  },
+  "strategy_note": "Owns blue and yellow, the Swedish flag pair, as a retail identity.",
+  "exemplary": true,
+  "role_overrides": {
+   "accent": "#ffdb00"
+  },
+  "role_note": "Blue primary confirmed; IKEA yellow (logo) sampled from the screenshot as accent instead of a measured orange price tag."
+ },
+ {
+  "brand": "Lidl",
+  "url": "https://www.lidl.de",
+  "country": "DE",
+  "industry": "retail",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "practical",
+    "bargain",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Uses blue, yellow and red from its logo, the discounter flag palette.",
+  "exemplary": false
+ },
+ {
+  "brand": "Aldi",
+  "url": "https://www.aldi.us",
+  "country": "DE",
+  "industry": "retail",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "practical",
+    "bargain",
+    "clear"
+   ]
+  },
+  "strategy_note": "Uses navy with red, the discounter flag palette.",
+  "exemplary": false,
+  "role_note": "Navy primary with red accent confirmed (store modal open)."
+ },
+ {
+  "brand": "Migros",
+  "url": "https://www.migros.com.tr",
+  "country": "TR",
+  "industry": "retail",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "familiar",
+    "friendly",
+    "practical"
+   ]
+  },
+  "strategy_note": "Uses orange with a yellow accent, the leading Turkish grocery colour.",
+  "exemplary": false
+ },
+ {
+  "brand": "BİM",
+  "url": "https://www.bim.com.tr",
+  "country": "TR",
+  "industry": "retail",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "practical",
+    "bargain",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Uses red with navy, the Turkish discounter code.",
+  "exemplary": false
+ },
+ {
+  "brand": "ŞOK Market",
+  "url": "https://www.sokmarket.com.tr",
+  "country": "TR",
+  "industry": "retail",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "cheerful",
+    "bargain",
+    "practical"
+   ]
+  },
+  "strategy_note": "Uses yellow with red, the loud discounter palette.",
+  "exemplary": false
+ },
+ {
+  "brand": "Vatan Bilgisayar",
+  "url": "https://www.vatanbilgisayar.com",
+  "country": "TR",
+  "industry": "retail",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "technical",
+    "practical",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Uses navy with red, the electronics-retail code.",
+  "exemplary": false,
+  "role_note": "Navy logo and nav colour confirmed as primary with red accent."
+ },
+ {
+  "brand": "Nike",
+  "url": "https://www.nike.com",
+  "country": "US",
+  "industry": "fashion",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "confident",
+    "athletic",
+    "minimal"
+   ]
+  },
+  "strategy_note": "Pure black-and-white UI with the swoosh doing the branding; the sportswear monochrome code.",
+  "exemplary": true,
+  "role_note": "Monochrome UI confirmed: near-black buttons and type on white (geo-redirected to Nike TR)."
+ },
+ {
+  "brand": "Puma",
+  "url": "https://us.puma.com",
+  "country": "DE",
+  "industry": "fashion",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "athletic",
+    "bold",
+    "urban"
+   ]
+  },
+  "strategy_note": "Conforms to the sportswear monochrome UI.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#191919"
+  },
+  "role_note": "Monochrome UI: black navigation bar and type; the measured light-grey primary was a disabled control."
+ },
+ {
+  "brand": "Mango",
+  "url": "https://shop.mango.com",
+  "country": "ES",
+  "industry": "fashion",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "minimal",
+    "fashionable",
+    "urban"
+   ]
+  },
+  "strategy_note": "Conforms to the fast-fashion monochrome code.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#131313"
+  },
+  "role_note": "Monochrome UI: black type and buttons on white; the measured white primary was a button fill on photos."
+ },
+ {
+  "brand": "Everlane",
+  "url": "https://www.everlane.com",
+  "country": "US",
+  "industry": "fashion",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "minimal",
+    "honest",
+    "calm"
+   ]
+  },
+  "strategy_note": "Conforms to the fashion monochrome code with a warm off-white surface.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#000000"
+  },
+  "role_note": "Monochrome UI (sign-up modal open); the measured red was a tiny sale badge."
+ },
+ {
+  "brand": "Allbirds",
+  "url": "https://www.allbirds.com",
+  "country": "US",
+  "industry": "fashion",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "natural",
+    "calm",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Conforms to monochrome but warms it with a sand-coloured surface.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#212121"
+  },
+  "role_note": "Warm-white and near-black UI (shipping modal open); the measured white primary was a button fill on photos."
+ },
+ {
+  "brand": "DeFacto",
+  "url": "https://www.defacto.com.tr",
+  "country": "TR",
+  "industry": "fashion",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "accessible",
+    "urban",
+    "minimal"
+   ]
+  },
+  "strategy_note": "Conforms to the fast-fashion monochrome code.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#22242a"
+  },
+  "role_note": "Monochrome UI: near-black type on white; the measured white primary was a button fill on photos."
+ },
+ {
+  "brand": "Koton",
+  "url": "https://www.koton.com",
+  "country": "TR",
+  "industry": "fashion",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "accessible",
+    "urban",
+    "minimal"
+   ]
+  },
+  "strategy_note": "Conforms to the fast-fashion monochrome code; red appears only in sale imagery.",
+  "exemplary": false,
+  "role_note": "Monochrome UI confirmed: grey-black buttons on white, red only in sale imagery."
+ },
+ {
+  "brand": "Vakko",
+  "url": "https://www.vakko.com",
+  "country": "TR",
+  "industry": "luxury",
+  "positioning": {
+   "price": "luxury",
+   "tone": [
+    "refined",
+    "classic",
+    "minimal"
+   ]
+  },
+  "strategy_note": "A Turkish luxury house that conforms to the luxury monochrome code.",
+  "exemplary": true,
+  "role_note": "Monochrome UI confirmed: black type and logo on white."
+ },
+ {
+  "brand": "Glossier",
+  "url": "https://www.glossier.com",
+  "country": "US",
+  "industry": "beauty",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "soft",
+    "minimal",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Owns a pale millennial pink as accent on a black-and-white UI, the template many beauty startups followed.",
+  "exemplary": true,
+  "role_overrides": {
+   "primary": "#000000"
+  },
+  "role_note": "Black-and-white UI with Glossier pink as the accent; the measured red primary was a tiny badge."
+ },
+ {
+  "brand": "L'Oréal Paris",
+  "url": "https://www.lorealparisusa.com",
+  "country": "FR",
+  "industry": "beauty",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "glamorous",
+    "classic",
+    "confident"
+   ]
+  },
+  "strategy_note": "Uses black and white with gold accents, the mass-premium beauty code.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#000000",
+   "accent": "#f2cd95"
+  },
+  "role_note": "Region modal over a black-and-white UI with gold accents."
+ },
+ {
+  "brand": "MAC Cosmetics",
+  "url": "https://www.maccosmetics.com",
+  "country": "US",
+  "industry": "beauty",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "bold",
+    "professional",
+    "urban"
+   ]
+  },
+  "strategy_note": "Conforms to the black-and-white beauty code; colour lives in product shades.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#000000"
+  },
+  "role_note": "Black-and-white UI (region modal open); the measured tan was a product swatch."
+ },
+ {
+  "brand": "Fenty Beauty",
+  "url": "https://fentybeauty.com",
+  "country": "US",
+  "industry": "beauty",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "inclusive",
+    "bold",
+    "glamorous"
+   ]
+  },
+  "strategy_note": "Black-and-white base with saturated campaign pinks; conforms to beauty's pink accent code.",
+  "exemplary": false,
+  "role_note": "Pink primary is a seasonal campaign surface; UI otherwise black and white."
+ },
+ {
+  "brand": "The Ordinary",
+  "url": "https://theordinary.com",
+  "country": "CA",
+  "industry": "beauty",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "clinical",
+    "minimal",
+    "honest"
+   ]
+  },
+  "strategy_note": "Pure monochrome, a clinical-minimal stance against colourful beauty marketing.",
+  "exemplary": true,
+  "role_note": "Monochrome UI confirmed: black buttons and type on white."
+ },
+ {
+  "brand": "Clinique",
+  "url": "https://www.clinique.com",
+  "country": "US",
+  "industry": "beauty",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "clinical",
+    "fresh",
+    "clean"
+   ]
+  },
+  "strategy_note": "Owns a pale clinical green in a pink-dominated beauty category.",
+  "exemplary": true,
+  "role_note": "Clinique pale green confirmed as the brand colour (promo bars); UI otherwise black on white."
+ },
+ {
+  "brand": "Rare Beauty",
+  "url": "https://www.rarebeauty.com",
+  "country": "US",
+  "industry": "beauty",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "soft",
+    "warm",
+    "inclusive"
+   ]
+  },
+  "strategy_note": "Uses a berry primary with peach accent, conforming to beauty's warm pink family.",
+  "exemplary": false
+ },
+ {
+  "brand": "Gratis",
+  "url": "https://www.gratis.com",
+  "country": "TR",
+  "industry": "beauty",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "cheerful",
+    "bold",
+    "accessible"
+   ]
+  },
+  "strategy_note": "A Turkish beauty retailer that owns purple with a yellow accent, far from the pink norm.",
+  "exemplary": true
+ },
+ {
+  "brand": "Flormar",
+  "url": "https://www.flormar.com.tr",
+  "country": "TR",
+  "industry": "beauty",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "friendly",
+    "feminine",
+    "colourful"
+   ]
+  },
+  "strategy_note": "Uses a mid pink, the conforming beauty choice in Turkey.",
+  "exemplary": false
+ },
+ {
+  "brand": "Golden Rose",
+  "url": "https://www.goldenrose.com.tr",
+  "country": "TR",
+  "industry": "beauty",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "warm",
+    "friendly",
+    "feminine"
+   ]
+  },
+  "strategy_note": "Uses salmon and berry, inside beauty's warm pink family.",
+  "exemplary": false
+ },
+ {
+  "brand": "Coca-Cola",
+  "url": "https://www.coca-cola.com",
+  "country": "US",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "iconic",
+    "joyful",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Owns red so completely that its site barely needs it in the UI; imagery carries the red.",
+  "exemplary": true,
+  "role_overrides": {
+   "primary": "#f10000"
+  },
+  "role_note": "CSS is grey, white and black; Coca-Cola red appears only in imagery and was sampled from the screenshot (TR site)."
+ },
+ {
+  "brand": "Heinz",
+  "url": "https://www.heinz.com",
+  "country": "US",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "iconic",
+    "warm",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Owns a tomato red with a maroon partner.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#d6001c",
+   "accent": "#540b26"
+  },
+  "role_note": "Red header and hero surfaces are the brand colour; the measured maroon primary is the button colour, kept as accent."
+ },
+ {
+  "brand": "Oatly",
+  "url": "https://www.oatly.com",
+  "country": "SE",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "irreverent",
+    "honest",
+    "playful"
+   ]
+  },
+  "strategy_note": "Differentiates with black-and-white type and soft pastels in a warm, saturated food category.",
+  "exemplary": true,
+  "role_note": "Pastel pink and peach on a black-and-white UI confirmed."
+ },
+ {
+  "brand": "Red Bull",
+  "url": "https://www.redbull.com",
+  "country": "AT",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "energetic",
+    "extreme",
+    "confident"
+   ]
+  },
+  "strategy_note": "Pairs navy with a red logo colour, the energy-drink take on the warm food code.",
+  "exemplary": false,
+  "role_overrides": {
+   "accent": "#00162b"
+  },
+  "role_note": "Red logo colour as primary confirmed; the dominant navy surface is set as accent."
+ },
+ {
+  "brand": "Haribo",
+  "url": "https://www.haribo.com",
+  "country": "DE",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "playful",
+    "cheerful",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Uses blue with a red accent, a cooler choice than most confectionery.",
+  "exemplary": false,
+  "role_note": "Blue primary with red accent confirmed (Haribo TR)."
+ },
+ {
+  "brand": "innocent drinks",
+  "url": "https://www.innocentdrinks.co.uk",
+  "country": "GB",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "natural",
+    "cheeky"
+   ]
+  },
+  "strategy_note": "Uses a leaf green, the natural-drinks code.",
+  "exemplary": false
+ },
+ {
+  "brand": "Ülker",
+  "url": "https://www.ulker.com.tr",
+  "country": "TR",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "familiar",
+    "warm",
+    "national"
+   ]
+  },
+  "strategy_note": "Uses red, the dominant Turkish FMCG colour.",
+  "exemplary": false
+ },
+ {
+  "brand": "Eti",
+  "url": "https://www.etietieti.com",
+  "country": "TR",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "cheerful",
+    "warm",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Uses a warm yellow with orange, inside the warm food code.",
+  "exemplary": false,
+  "role_note": "Yellow primary with orange accent confirmed."
+ },
+ {
+  "brand": "Sütaş",
+  "url": "https://www.sutas.com.tr",
+  "country": "TR",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "natural",
+    "fresh",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Uses dairy green with a sky-blue accent, the farm-fresh code.",
+  "exemplary": false
+ },
+ {
+  "brand": "Torku",
+  "url": "https://www.torku.com.tr",
+  "country": "TR",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "natural",
+    "warm",
+    "national"
+   ]
+  },
+  "strategy_note": "Uses red, the Turkish FMCG default.",
+  "exemplary": false
+ },
+ {
+  "brand": "Anadolu Efes",
+  "url": "https://www.anadoluefes.com",
+  "country": "TR",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "corporate",
+    "national",
+    "confident"
+   ]
+  },
+  "strategy_note": "Uses a deep blue, the corporate face of a brewer.",
+  "exemplary": false
+ },
+ {
+  "brand": "Burger King",
+  "url": "https://www.bk.com",
+  "country": "US",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "bold",
+    "appetising",
+    "playful"
+   ]
+  },
+  "strategy_note": "Uses flame red-orange on cream, the warm quick-service code.",
+  "exemplary": true
+ },
+ {
+  "brand": "Starbucks",
+  "url": "https://www.starbucks.com",
+  "country": "US",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "warm",
+    "welcoming",
+    "crafted"
+   ]
+  },
+  "strategy_note": "Owns green in a red-and-yellow food category.",
+  "exemplary": true
+ },
+ {
+  "brand": "Domino's",
+  "url": "https://www.dominos.com",
+  "country": "US",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "familiar",
+    "fast",
+    "playful"
+   ]
+  },
+  "strategy_note": "Uses red with blue, the pizza-chain flag pair.",
+  "exemplary": false,
+  "role_note": "Measured on the country-selector page; Domino's blue and red confirmed."
+ },
+ {
+  "brand": "Chipotle",
+  "url": "https://www.chipotle.com",
+  "country": "US",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "natural",
+    "warm",
+    "honest"
+   ]
+  },
+  "strategy_note": "Uses a chilli red with gold and brown, an earthy version of the warm food code.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#ad2118",
+   "accent": "#b68207"
+  },
+  "role_note": "Red order buttons and logo are the brand colour; the measured gold primary is a small label colour, kept as accent."
+ },
+ {
+  "brand": "Sweetgreen",
+  "url": "https://www.sweetgreen.com",
+  "country": "US",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "fresh",
+    "healthy",
+    "modern"
+   ]
+  },
+  "strategy_note": "Uses lime on cream with dark green, the fresh-food alternative to red and yellow.",
+  "exemplary": true,
+  "role_note": "Lime CTA on cream with dark green type confirmed."
+ },
+ {
+  "brand": "Deliveroo",
+  "url": "https://deliveroo.co.uk",
+  "country": "GB",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "fresh",
+    "fast",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Owns teal in delivery, away from the red of DoorDash and the orange of Just Eat.",
+  "exemplary": true
+ },
+ {
+  "brand": "Kahve Dünyası",
+  "url": "https://www.kahvedunyasi.com",
+  "country": "TR",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "crafted",
+    "local",
+    "warm"
+   ]
+  },
+  "strategy_note": "Uses a petrol green with plum, close to the coffee-chain green of Starbucks.",
+  "exemplary": false
+ },
+ {
+  "brand": "Simit Sarayı",
+  "url": "https://www.simitsarayi.com",
+  "country": "TR",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "local",
+    "warm",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Uses red, the conforming warm food code.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#d7464c"
+  },
+  "role_note": "CSS is black and white; the red of the logo badge was sampled from the screenshot."
+ },
+ {
+  "brand": "Tavuk Dünyası",
+  "url": "https://www.tavukdunyasi.com",
+  "country": "TR",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "local",
+    "friendly",
+    "appetising"
+   ]
+  },
+  "strategy_note": "Uses maroon and yellow, inside the warm food code.",
+  "exemplary": false,
+  "role_note": "Maroon primary with yellow bar as accent confirmed (promo modal open)."
+ },
+ {
+  "brand": "Slack",
+  "url": "https://slack.com",
+  "country": "US",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "collaborative",
+    "playful"
+   ]
+  },
+  "strategy_note": "Owns aubergine in SaaS, away from the category blue.",
+  "exemplary": true
+ },
+ {
+  "brand": "Notion",
+  "url": "https://www.notion.com",
+  "country": "US",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "minimal",
+    "clear",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Conforms to SaaS blue for actions on a black-and-white base.",
+  "exemplary": false
+ },
+ {
+  "brand": "Atlassian",
+  "url": "https://www.atlassian.com",
+  "country": "AU",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "corporate",
+    "clear",
+    "collaborative"
+   ]
+  },
+  "strategy_note": "Conforms to the SaaS blue code.",
+  "exemplary": false
+ },
+ {
+  "brand": "HubSpot",
+  "url": "https://www.hubspot.com",
+  "country": "US",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "warm",
+    "energetic"
+   ]
+  },
+  "strategy_note": "Owns orange in a blue SaaS category.",
+  "exemplary": true
+ },
+ {
+  "brand": "Asana",
+  "url": "https://asana.com",
+  "country": "US",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "calm",
+    "friendly",
+    "modern"
+   ]
+  },
+  "strategy_note": "Uses coral from its logo with pastel pink, away from SaaS blue.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#ff584a",
+   "accent": "#ffc9ff"
+  },
+  "role_note": "Black CTAs on white; Asana coral (logo, measured accent) is the brand colour; pastel pink kept as accent."
+ },
+ {
+  "brand": "monday.com",
+  "url": "https://monday.com",
+  "country": "IL",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "colourful",
+    "friendly",
+    "energetic"
+   ]
+  },
+  "strategy_note": "Uses a violet-blue with pink, a playful version of SaaS blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Figma",
+  "url": "https://www.figma.com",
+  "country": "US",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "creative",
+    "playful",
+    "minimal"
+   ]
+  },
+  "strategy_note": "Black-and-white UI with a multi-colour logo; the tool hands colour to its users.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#000000"
+  },
+  "role_note": "Black-and-white UI with the multi-colour logo; the measured lilac primary was one illustration fill."
+ },
+ {
+  "brand": "Dropbox",
+  "url": "https://www.dropbox.com",
+  "country": "US",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "clear",
+    "creative",
+    "trustworthy"
+   ]
+  },
+  "strategy_note": "Conforms to SaaS blue with a saturated royal blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Zoom",
+  "url": "https://www.zoom.com",
+  "country": "US",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "clear",
+    "reliable",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Conforms to SaaS blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Mailchimp",
+  "url": "https://mailchimp.com",
+  "country": "US",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "playful",
+    "quirky",
+    "warm"
+   ]
+  },
+  "strategy_note": "Owns a cavendish yellow on dark peppercorn, a deliberate break from SaaS blue.",
+  "exemplary": true,
+  "role_note": "Mailchimp yellow on dark peppercorn and cream sections confirmed (survey modal open)."
+ },
+ {
+  "brand": "Airtable",
+  "url": "https://www.airtable.com",
+  "country": "US",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "clear",
+    "friendly",
+    "structured"
+   ]
+  },
+  "strategy_note": "Uses dark navy buttons with a blue accent, a conforming SaaS palette.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#040e20",
+   "accent": "#254fad"
+  },
+  "role_note": "Near-black navy buttons on white; the measured brick red was a single card."
+ },
+ {
+  "brand": "Linear",
+  "url": "https://linear.app",
+  "country": "US",
+  "industry": "saas",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "precise",
+    "minimal",
+    "technical"
+   ]
+  },
+  "strategy_note": "Dark monochrome UI with almost no colour, the developer-tool premium code.",
+  "exemplary": true,
+  "role_overrides": {
+   "primary": "#d0d6e0"
+  },
+  "role_note": "Monochrome dark UI: light-grey type and white pill buttons on near-black; the measured lime was a tiny status dot."
+ },
+ {
+  "brand": "Intercom",
+  "url": "https://www.intercom.com",
+  "country": "US",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "confident",
+    "modern",
+    "minimal"
+   ]
+  },
+  "strategy_note": "Black-and-white with an orange accent, away from SaaS blue.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#111111",
+   "accent": "#ff5600"
+  },
+  "role_note": "Black-and-white UI with the orange Fin accent; the measured blue primary was a tiny link."
+ },
+ {
+  "brand": "Zendesk",
+  "url": "https://www.zendesk.com",
+  "country": "US",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "calm",
+    "friendly",
+    "modern"
+   ]
+  },
+  "strategy_note": "Differentiates with a lime-green CTA on white and dark-green sections.",
+  "exemplary": false,
+  "role_note": "Lime CTA on white and dark sections confirmed."
+ },
+ {
+  "brand": "Miro",
+  "url": "https://miro.com",
+  "country": "NL",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "creative",
+    "collaborative",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Uses blue actions with its yellow logo colour.",
+  "exemplary": false
+ },
+ {
+  "brand": "GitHub",
+  "url": "https://github.com",
+  "country": "US",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "technical",
+    "community",
+    "dark"
+   ]
+  },
+  "strategy_note": "Dark ground with a green action colour, the developer-platform code.",
+  "exemplary": false
+ },
+ {
+  "brand": "Vercel",
+  "url": "https://vercel.com",
+  "country": "US",
+  "industry": "saas",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "precise",
+    "minimal",
+    "technical"
+   ]
+  },
+  "strategy_note": "Pure black-and-white, the developer-infrastructure monochrome code.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#000000"
+  },
+  "role_note": "Monochrome UI: black buttons and logo on near-white; the measured blue was an off-screen status colour."
+ },
+ {
+  "brand": "Datadog",
+  "url": "https://www.datadoghq.com",
+  "country": "US",
+  "industry": "saas",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "technical",
+    "confident",
+    "data"
+   ]
+  },
+  "strategy_note": "Owns purple among monitoring tools.",
+  "exemplary": false
+ },
+ {
+  "brand": "ikas",
+  "url": "https://ikas.com",
+  "country": "TR",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "modern",
+    "energetic",
+    "friendly"
+   ]
+  },
+  "strategy_note": "A Turkish e-commerce platform using an electric blue with a lime accent.",
+  "exemplary": false
+ },
+ {
+  "brand": "Insider",
+  "url": "https://useinsider.com",
+  "country": "TR",
+  "industry": "saas",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "bold",
+    "modern",
+    "ambitious"
+   ]
+  },
+  "strategy_note": "Uses an orange-red on dark heroes, away from SaaS blue.",
+  "exemplary": false,
+  "role_note": "Orange-red CTA on a dark hero confirmed; light warm ground below."
+ },
+ {
+  "brand": "Paraşüt",
+  "url": "https://www.parasut.com",
+  "country": "TR",
+  "industry": "saas",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "friendly",
+    "practical",
+    "warm"
+   ]
+  },
+  "strategy_note": "A Turkish accounting SaaS using salmon-red with indigo, warmer than the blue norm.",
+  "exemplary": false
+ },
+ {
+  "brand": "Logo Yazılım",
+  "url": "https://www.logo.com.tr",
+  "country": "TR",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "corporate",
+    "familiar",
+    "national"
+   ]
+  },
+  "strategy_note": "Uses red, the Turkish corporate-software colour.",
+  "exemplary": false
+ },
+ {
+  "brand": "Ticimax",
+  "url": "https://www.ticimax.com",
+  "country": "TR",
+  "industry": "saas",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "practical",
+    "corporate",
+    "clear"
+   ]
+  },
+  "strategy_note": "Uses navy with green, a conforming SaaS palette.",
+  "exemplary": false,
+  "role_note": "Navy primary with green accent confirmed."
+ },
+ {
+  "brand": "Pentagram",
+  "url": "https://www.pentagram.com",
+  "country": "GB",
+  "industry": "agency",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "authoritative",
+    "minimal",
+    "editorial"
+   ]
+  },
+  "strategy_note": "Conforms to the agency code of black-and-white type with colour left to the work shown.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#222222"
+  },
+  "role_note": "Monochrome site: black type and rules on white; the measured white primary was a hidden button."
+ },
+ {
+  "brand": "IDEO",
+  "url": "https://www.ideo.com",
+  "country": "US",
+  "industry": "agency",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "curious",
+    "optimistic",
+    "human"
+   ]
+  },
+  "strategy_note": "Differentiates with an acid-lime accent on a dark slate ground instead of the agency black-and-white default.",
+  "exemplary": true
+ },
+ {
+  "brand": "Wolff Olins",
+  "url": "https://www.wolffolins.com",
+  "country": "GB",
+  "industry": "agency",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "bold",
+    "playful",
+    "confident"
+   ]
+  },
+  "strategy_note": "Uses a lemon-yellow accent over a white editorial page, a single loud colour against the monochrome agency norm.",
+  "exemplary": false
+ },
+ {
+  "brand": "Collins",
+  "url": "https://www.wearecollins.com",
+  "country": "US",
+  "industry": "agency",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "poetic",
+    "minimal",
+    "confident"
+   ]
+  },
+  "strategy_note": "Conforms to the monochrome agency code but warms it with a brown-black ground instead of pure black.",
+  "exemplary": false,
+  "role_note": "Near-black ground with off-white type; monochrome by design."
+ },
+ {
+  "brand": "Landor",
+  "url": "https://landor.com",
+  "country": "US",
+  "industry": "agency",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "bold",
+    "energetic",
+    "confident"
+   ]
+  },
+  "strategy_note": "Breaks from agency monochrome with saturated electric blue plus an acid-yellow accent.",
+  "exemplary": true
+ },
+ {
+  "brand": "R/GA",
+  "url": "https://rga.com",
+  "country": "US",
+  "industry": "agency",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "technical",
+    "bold",
+    "minimal"
+   ]
+  },
+  "strategy_note": "Conforms to the agency code: black ground, white type, colour only in case-study imagery.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#000000"
+  },
+  "role_note": "Black hero with white type; the measured tan primary came from a small image-card fill."
+ },
+ {
+  "brand": "Wieden+Kennedy",
+  "url": "https://www.wk.com",
+  "country": "US",
+  "industry": "agency",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "irreverent",
+    "minimal",
+    "confident"
+   ]
+  },
+  "strategy_note": "Conforms to the black-and-white agency norm and lets client work carry all colour.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#000000"
+  },
+  "role_note": "Black-and-white site; the measured grey was a Bootstrap default button colour."
+ },
+ {
+  "brand": "Ogilvy",
+  "url": "https://www.ogilvy.com",
+  "country": "US",
+  "industry": "agency",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "bold",
+    "warm",
+    "classic"
+   ]
+  },
+  "strategy_note": "Owns a single signature red as a full page ground, a rare move among monochrome agencies.",
+  "exemplary": true
+ },
+ {
+  "brand": "Huge",
+  "url": "https://www.hugeinc.com",
+  "country": "US",
+  "industry": "agency",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "playful",
+    "bold",
+    "loud"
+   ]
+  },
+  "strategy_note": "Differentiates with hot magenta in an otherwise black-and-white agency category.",
+  "exemplary": false,
+  "role_note": "Magenta primary confirmed on screenshot (hero type and CTA)."
+ },
+ {
+  "brand": "Metalab",
+  "url": "https://www.metalab.com",
+  "country": "CA",
+  "industry": "agency",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "refined",
+    "minimal",
+    "technical"
+   ]
+  },
+  "strategy_note": "Pure black-and-white on a black ground; conforms to the agency monochrome code entirely.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#ffffff"
+  },
+  "role_note": "Monochrome site on black: white type and buttons, no chromatic brand colour."
+ },
+ {
+  "brand": "Instrument",
+  "url": "https://www.instrument.com",
+  "country": "US",
+  "industry": "agency",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "bold",
+    "minimal",
+    "editorial"
+   ]
+  },
+  "strategy_note": "Conforms to agency monochrome and lets bright photography supply colour.",
+  "exemplary": false,
+  "role_note": "Monochrome site: black ground and type; colour comes from photography."
+ },
+ {
+  "brand": "Work & Co",
+  "url": "https://work.co",
+  "country": "US",
+  "industry": "agency",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "direct",
+    "minimal",
+    "confident"
+   ]
+  },
+  "strategy_note": "Pairs plain white pages with a single strong red, a one-accent variant of the agency code.",
+  "exemplary": false,
+  "role_note": "Red primary confirmed on screenshot."
+ },
+ {
+  "brand": "Koto",
+  "url": "https://koto.studio",
+  "country": "GB",
+  "industry": "agency",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "playful",
+    "bold",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Uses a saturated yellow on near-black, the one-loud-accent variant of the agency code.",
+  "exemplary": false,
+  "role_note": "Yellow primary on near-black confirmed on screenshot."
+ },
+ {
+  "brand": "Rabarba",
+  "url": "https://www.rabarba.com",
+  "country": "TR",
+  "industry": "agency",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "digital",
+    "energetic"
+   ]
+  },
+  "strategy_note": "A Turkish digital agency that adds a teal accent to the dark agency ground.",
+  "exemplary": false,
+  "role_note": "Teal primary on near-black confirmed on screenshot."
+ },
+ {
+  "brand": "Harvard University",
+  "url": "https://www.harvard.edu",
+  "country": "US",
+  "industry": "education",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "traditional",
+    "authoritative",
+    "academic"
+   ]
+  },
+  "strategy_note": "Conforms to the academic heritage code: crimson on white.",
+  "exemplary": true,
+  "role_overrides": {
+   "primary": "#a51c30"
+  },
+  "role_note": "Measured primary was the grey page ground; Harvard crimson is the measured meta theme-color and the header crest."
+ },
+ {
+  "brand": "MIT",
+  "url": "https://www.mit.edu",
+  "country": "US",
+  "industry": "education",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "technical",
+    "authoritative",
+    "academic"
+   ]
+  },
+  "strategy_note": "Conforms to the academic heritage code with a dark cardinal red.",
+  "exemplary": false,
+  "role_note": "MIT dark red header bar confirmed."
+ },
+ {
+  "brand": "Stanford University",
+  "url": "https://www.stanford.edu",
+  "country": "US",
+  "industry": "education",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "traditional",
+    "ambitious",
+    "academic"
+   ]
+  },
+  "strategy_note": "Conforms to the academic heritage code: cardinal red on white.",
+  "exemplary": false
+ },
+ {
+  "brand": "University of Cambridge",
+  "url": "https://www.cam.ac.uk",
+  "country": "GB",
+  "industry": "education",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "traditional",
+    "curious",
+    "contemporary"
+   ]
+  },
+  "strategy_note": "Departs from academic heritage colours with pink, teal and yellow campaign panels.",
+  "exemplary": false,
+  "role_note": "Pink, teal and yellow campaign panels confirmed; navy crest on white."
+ },
+ {
+  "brand": "ETH Zürich",
+  "url": "https://ethz.ch/en.html",
+  "country": "CH",
+  "industry": "education",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "precise",
+    "technical",
+    "academic"
+   ]
+  },
+  "strategy_note": "Uses a petrol blue with a yellow accent, cooler than the red-heritage universities.",
+  "exemplary": false
+ },
+ {
+  "brand": "Coursera",
+  "url": "https://www.coursera.org",
+  "country": "US",
+  "industry": "education",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "clear",
+    "trustworthy",
+    "corporate"
+   ]
+  },
+  "strategy_note": "Conforms to the edtech blue code.",
+  "exemplary": false
+ },
+ {
+  "brand": "Khan Academy",
+  "url": "https://www.khanacademy.org",
+  "country": "US",
+  "industry": "education",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "friendly",
+    "playful",
+    "encouraging"
+   ]
+  },
+  "strategy_note": "Uses a violet-blue with a yellow accent, the friendly edtech palette.",
+  "exemplary": false
+ },
+ {
+  "brand": "Duolingo",
+  "url": "https://www.duolingo.com",
+  "country": "US",
+  "industry": "education",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "playful",
+    "cheerful",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Owns a bright lime green in edtech, inseparable from its mascot.",
+  "exemplary": true
+ },
+ {
+  "brand": "edX",
+  "url": "https://www.edx.org",
+  "country": "US",
+  "industry": "education",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "ambitious",
+    "energetic",
+    "academic"
+   ]
+  },
+  "strategy_note": "Uses red-orange actions on a dark teal surface, warmer than edtech blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Brilliant",
+  "url": "https://brilliant.org",
+  "country": "US",
+  "industry": "education",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "smart",
+    "friendly",
+    "clean"
+   ]
+  },
+  "strategy_note": "Uses a fresh green on a calm off-white page.",
+  "exemplary": false
+ },
+ {
+  "brand": "ODTÜ",
+  "url": "https://www.metu.edu.tr",
+  "country": "TR",
+  "industry": "education",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "academic",
+    "traditional",
+    "national"
+   ]
+  },
+  "strategy_note": "Conforms to the red-and-white academic code common in Turkish universities.",
+  "exemplary": false
+ },
+ {
+  "brand": "İTÜ",
+  "url": "https://www.itu.edu.tr",
+  "country": "TR",
+  "industry": "education",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "technical",
+    "traditional",
+    "academic"
+   ]
+  },
+  "strategy_note": "Uses blue with a red accent, the engineering-university variant of the academic code.",
+  "exemplary": false
+ },
+ {
+  "brand": "Sabancı Üniversitesi",
+  "url": "https://www.sabanciuniv.edu",
+  "country": "TR",
+  "industry": "education",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "modern",
+    "academic",
+    "corporate"
+   ]
+  },
+  "strategy_note": "Uses a deep navy, the conservative academic choice.",
+  "exemplary": false
+ },
+ {
+  "brand": "Bilkent Üniversitesi",
+  "url": "https://w3.bilkent.edu.tr",
+  "country": "TR",
+  "industry": "education",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "academic",
+    "traditional",
+    "serious"
+   ]
+  },
+  "strategy_note": "Uses indigo with an amber accent, close to the academic navy norm.",
+  "exemplary": false,
+  "role_note": "Indigo top bar as primary with amber CTA accent confirmed."
+ },
+ {
+  "brand": "Cleveland Clinic",
+  "url": "https://my.clevelandclinic.org",
+  "country": "US",
+  "industry": "healthcare",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "trustworthy",
+    "clinical",
+    "calm"
+   ]
+  },
+  "strategy_note": "Conforms to the healthcare blue code with a green secondary.",
+  "exemplary": false
+ },
+ {
+  "brand": "Novartis",
+  "url": "https://www.novartis.com",
+  "country": "CH",
+  "industry": "healthcare",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "scientific",
+    "modern",
+    "warm"
+   ]
+  },
+  "strategy_note": "Uses an orange-red accent on white, warmer than the pharma blue code.",
+  "exemplary": false,
+  "role_note": "Novartis orange accent bar as primary confirmed; UI otherwise black on white."
+ },
+ {
+  "brand": "Roche",
+  "url": "https://www.roche.com",
+  "country": "CH",
+  "industry": "healthcare",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "scientific",
+    "trustworthy",
+    "corporate"
+   ]
+  },
+  "strategy_note": "Conforms to the pharma blue code with a red accent.",
+  "exemplary": false
+ },
+ {
+  "brand": "Johnson & Johnson",
+  "url": "https://www.jnj.com",
+  "country": "US",
+  "industry": "healthcare",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "caring",
+    "heritage",
+    "trustworthy"
+   ]
+  },
+  "strategy_note": "Owns red in healthcare, where blue is the norm.",
+  "exemplary": true,
+  "role_note": "Red bands and logo confirmed as primary."
+ },
+ {
+  "brand": "Acıbadem",
+  "url": "https://www.acibadem.com.tr",
+  "country": "TR",
+  "industry": "healthcare",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "trustworthy",
+    "modern",
+    "caring"
+   ]
+  },
+  "strategy_note": "Conforms to healthcare navy with a pink accent.",
+  "exemplary": false
+ },
+ {
+  "brand": "Medical Park",
+  "url": "https://www.medicalpark.com.tr",
+  "country": "TR",
+  "industry": "healthcare",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "accessible",
+    "caring",
+    "energetic"
+   ]
+  },
+  "strategy_note": "Uses red, the second healthcare code in this sample (hospitals and pharmacies), instead of blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Abdi İbrahim",
+  "url": "https://www.abdiibrahim.com.tr",
+  "country": "TR",
+  "industry": "healthcare",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "scientific",
+    "corporate",
+    "trustworthy"
+   ]
+  },
+  "strategy_note": "Conforms to the pharma blue code.",
+  "exemplary": false
+ },
+ {
+  "brand": "BMW",
+  "url": "https://www.bmw.com",
+  "country": "DE",
+  "industry": "automotive",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "precise",
+    "premium",
+    "technical"
+   ]
+  },
+  "strategy_note": "Conforms to the automotive monochrome UI with BMW blue reserved for actions.",
+  "exemplary": false,
+  "role_note": "Geo-redirected to BMW Türkiye; blue CTA confirmed."
+ },
+ {
+  "brand": "Toyota",
+  "url": "https://www.toyota.com",
+  "country": "JP",
+  "industry": "automotive",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "reliable",
+    "friendly",
+    "clear"
+   ]
+  },
+  "strategy_note": "Monochrome UI with the red of the logo as the only brand colour, the common automotive pattern.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#ca1f00"
+  },
+  "role_note": "Black-and-white UI with the red logo; the measured blue was a focus/link colour, red is the measured accent."
+ },
+ {
+  "brand": "Volkswagen",
+  "url": "https://www.vw.com",
+  "country": "DE",
+  "industry": "automotive",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "approachable",
+    "clear",
+    "modern"
+   ]
+  },
+  "strategy_note": "Uses dark navy and white, the restrained automotive UI code.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#1b2236"
+  },
+  "role_note": "Measured yellow came from off-screen buttons; visible UI is dark navy and white."
+ },
+ {
+  "brand": "Audi",
+  "url": "https://www.audi.com",
+  "country": "DE",
+  "industry": "automotive",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "technical",
+    "premium",
+    "cool"
+   ]
+  },
+  "strategy_note": "Conforms to the premium-automotive code: near-black ground, white type, no chromatic colour.",
+  "exemplary": false,
+  "role_note": "Monochrome dark site: near-black ground, white type and buttons."
+ },
+ {
+  "brand": "Kia",
+  "url": "https://www.kia.com",
+  "country": "KR",
+  "industry": "automotive",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "modern",
+    "bold",
+    "technical"
+   ]
+  },
+  "strategy_note": "Monochrome near-black UI, the automotive default since its 2021 rebrand.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#05141f"
+  },
+  "role_note": "Monochrome site; the measured white primary is the button text ground, the brand ink is Kia midnight black."
+ },
+ {
+  "brand": "Rivian",
+  "url": "https://rivian.com",
+  "country": "US",
+  "industry": "automotive",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "adventurous",
+    "warm",
+    "optimistic"
+   ]
+  },
+  "strategy_note": "Differentiates from automotive monochrome with a warm yellow-orange action colour.",
+  "exemplary": true,
+  "role_note": "Yellow-orange CTA pill confirmed."
+ },
+ {
+  "brand": "Togg",
+  "url": "https://www.togg.com.tr",
+  "country": "TR",
+  "industry": "automotive",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "national",
+    "technological",
+    "calm"
+   ]
+  },
+  "strategy_note": "A Turkish EV brand using a petrol blue with a green secondary, softer than the automotive black default.",
+  "exemplary": false,
+  "role_note": "Petrol-blue primary confirmed in navigation and buttons; hero is a video."
+ },
+ {
+  "brand": "Ford Otosan",
+  "url": "https://www.fordotosan.com.tr",
+  "country": "TR",
+  "industry": "automotive",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "corporate",
+    "industrial",
+    "trustworthy"
+   ]
+  },
+  "strategy_note": "Uses corporate Ford blue, the B2B face of the automotive category.",
+  "exemplary": false
+ },
+ {
+  "brand": "Otokar",
+  "url": "https://www.otokar.com.tr",
+  "country": "TR",
+  "industry": "automotive",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "industrial",
+    "energetic",
+    "national"
+   ]
+  },
+  "strategy_note": "Uses red with a blue secondary, typical of Turkish industrial brands.",
+  "exemplary": false
+ },
+ {
+  "brand": "Karsan",
+  "url": "https://www.karsan.com.tr",
+  "country": "TR",
+  "industry": "automotive",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "industrial",
+    "energetic",
+    "modern"
+   ]
+  },
+  "strategy_note": "Uses red, the warm industrial code shared with Otokar.",
+  "exemplary": false
+ },
+ {
+  "brand": "Shell",
+  "url": "https://www.shell.com",
+  "country": "GB",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "familiar",
+    "warm",
+    "corporate"
+   ]
+  },
+  "strategy_note": "Owns yellow and red from the pecten, the textbook fuel-retail colour pair.",
+  "exemplary": true
+ },
+ {
+  "brand": "BP",
+  "url": "https://www.bp.com",
+  "country": "GB",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "green",
+    "optimistic",
+    "corporate"
+   ]
+  },
+  "strategy_note": "Uses green and yellow from the Helios mark, the energy-transition reading of the fuel code.",
+  "exemplary": false
+ },
+ {
+  "brand": "ExxonMobil",
+  "url": "https://corporate.exxonmobil.com",
+  "country": "US",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "corporate",
+    "industrial",
+    "serious"
+   ]
+  },
+  "strategy_note": "Uses red, the classic fossil-fuel code.",
+  "exemplary": false
+ },
+ {
+  "brand": "TotalEnergies",
+  "url": "https://totalenergies.com",
+  "country": "FR",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "corporate",
+    "transitional",
+    "colourful"
+   ]
+  },
+  "strategy_note": "A multi-colour logo reduced to red actions on a white page.",
+  "exemplary": false,
+  "role_note": "Red CTA from the multi-colour logo confirmed under a consent overlay; low measurement confidence."
+ },
+ {
+  "brand": "Octopus Energy",
+  "url": "https://octopus.energy",
+  "country": "GB",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "playful",
+    "challenger",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Differentiates with hot pink on a deep purple ground, a challenger move in utilities.",
+  "exemplary": true,
+  "role_overrides": {
+   "primary": "#f050f8",
+   "accent": "#60f0f8"
+  },
+  "role_note": "Primary was measured as the dark-purple ground; the action colour is the pink quote button, cyan links are the accent."
+ },
+ {
+  "brand": "Enel",
+  "url": "https://www.enel.com",
+  "country": "IT",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "modern",
+    "friendly",
+    "corporate"
+   ]
+  },
+  "strategy_note": "Uses a magenta-red from its multi-colour logo, away from utility blue.",
+  "exemplary": false,
+  "role_note": "Magenta-red headline and logo colour confirmed."
+ },
+ {
+  "brand": "Petrol Ofisi",
+  "url": "https://www.petrolofisi.com.tr",
+  "country": "TR",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "national",
+    "energetic",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Uses red on a near-black ground, the Turkish fuel-retail code.",
+  "exemplary": false,
+  "role_note": "Red primary on a near-black ground confirmed."
+ },
+ {
+  "brand": "Opet",
+  "url": "https://www.opet.com.tr",
+  "country": "TR",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "familiar",
+    "friendly",
+    "national"
+   ]
+  },
+  "strategy_note": "Uses blue with a yellow accent, distinct from the red of rival fuel retailers.",
+  "exemplary": false,
+  "role_note": "Opet blue surfaces with yellow accent confirmed (modal open over the hero)."
+ },
+ {
+  "brand": "Enerjisa",
+  "url": "https://www.enerjisa.com.tr",
+  "country": "TR",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "warm",
+    "friendly",
+    "optimistic"
+   ]
+  },
+  "strategy_note": "Uses a warm yellow-orange, the sunny utility code.",
+  "exemplary": false,
+  "role_note": "Yellow-orange primary and yellow surfaces confirmed."
+ },
+ {
+  "brand": "Aygaz",
+  "url": "https://www.aygaz.com.tr",
+  "country": "TR",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "familiar",
+    "practical",
+    "trustworthy"
+   ]
+  },
+  "strategy_note": "Uses blue with a red accent, a conforming utility palette.",
+  "exemplary": false
+ },
+ {
+  "brand": "Tüpraş",
+  "url": "https://www.tupras.com.tr",
+  "country": "TR",
+  "industry": "energy",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "industrial",
+    "corporate",
+    "national"
+   ]
+  },
+  "strategy_note": "Uses red on a photo-led page, the fossil-fuel code.",
+  "exemplary": false,
+  "role_note": "Red logo and accents on a photo hero confirmed; UI otherwise grey and white."
+ },
+ {
+  "brand": "Airbnb",
+  "url": "https://www.airbnb.com",
+  "country": "US",
+  "industry": "travel-hospitality",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "welcoming",
+    "warm",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Owns a coral-red (Rausch) in a blue travel category.",
+  "exemplary": true,
+  "role_note": "Rausch pink-red search button confirmed as primary."
+ },
+ {
+  "brand": "Mews",
+  "url": "https://www.mews.com",
+  "country": "CZ",
+  "industry": "travel-hospitality",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "playful",
+    "modern",
+    "bold"
+   ]
+  },
+  "strategy_note": "Owns pink in hospitality tech, a deliberate break from safe blue.",
+  "exemplary": true,
+  "role_note": "Mews pink primary confirmed (cookie overlay dimmed the page)."
+ },
+ {
+  "brand": "Etstur",
+  "url": "https://www.etstur.com",
+  "country": "TR",
+  "industry": "travel-hospitality",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "cheerful",
+    "practical",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Uses blue with a pink accent, conforming to travel blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Jolly Tur",
+  "url": "https://www.jollytur.com",
+  "country": "TR",
+  "industry": "travel-hospitality",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "cheerful",
+    "holiday",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Uses green with orange, a holiday-warm palette.",
+  "exemplary": false
+ },
+ {
+  "brand": "obilet",
+  "url": "https://www.obilet.com",
+  "country": "TR",
+  "industry": "travel-hospitality",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "practical",
+    "fast",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Uses red with green, a warm ticketing palette.",
+  "exemplary": false,
+  "role_note": "Red header as primary with green accent confirmed (language modal open)."
+ },
+ {
+  "brand": "Enuygun",
+  "url": "https://www.enuygun.com",
+  "country": "TR",
+  "industry": "travel-hospitality",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "practical",
+    "bargain",
+    "clear"
+   ]
+  },
+  "strategy_note": "Uses green actions with blue, the price-comparison palette.",
+  "exemplary": false,
+  "role_note": "Green CTA as primary with blue accent confirmed."
+ },
+ {
+  "brand": "Netflix",
+  "url": "https://www.netflix.com",
+  "country": "US",
+  "industry": "media-entertainment",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "cinematic",
+    "bold",
+    "iconic"
+   ]
+  },
+  "strategy_note": "Red on a black ground, the cinema code it now defines for streaming.",
+  "exemplary": true
+ },
+ {
+  "brand": "Spotify",
+  "url": "https://www.spotify.com",
+  "country": "SE",
+  "industry": "media-entertainment",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "energetic",
+    "youthful",
+    "cultural"
+   ]
+  },
+  "strategy_note": "Owns a bright green on near-black, unusual in media.",
+  "exemplary": true
+ },
+ {
+  "brand": "YouTube",
+  "url": "https://www.youtube.com",
+  "country": "US",
+  "industry": "media-entertainment",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "familiar",
+    "energetic",
+    "universal"
+   ]
+  },
+  "strategy_note": "Owns red through the play button; the UI itself stays neutral.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#ff0033",
+   "accent": "#065fd4"
+  },
+  "role_note": "YouTube red (logo, measured accent) is the brand colour; the measured blue primary is the sign-in button."
+ },
+ {
+  "brand": "Disney+",
+  "url": "https://www.disneyplus.com",
+  "country": "US",
+  "industry": "media-entertainment",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "magical",
+    "cinematic",
+    "family"
+   ]
+  },
+  "strategy_note": "Uses cyan on a dark navy ground, a cool streaming palette.",
+  "exemplary": false
+ },
+ {
+  "brand": "BBC",
+  "url": "https://www.bbc.co.uk",
+  "country": "GB",
+  "industry": "media-entertainment",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "public",
+    "authoritative",
+    "neutral"
+   ]
+  },
+  "strategy_note": "Pure black-and-white, the public-service news code.",
+  "exemplary": false,
+  "role_note": "Monochrome UI confirmed: black logo blocks and type on white."
+ },
+ {
+  "brand": "The Guardian",
+  "url": "https://www.theguardian.com",
+  "country": "GB",
+  "industry": "media-entertainment",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "editorial",
+    "progressive",
+    "authoritative"
+   ]
+  },
+  "strategy_note": "Owns a deep navy with red news accents; colour encodes sections.",
+  "exemplary": true
+ },
+ {
+  "brand": "Twitch",
+  "url": "https://www.twitch.tv",
+  "country": "US",
+  "industry": "media-entertainment",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "playful",
+    "gamer",
+    "community"
+   ]
+  },
+  "strategy_note": "Owns purple in media, where red and black dominate.",
+  "exemplary": true,
+  "role_overrides": {
+   "background": "#f7f7f8"
+  },
+  "role_note": "Light-theme page: the measured black ground was an off-screen area; Twitch purple primary confirmed."
+ },
+ {
+  "brand": "SoundCloud",
+  "url": "https://soundcloud.com",
+  "country": "DE",
+  "industry": "media-entertainment",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "creative",
+    "underground",
+    "community"
+   ]
+  },
+  "strategy_note": "Dark grey UI on near-black; its orange stays in the logo.",
+  "exemplary": false,
+  "role_note": "Dark grey UI with white type confirmed; the measured salmon primary is low-confidence and SoundCloud orange is not in the page CSS."
+ },
+ {
+  "brand": "puhutv",
+  "url": "https://puhutv.com",
+  "country": "TR",
+  "industry": "media-entertainment",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "popular",
+    "dark",
+    "local"
+   ]
+  },
+  "strategy_note": "A dark streaming UI with a yellow accent, the Turkish free-streaming take on the cinema code.",
+  "exemplary": false,
+  "role_note": "Dark UI; the yellow primary comes from tiles below the fold (low confidence)."
+ },
+ {
+  "brand": "Hürriyet",
+  "url": "https://www.hurriyet.com.tr",
+  "country": "TR",
+  "industry": "media-entertainment",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "popular",
+    "urgent",
+    "national"
+   ]
+  },
+  "strategy_note": "Uses red, the tabloid news code.",
+  "exemplary": false,
+  "role_note": "Red header bar confirmed as primary."
+ },
+ {
+  "brand": "NTV",
+  "url": "https://www.ntv.com.tr",
+  "country": "TR",
+  "industry": "media-entertainment",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "serious",
+    "national",
+    "trustworthy"
+   ]
+  },
+  "strategy_note": "Uses a navy, the broadcast-news trust colour.",
+  "exemplary": false,
+  "role_note": "Navy logo and nav colour confirmed as primary."
+ },
+ {
+  "brand": "tabii",
+  "url": "https://www.tabii.com",
+  "country": "TR",
+  "industry": "media-entertainment",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "public",
+    "modern",
+    "youthful"
+   ]
+  },
+  "strategy_note": "A state streaming service using mint green on black, close to the Spotify palette.",
+  "exemplary": false
+ },
+ {
+  "brand": "Deloitte",
+  "url": "https://www.deloitte.com",
+  "country": "GB",
+  "industry": "professional-services",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "corporate",
+    "confident",
+    "modern"
+   ]
+  },
+  "strategy_note": "Uses blue with Deloitte green, the professional-services blue code plus one owned accent.",
+  "exemplary": false,
+  "role_note": "Blue CTA as primary with Deloitte green accent confirmed (TR site)."
+ },
+ {
+  "brand": "PwC",
+  "url": "https://www.pwc.com",
+  "country": "GB",
+  "industry": "professional-services",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "warm",
+    "corporate",
+    "optimistic"
+   ]
+  },
+  "strategy_note": "Differentiates with peach-orange in a blue-and-grey consulting category.",
+  "exemplary": false,
+  "role_note": "Peach-orange primary confirmed; hero video is black."
+ },
+ {
+  "brand": "EY",
+  "url": "https://www.ey.com",
+  "country": "GB",
+  "industry": "professional-services",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "confident",
+    "bold",
+    "corporate"
+   ]
+  },
+  "strategy_note": "Owns yellow on a dark charcoal ground, a clear break from consulting blue.",
+  "exemplary": true,
+  "role_note": "EY yellow on a dark charcoal ground confirmed."
+ },
+ {
+  "brand": "KPMG",
+  "url": "https://kpmg.com",
+  "country": "NL",
+  "industry": "professional-services",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "corporate",
+    "trustworthy",
+    "clear"
+   ]
+  },
+  "strategy_note": "Uses blue, the conventional consulting colour, which only a minority of the measured firms still use.",
+  "exemplary": false
+ },
+ {
+  "brand": "Boston Consulting Group",
+  "url": "https://www.bcg.com",
+  "country": "US",
+  "industry": "professional-services",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "confident",
+    "modern",
+    "bold"
+   ]
+  },
+  "strategy_note": "Owns a bright green, unusual in consulting.",
+  "exemplary": true
+ },
+ {
+  "brand": "Bain & Company",
+  "url": "https://www.bain.com",
+  "country": "US",
+  "industry": "professional-services",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "bold",
+    "confident",
+    "classic"
+   ]
+  },
+  "strategy_note": "Uses red, a warm departure from consulting blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Accenture",
+  "url": "https://www.accenture.com",
+  "country": "IE",
+  "industry": "professional-services",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "technological",
+    "bold",
+    "confident"
+   ]
+  },
+  "strategy_note": "Owns purple on a black ground, distinct from consulting blue.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#a100ff"
+  },
+  "role_note": "Black ground; Accenture purple (logo chevron) sampled from the screenshot; the measured blue primary was one card colour."
+ },
+ {
+  "brand": "Linklaters",
+  "url": "https://www.linklaters.com",
+  "country": "GB",
+  "industry": "professional-services",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "confident",
+    "modern",
+    "corporate"
+   ]
+  },
+  "strategy_note": "Differentiates with magenta among navy and black law firms.",
+  "exemplary": false,
+  "role_note": "Magenta primary confirmed; the hero was dimmed by an overlay."
+ },
+ {
+  "brand": "Clifford Chance",
+  "url": "https://www.cliffordchance.com",
+  "country": "GB",
+  "industry": "professional-services",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "corporate",
+    "modern",
+    "trustworthy"
+   ]
+  },
+  "strategy_note": "Uses a bright blue, a lighter take on the law-firm navy code.",
+  "exemplary": false
+ },
+ {
+  "brand": "Baker McKenzie",
+  "url": "https://www.bakermckenzie.com",
+  "country": "US",
+  "industry": "professional-services",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "global",
+    "confident",
+    "warm"
+   ]
+  },
+  "strategy_note": "Uses a deep red, a warm departure from law-firm navy.",
+  "exemplary": false
+ },
+ {
+  "brand": "Latham & Watkins",
+  "url": "https://www.lw.com",
+  "country": "US",
+  "industry": "professional-services",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "traditional",
+    "authoritative",
+    "serious"
+   ]
+  },
+  "strategy_note": "Uses a dark red rule and logo on a monochrome page.",
+  "exemplary": false,
+  "role_note": "Dark red logo and accent rule confirmed as primary; UI otherwise black on white."
+ },
+ {
+  "brand": "Kirkland & Ellis",
+  "url": "https://www.kirkland.com",
+  "country": "US",
+  "industry": "professional-services",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "serious",
+    "dark",
+    "minimal"
+   ]
+  },
+  "strategy_note": "A dark monochrome site with a single teal accent, the restrained law-firm code.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#1ac6ba"
+  },
+  "role_note": "Dark monochrome site; the teal arrows are its only chromatic UI colour (measured blue primary not visible)."
+ },
+ {
+  "brand": "Qantas",
+  "url": "https://www.qantas.com",
+  "country": "AU",
+  "industry": "airline",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "national",
+    "confident",
+    "warm"
+   ]
+  },
+  "strategy_note": "Owns red in the airline category, carried from its kangaroo tail.",
+  "exemplary": true
+ },
+ {
+  "brand": "Air New Zealand",
+  "url": "https://www.airnewzealand.com",
+  "country": "NZ",
+  "industry": "airline",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "national",
+    "warm",
+    "modern"
+   ]
+  },
+  "strategy_note": "Uses black for the brand and teal for actions, away from the airline navy norm.",
+  "exemplary": false,
+  "role_note": "Teal CTA as primary with purple accent confirmed on a black header."
+ },
+ {
+  "brand": "Vueling",
+  "url": "https://www.vueling.com",
+  "country": "ES",
+  "industry": "airline",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "cheerful",
+    "energetic",
+    "direct"
+   ]
+  },
+  "strategy_note": "Owns yellow among European airlines, the low-cost signal colour.",
+  "exemplary": false
+ },
+ {
+  "brand": "Virgin Atlantic",
+  "url": "https://www.virginatlantic.com",
+  "country": "GB",
+  "industry": "airline",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "playful",
+    "confident",
+    "glamorous"
+   ]
+  },
+  "strategy_note": "Owns red with a purple partner, a challenger palette against airline blue.",
+  "exemplary": true
+ },
+ {
+  "brand": "TAP Air Portugal",
+  "url": "https://www.flytap.com",
+  "country": "PT",
+  "industry": "airline",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "national",
+    "fresh",
+    "warm"
+   ]
+  },
+  "strategy_note": "Uses the green and red of the Portuguese flag rather than airline blue.",
+  "exemplary": false,
+  "role_note": "Lime-green CTA as primary with TAP red accent confirmed."
+ },
+ {
+  "brand": "Freebird Airlines",
+  "url": "https://www.freebirdairlines.com",
+  "country": "TR",
+  "industry": "airline",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "friendly",
+    "holiday",
+    "warm"
+   ]
+  },
+  "strategy_note": "A Turkish charter airline using a warm orange with a navy partner.",
+  "exemplary": false
+ },
+ {
+  "brand": "Hyundai",
+  "url": "https://www.hyundai.com/worldwide/en",
+  "country": "KR",
+  "industry": "automotive",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "modern",
+    "calm",
+    "corporate"
+   ]
+  },
+  "strategy_note": "Conforms to automotive restraint: navy logo colour on a white, photo-led page.",
+  "exemplary": false,
+  "role_note": "Hyundai navy confirmed in logo and links; hero is photography."
+ },
+ {
+  "brand": "Renault",
+  "url": "https://www.renault.fr",
+  "country": "FR",
+  "industry": "automotive",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "modern",
+    "bold",
+    "minimal"
+   ]
+  },
+  "strategy_note": "Conforms to the automotive monochrome code on a dark ground.",
+  "exemplary": false,
+  "role_note": "Black and white UI on a dark ground confirmed; the logo is the only other colour."
+ },
+ {
+  "brand": "Peugeot",
+  "url": "https://www.peugeot.fr",
+  "country": "FR",
+  "industry": "automotive",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "elegant",
+    "modern",
+    "cool"
+   ]
+  },
+  "strategy_note": "Conforms to the automotive monochrome code with blue links.",
+  "exemplary": false,
+  "role_note": "Monochrome UI with blue links confirmed; low measurement confidence."
+ },
+ {
+  "brand": "Fiat",
+  "url": "https://www.fiat.com",
+  "country": "IT",
+  "industry": "automotive",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "italian",
+    "playful",
+    "warm"
+   ]
+  },
+  "strategy_note": "Uses red, the Italian heritage colour, against the automotive monochrome norm.",
+  "exemplary": false
+ },
+ {
+  "brand": "Škoda",
+  "url": "https://www.skoda-auto.com",
+  "country": "CZ",
+  "industry": "automotive",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "fresh",
+    "friendly",
+    "modern"
+   ]
+  },
+  "strategy_note": "Owns an electric mint green in a monochrome automotive category.",
+  "exemplary": true,
+  "role_note": "Škoda electric green CTA confirmed."
+ },
+ {
+  "brand": "Mazda",
+  "url": "https://www.mazdausa.com",
+  "country": "JP",
+  "industry": "automotive",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "refined",
+    "calm",
+    "premium"
+   ]
+  },
+  "strategy_note": "Conforms to the automotive monochrome code and leaves its Soul Red to the cars.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#101010"
+  },
+  "role_note": "Monochrome UI: near-black type and outlined buttons; the measured white primary was a button fill on photos."
+ },
+ {
+  "brand": "Subaru",
+  "url": "https://www.subaru.com",
+  "country": "JP",
+  "industry": "automotive",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "outdoorsy",
+    "reliable",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Uses the navy and mid blue of its star-cluster badge, a conforming automotive choice.",
+  "exemplary": false
+ },
+ {
+  "brand": "Lucid",
+  "url": "https://lucidmotors.com",
+  "country": "US",
+  "industry": "automotive",
+  "positioning": {
+   "price": "luxury",
+   "tone": [
+    "refined",
+    "warm",
+    "technical"
+   ]
+  },
+  "strategy_note": "Differentiates with a warm tan action colour on near-black, a luxury-materials cue.",
+  "exemplary": false,
+  "role_note": "Tan CTA on near-black confirmed."
+ },
+ {
+  "brand": "MINI",
+  "url": "https://www.miniusa.com",
+  "country": "GB",
+  "industry": "automotive",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "playful",
+    "urban",
+    "bold"
+   ]
+  },
+  "strategy_note": "Pairs a black ground with a teal action colour, livelier than the automotive norm.",
+  "exemplary": false,
+  "role_note": "Teal CTA confirmed on a black hero."
+ },
+ {
+  "brand": "Cupra",
+  "url": "https://www.cupraofficial.com",
+  "country": "ES",
+  "industry": "automotive",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "bold",
+    "dark",
+    "sporty"
+   ]
+  },
+  "strategy_note": "A dark automotive UI with a petrol-teal primary from model tiles; copper stays in details.",
+  "exemplary": false,
+  "role_note": "Dark monochrome UI; the petrol-teal comes from model tiles (low confidence)."
+ },
+ {
+  "brand": "DenizBank",
+  "url": "https://www.denizbank.com",
+  "country": "TR",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "trustworthy",
+    "corporate",
+    "clear"
+   ]
+  },
+  "strategy_note": "Conforms to the Turkish banking navy-blue code.",
+  "exemplary": false
+ },
+ {
+  "brand": "TEB",
+  "url": "https://www.teb.com.tr",
+  "country": "TR",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "trustworthy",
+    "fresh",
+    "corporate"
+   ]
+  },
+  "strategy_note": "Owns green among Turkish banks.",
+  "exemplary": false,
+  "role_note": "TEB green confirmed in logo and buttons (promo modal open)."
+ },
+ {
+  "brand": "ING Türkiye",
+  "url": "https://www.ing.com.tr",
+  "country": "TR",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "clear",
+    "challenger"
+   ]
+  },
+  "strategy_note": "Owns orange, ING's global colour, against banking blue.",
+  "exemplary": true
+ },
+ {
+  "brand": "Kuveyt Türk",
+  "url": "https://www.kuveytturk.com.tr",
+  "country": "TR",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "trustworthy",
+    "fresh",
+    "traditional"
+   ]
+  },
+  "strategy_note": "Uses green, the participation-banking colour in Turkey.",
+  "exemplary": false
+ },
+ {
+  "brand": "Şekerbank",
+  "url": "https://www.sekerbank.com.tr",
+  "country": "TR",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "traditional",
+    "friendly",
+    "regional"
+   ]
+  },
+  "strategy_note": "Uses green with lime, close to Kuveyt Türk.",
+  "exemplary": false
+ },
+ {
+  "brand": "Citi",
+  "url": "https://www.citi.com",
+  "country": "US",
+  "industry": "banking",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "corporate",
+    "trustworthy",
+    "global"
+   ]
+  },
+  "strategy_note": "Conforms to banking blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "HSBC UK",
+  "url": "https://www.hsbc.co.uk",
+  "country": "GB",
+  "industry": "banking",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "global",
+    "corporate",
+    "confident"
+   ]
+  },
+  "strategy_note": "Uses red from its hexagon mark against the banking blue norm.",
+  "exemplary": false
+ },
+ {
+  "brand": "Rakuten",
+  "url": "https://www.rakuten.com",
+  "country": "JP",
+  "industry": "ecommerce",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "bargain",
+    "bright"
+   ]
+  },
+  "strategy_note": "Owns purple in a marketplace category led by orange, yellow and blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Vinted",
+  "url": "https://www.vinted.com",
+  "country": "LT",
+  "industry": "ecommerce",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "friendly",
+    "sustainable",
+    "casual"
+   ]
+  },
+  "strategy_note": "Owns a deep teal in resale, away from marketplace orange.",
+  "exemplary": true,
+  "role_note": "Teal primary confirmed (country modal open)."
+ },
+ {
+  "brand": "OTTO",
+  "url": "https://www.otto.de",
+  "country": "DE",
+  "industry": "ecommerce",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "familiar",
+    "practical",
+    "bold"
+   ]
+  },
+  "strategy_note": "Uses red with a blue secondary, the classic German retail palette.",
+  "exemplary": false,
+  "role_note": "OTTO red logo and sale buttons confirmed as primary; low measurement confidence."
+ },
+ {
+  "brand": "Flipkart",
+  "url": "https://www.flipkart.com",
+  "country": "IN",
+  "industry": "ecommerce",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "familiar",
+    "bargain",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Uses blue with yellow, the Indian marketplace palette.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#2874f0"
+  },
+  "role_note": "Login modal over the page; Flipkart blue (measured link colour, header) is the brand colour; the measured lilac was a promo tile."
+ },
+ {
+  "brand": "Newegg",
+  "url": "https://www.newegg.com",
+  "country": "US",
+  "industry": "ecommerce",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "technical",
+    "bargain",
+    "dense"
+   ]
+  },
+  "strategy_note": "Uses dark navy with a red-orange, the electronics-retail code.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#0a185c",
+   "accent": "#c21a00"
+  },
+  "role_note": "Dark navy header is the brand surface; the measured light-blue primary was a menu fill; red-orange kept as accent."
+ },
+ {
+  "brand": "Zappos",
+  "url": "https://www.zappos.com",
+  "country": "US",
+  "industry": "ecommerce",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "service",
+    "casual"
+   ]
+  },
+  "strategy_note": "Monochrome UI with warm promo strips.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#000000",
+   "accent": "#ffb967"
+  },
+  "role_note": "Black-and-white UI; the measured yellow and peach come from promo strips below the hero."
+ },
+ {
+  "brand": "SHEIN",
+  "url": "https://www.shein.com",
+  "country": "SG",
+  "industry": "ecommerce",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "fashionable",
+    "bargain",
+    "minimal"
+   ]
+  },
+  "strategy_note": "Pure monochrome, the fast-fashion marketplace code.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#000000"
+  },
+  "role_note": "Monochrome UI: black header and type (TR service-notice banner shown)."
+ },
+ {
+  "brand": "Modanisa",
+  "url": "https://www.modanisa.com",
+  "country": "TR",
+  "industry": "ecommerce",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "modest",
+    "fashionable",
+    "warm"
+   ]
+  },
+  "strategy_note": "A Turkish modest-fashion marketplace using orange with a sky-blue accent.",
+  "exemplary": false
+ },
+ {
+  "brand": "idefix",
+  "url": "https://www.idefix.com",
+  "country": "TR",
+  "industry": "ecommerce",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "playful",
+    "cultural",
+    "bargain"
+   ]
+  },
+  "strategy_note": "A Turkish book and goods marketplace using dark navy with coral.",
+  "exemplary": false,
+  "role_note": "Navy logo colour as primary with coral accent confirmed."
+ },
+ {
+  "brand": "Kitapyurdu",
+  "url": "https://www.kitapyurdu.com",
+  "country": "TR",
+  "industry": "ecommerce",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "familiar",
+    "cultural",
+    "bargain"
+   ]
+  },
+  "strategy_note": "Uses orange, the Turkish marketplace default shared with Trendyol and Hepsiburada.",
+  "exemplary": false
+ },
+ {
+  "brand": "Charlotte Tilbury",
+  "url": "https://www.charlottetilbury.com",
+  "country": "GB",
+  "industry": "beauty",
+  "positioning": {
+   "price": "luxury",
+   "tone": [
+    "glamorous",
+    "opulent",
+    "romantic"
+   ]
+  },
+  "strategy_note": "Owns a deep burgundy close to black, a luxury reading of the beauty pink family.",
+  "exemplary": true
+ },
+ {
+  "brand": "Ulta Beauty",
+  "url": "https://www.ulta.com",
+  "country": "US",
+  "industry": "beauty",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "cheerful",
+    "bold",
+    "accessible"
+   ]
+  },
+  "strategy_note": "Combines hot pink and orange, the loud mass-retail beauty code.",
+  "exemplary": false,
+  "role_note": "Pink-red buttons and Ulta orange promo tiles confirmed."
+ },
+ {
+  "brand": "CeraVe",
+  "url": "https://www.cerave.com",
+  "country": "US",
+  "industry": "beauty",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "clinical",
+    "trustworthy",
+    "calm"
+   ]
+  },
+  "strategy_note": "Uses dermatological navy blue, borrowing the healthcare code rather than beauty pink.",
+  "exemplary": false
+ },
+ {
+  "brand": "e.l.f. Cosmetics",
+  "url": "https://www.elfcosmetics.com",
+  "country": "US",
+  "industry": "beauty",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "playful",
+    "bold",
+    "accessible"
+   ]
+  },
+  "strategy_note": "Black-and-white base with blue-purple accents, away from beauty pink.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#000000"
+  },
+  "role_note": "Black hero and type with white buttons; the measured tan was a product swatch."
+ },
+ {
+  "brand": "KIKO Milano",
+  "url": "https://www.kikocosmetics.com",
+  "country": "IT",
+  "industry": "beauty",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "fashionable",
+    "bold",
+    "urban"
+   ]
+  },
+  "strategy_note": "Monochrome UI with campaign pinks, the fashion-led beauty code.",
+  "exemplary": false,
+  "role_note": "Monochrome UI with a pink campaign hero; low measurement confidence."
+ },
+ {
+  "brand": "Rossmann Türkiye",
+  "url": "https://www.rossmann.com.tr",
+  "country": "TR",
+  "industry": "beauty",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "practical",
+    "warm",
+    "accessible"
+   ]
+  },
+  "strategy_note": "Uses a deep red, the drugstore retail code.",
+  "exemplary": false
+ },
+ {
+  "brand": "Farmasi",
+  "url": "https://www.farmasi.com.tr",
+  "country": "TR",
+  "industry": "beauty",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "friendly",
+    "warm",
+    "accessible"
+   ]
+  },
+  "strategy_note": "A Turkish direct-sales beauty brand with a monochrome UI and coral headlines.",
+  "exemplary": false,
+  "role_note": "Monochrome UI with coral campaign headlines; low measurement confidence."
+ },
+ {
+  "brand": "Yale University",
+  "url": "https://www.yale.edu",
+  "country": "US",
+  "industry": "education",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "traditional",
+    "authoritative",
+    "academic"
+   ]
+  },
+  "strategy_note": "Conforms to academic heritage with Yale blue on white.",
+  "exemplary": false,
+  "role_overrides": {
+   "background": "#ffffff"
+  },
+  "role_note": "White page with Yale blue confirmed; the measured dark ground was the footer and nav band."
+ },
+ {
+  "brand": "Hacettepe Üniversitesi",
+  "url": "https://www.hacettepe.edu.tr",
+  "country": "TR",
+  "industry": "education",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "academic",
+    "traditional",
+    "national"
+   ]
+  },
+  "strategy_note": "Uses a black header with a red crest, inside the red-and-white Turkish academic code.",
+  "exemplary": false,
+  "role_note": "Black header with the red crest; the measured blue primary comes from buttons below the fold."
+ },
+ {
+  "brand": "Özyeğin Üniversitesi",
+  "url": "https://www.ozyegin.edu.tr",
+  "country": "TR",
+  "industry": "education",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "modern",
+    "academic",
+    "warm"
+   ]
+  },
+  "strategy_note": "Uses a magenta-maroon, a warmer take on the academic red.",
+  "exemplary": false
+ },
+ {
+  "brand": "İstanbul Bilgi Üniversitesi",
+  "url": "https://www.bilgi.edu.tr",
+  "country": "TR",
+  "industry": "education",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "academic",
+    "urban",
+    "bold"
+   ]
+  },
+  "strategy_note": "Uses red with navy, the conforming academic pair.",
+  "exemplary": false
+ },
+ {
+  "brand": "Equinor",
+  "url": "https://www.equinor.com",
+  "country": "NO",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "corporate",
+    "transitional",
+    "calm"
+   ]
+  },
+  "strategy_note": "Uses red with a teal secondary, bridging the fossil and renewable codes.",
+  "exemplary": false,
+  "role_note": "Equinor red as primary with teal accent confirmed (consent overlay dimmed the page)."
+ },
+ {
+  "brand": "Eni",
+  "url": "https://www.eni.com",
+  "country": "IT",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "corporate",
+    "bold",
+    "national"
+   ]
+  },
+  "strategy_note": "Owns yellow on dark navy, carried from its six-legged dog mark.",
+  "exemplary": true,
+  "role_note": "Eni yellow on a dark navy ground confirmed."
+ },
+ {
+  "brand": "Repsol",
+  "url": "https://www.repsol.com",
+  "country": "ES",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "corporate",
+    "warm",
+    "national"
+   ]
+  },
+  "strategy_note": "Uses navy with orange, a conforming fuel palette.",
+  "exemplary": false
+ },
+ {
+  "brand": "OVO Energy",
+  "url": "https://www.ovoenergy.com",
+  "country": "GB",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "green",
+    "friendly",
+    "modern"
+   ]
+  },
+  "strategy_note": "Uses bright and deep greens, the renewable-utility code.",
+  "exemplary": false
+ },
+ {
+  "brand": "British Gas",
+  "url": "https://www.britishgas.co.uk",
+  "country": "GB",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "familiar",
+    "trustworthy",
+    "clear"
+   ]
+  },
+  "strategy_note": "Uses blue, the utility-trust code.",
+  "exemplary": false,
+  "role_note": "British Gas blue confirmed in header and buttons; low measurement confidence."
+ },
+ {
+  "brand": "Engie",
+  "url": "https://www.engie.com",
+  "country": "FR",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "corporate",
+    "transitional",
+    "calm"
+   ]
+  },
+  "strategy_note": "Uses blue with a teal accent, the renewable-utility blue.",
+  "exemplary": false,
+  "role_note": "ENGIE blue with teal accent confirmed on a photo hero; low measurement confidence."
+ },
+ {
+  "brand": "Zorlu Enerji",
+  "url": "https://www.zorluenerji.com.tr",
+  "country": "TR",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "modern",
+    "corporate",
+    "bold"
+   ]
+  },
+  "strategy_note": "A Turkish energy group using raspberry with purple, far from the fuel red and yellow.",
+  "exemplary": false
+ },
+ {
+  "brand": "CK Enerji",
+  "url": "https://www.ckenerji.com.tr",
+  "country": "TR",
+  "industry": "energy",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "corporate",
+    "serious",
+    "modern"
+   ]
+  },
+  "strategy_note": "Uses navy on a dark ground, the corporate-utility code.",
+  "exemplary": false,
+  "role_note": "Navy on a dark ground confirmed."
+ },
+ {
+  "brand": "Reebok",
+  "url": "https://www.reebok.com",
+  "country": "US",
+  "industry": "fashion",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "athletic",
+    "heritage",
+    "bold"
+   ]
+  },
+  "strategy_note": "Uses navy with red, a heritage sportswear palette rather than the monochrome default.",
+  "exemplary": false,
+  "role_note": "Navy primary with red accent confirmed (geo modal open)."
+ },
+ {
+  "brand": "Colin's",
+  "url": "https://www.colins.com.tr",
+  "country": "TR",
+  "industry": "fashion",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "casual",
+    "youthful",
+    "accessible"
+   ]
+  },
+  "strategy_note": "Conforms to the fast-fashion monochrome code with red sale accents.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#000000"
+  },
+  "role_note": "Monochrome UI: black type and logo on white; the measured red was a sale label."
+ },
+ {
+  "brand": "Network",
+  "url": "https://www.network.com.tr",
+  "country": "TR",
+  "industry": "fashion",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "refined",
+    "minimal",
+    "classic"
+   ]
+  },
+  "strategy_note": "Conforms to the premium-fashion monochrome code.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#333333"
+  },
+  "role_note": "Monochrome UI: dark-grey type and logo; the measured green was a tiny badge."
+ },
+ {
+  "brand": "Kiğılı",
+  "url": "https://www.kigili.com",
+  "country": "TR",
+  "industry": "fashion",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "classic",
+    "masculine",
+    "trustworthy"
+   ]
+  },
+  "strategy_note": "Uses navy with a coral accent, the menswear tailoring code.",
+  "exemplary": false
+ },
+ {
+  "brand": "Mondelez",
+  "url": "https://www.mondelezinternational.com",
+  "country": "US",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "corporate",
+    "playful",
+    "warm"
+   ]
+  },
+  "strategy_note": "Uses purple with green, from the Milka-and-Oreo portfolio rather than food red.",
+  "exemplary": false
+ },
+ {
+  "brand": "Ferrero",
+  "url": "https://www.ferrero.com",
+  "country": "IT",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "indulgent",
+    "heritage",
+    "warm"
+   ]
+  },
+  "strategy_note": "Uses chocolate brown with gold, the premium-confectionery code.",
+  "exemplary": false,
+  "role_note": "Chocolate brown with gold accent confirmed (region modal open)."
+ },
+ {
+  "brand": "Tony's Chocolonely",
+  "url": "https://tonyschocolonely.com",
+  "country": "NL",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "activist",
+    "loud",
+    "playful"
+   ]
+  },
+  "strategy_note": "Uses loud red and blue with hand-drawn type, an activist break from premium-chocolate brown and gold.",
+  "exemplary": true,
+  "role_note": "Red and blue confirmed on the country-selection page, a fully styled brand page."
+ },
+ {
+  "brand": "Liquid Death",
+  "url": "https://liquiddeath.com",
+  "country": "US",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "irreverent",
+    "dark",
+    "humorous"
+   ]
+  },
+  "strategy_note": "Black-and-white heavy-metal styling in a category of bright drink colours.",
+  "exemplary": true,
+  "role_overrides": {
+   "primary": "#000000"
+  },
+  "role_note": "Black-and-white UI; the purple is campaign photography and the measured tan a tiny label."
+ },
+ {
+  "brand": "Doğadan",
+  "url": "https://www.dogadan.com.tr",
+  "country": "TR",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "natural",
+    "fresh",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Uses a leaf green, the herbal-tea code.",
+  "exemplary": false
+ },
+ {
+  "brand": "Tadım",
+  "url": "https://www.tadim.com.tr",
+  "country": "TR",
+  "industry": "food-beverage",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "familiar",
+    "bold",
+    "appetising"
+   ]
+  },
+  "strategy_note": "Uses red, the Turkish snack default.",
+  "exemplary": false
+ },
+ {
+  "brand": "GSK",
+  "url": "https://www.gsk.com",
+  "country": "GB",
+  "industry": "healthcare",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "scientific",
+    "warm",
+    "modern"
+   ]
+  },
+  "strategy_note": "Owns orange in pharma, where blue is the norm.",
+  "exemplary": true,
+  "role_note": "GSK orange confirmed (consent overlay dimmed the page)."
+ },
+ {
+  "brand": "AstraZeneca",
+  "url": "https://www.astrazeneca.com",
+  "country": "GB",
+  "industry": "healthcare",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "scientific",
+    "corporate",
+    "warm"
+   ]
+  },
+  "strategy_note": "Uses mulberry with navy, a warm departure from pharma blue.",
+  "exemplary": false,
+  "role_note": "Mulberry primary with navy accent confirmed (consent overlay dimmed the page)."
+ },
+ {
+  "brand": "Sanofi",
+  "url": "https://www.sanofi.com",
+  "country": "FR",
+  "industry": "healthcare",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "scientific",
+    "modern",
+    "bold"
+   ]
+  },
+  "strategy_note": "Uses a vivid purple, away from pharma blue.",
+  "exemplary": false,
+  "role_note": "Sanofi purple confirmed in links and accents on a black-and-white page; low measurement confidence."
+ },
+ {
+  "brand": "Novo Nordisk",
+  "url": "https://www.novonordisk.com",
+  "country": "DK",
+  "industry": "healthcare",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "scientific",
+    "trustworthy",
+    "calm"
+   ]
+  },
+  "strategy_note": "Conforms to the pharma blue code with a deep Apis blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Teladoc Health",
+  "url": "https://www.teladochealth.com",
+  "country": "US",
+  "industry": "healthcare",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "caring",
+    "modern",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Uses violet, the digital-health alternative to clinical blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Walgreens",
+  "url": "https://www.walgreens.com",
+  "country": "US",
+  "industry": "healthcare",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "familiar",
+    "caring",
+    "practical"
+   ]
+  },
+  "strategy_note": "Uses red, the US pharmacy-retail code shared with CVS.",
+  "exemplary": false
+ },
+ {
+  "brand": "Liv Hospital",
+  "url": "https://www.livhospital.com",
+  "country": "TR",
+  "industry": "healthcare",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "modern",
+    "trustworthy",
+    "clinical"
+   ]
+  },
+  "strategy_note": "Conforms to healthcare blue with a coral accent.",
+  "exemplary": false
+ },
+ {
+  "brand": "Florence Nightingale",
+  "url": "https://www.florence.com.tr",
+  "country": "TR",
+  "industry": "healthcare",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "caring",
+    "traditional",
+    "trustworthy"
+   ]
+  },
+  "strategy_note": "Uses a deep red, inside the Turkish hospital-group red family.",
+  "exemplary": false
+ },
+ {
+  "brand": "Eczacıbaşı",
+  "url": "https://www.eczacibasi.com.tr",
+  "country": "TR",
+  "industry": "healthcare",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "corporate",
+    "warm",
+    "heritage"
+   ]
+  },
+  "strategy_note": "Uses orange with teal, warmer than the pharma blue code.",
+  "exemplary": false,
+  "role_note": "Eczacıbaşı orange buttons and logo confirmed; low measurement confidence."
+ },
+ {
+  "brand": "Valentino",
+  "url": "https://www.valentino.com",
+  "country": "IT",
+  "industry": "luxury",
+  "positioning": {
+   "price": "luxury",
+   "tone": [
+    "romantic",
+    "refined",
+    "minimal"
+   ]
+  },
+  "strategy_note": "Conforms to the luxury monochrome code; its signature red stays in product.",
+  "exemplary": false,
+  "role_note": "Monochrome UI confirmed (country modal over a campaign image)."
+ },
+ {
+  "brand": "Loewe",
+  "url": "https://www.loewe.com",
+  "country": "ES",
+  "industry": "luxury",
+  "positioning": {
+   "price": "luxury",
+   "tone": [
+    "artful",
+    "minimal",
+    "playful"
+   ]
+  },
+  "strategy_note": "Monochrome luxury UI that lets one campaign colour take over the wordmark.",
+  "exemplary": false,
+  "role_note": "Monochrome UI with a yellow campaign wordmark; low measurement confidence."
+ },
+ {
+  "brand": "Omega",
+  "url": "https://www.omegawatches.com",
+  "country": "CH",
+  "industry": "luxury",
+  "positioning": {
+   "price": "luxury",
+   "tone": [
+    "precise",
+    "heritage",
+    "refined"
+   ]
+  },
+  "strategy_note": "Uses its red logo colour sparingly on black, a heritage-watch variant of luxury monochrome.",
+  "exemplary": false,
+  "role_note": "Omega red logo and accents on a black hero confirmed."
+ },
+ {
+  "brand": "Patek Philippe",
+  "url": "https://www.patek.com",
+  "country": "CH",
+  "industry": "luxury",
+  "positioning": {
+   "price": "luxury",
+   "tone": [
+    "heritage",
+    "refined",
+    "quiet"
+   ]
+  },
+  "strategy_note": "Uses muted gold on photography, the classic luxury-watch code.",
+  "exemplary": false,
+  "role_note": "Patek gold accents on photography confirmed; low measurement confidence."
+ },
+ {
+  "brand": "Audemars Piguet",
+  "url": "https://www.audemarspiguet.com",
+  "country": "CH",
+  "industry": "luxury",
+  "positioning": {
+   "price": "luxury",
+   "tone": [
+    "bold",
+    "modern",
+    "refined"
+   ]
+  },
+  "strategy_note": "Dark monochrome UI, the contemporary luxury code.",
+  "exemplary": false,
+  "role_note": "Dark monochrome UI confirmed: black ground, white type and buttons."
+ },
+ {
+  "brand": "Chopard",
+  "url": "https://www.chopard.com",
+  "country": "CH",
+  "industry": "luxury",
+  "positioning": {
+   "price": "luxury",
+   "tone": [
+    "refined",
+    "classic",
+    "quiet"
+   ]
+  },
+  "strategy_note": "Grey-and-black monochrome, the jewellery-house default.",
+  "exemplary": false,
+  "role_note": "Grey-and-black monochrome UI confirmed; low measurement confidence."
+ },
+ {
+  "brand": "Tom Ford",
+  "url": "https://www.tomfordfashion.com",
+  "country": "US",
+  "industry": "luxury",
+  "positioning": {
+   "price": "luxury",
+   "tone": [
+    "sensual",
+    "dark",
+    "refined"
+   ]
+  },
+  "strategy_note": "All-black UI, the darkest version of the luxury monochrome code.",
+  "exemplary": false,
+  "role_note": "Black monochrome UI confirmed (country modal open)."
+ },
+ {
+  "brand": "Atasay",
+  "url": "https://www.atasay.com",
+  "country": "TR",
+  "industry": "luxury",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "warm",
+    "feminine",
+    "festive"
+   ]
+  },
+  "strategy_note": "A Turkish jeweller using salmon pink, warmer than the luxury monochrome norm.",
+  "exemplary": false,
+  "role_note": "Salmon logo tile and top bar confirmed as primary; low measurement confidence."
+ },
+ {
+  "brand": "Altınbaş",
+  "url": "https://www.altinbas.com",
+  "country": "TR",
+  "industry": "luxury",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "refined",
+    "classic",
+    "quiet"
+   ]
+  },
+  "strategy_note": "A Turkish jeweller using a slate-and-white monochrome, inside the luxury code.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#2a373a"
+  },
+  "role_note": "Monochrome slate-and-white UI; the measured blue primary was a newsletter-modal button."
+ },
+ {
+  "brand": "Wendy's",
+  "url": "https://www.wendys.com",
+  "country": "US",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "friendly",
+    "warm",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Uses red with a blue secondary, inside the warm quick-service code.",
+  "exemplary": false,
+  "role_overrides": {
+   "primary": "#dc163b",
+   "accent": "#0077a3"
+  },
+  "role_note": "Wendy's red (logo, nav bar) is the brand colour; the measured blue is the order-button colour, kept as accent."
+ },
+ {
+  "brand": "Popeyes",
+  "url": "https://www.popeyes.com",
+  "country": "US",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "bold",
+    "spicy",
+    "warm"
+   ]
+  },
+  "strategy_note": "Uses a hot orange, inside the warm quick-service code.",
+  "exemplary": false,
+  "role_note": "Popeyes orange header and buttons confirmed (page still loading product tiles)."
+ },
+ {
+  "brand": "Panera Bread",
+  "url": "https://www.panerabread.com",
+  "country": "US",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "wholesome",
+    "warm",
+    "natural"
+   ]
+  },
+  "strategy_note": "Uses olive green with a coral accent, the bakery-cafe alternative to red.",
+  "exemplary": false
+ },
+ {
+  "brand": "Pret A Manger",
+  "url": "https://www.pret.co.uk",
+  "country": "GB",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "fresh",
+    "urban",
+    "crafted"
+   ]
+  },
+  "strategy_note": "Uses its burgundy star colour with a lime accent.",
+  "exemplary": false
+ },
+ {
+  "brand": "Five Guys",
+  "url": "https://www.fiveguys.com",
+  "country": "US",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "bold",
+    "simple",
+    "classic"
+   ]
+  },
+  "strategy_note": "Uses red on white, the classic burger code.",
+  "exemplary": false
+ },
+ {
+  "brand": "Wolt",
+  "url": "https://wolt.com",
+  "country": "FI",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "friendly",
+    "fresh",
+    "bright"
+   ]
+  },
+  "strategy_note": "Owns cyan blue in delivery, against the red and orange of rivals.",
+  "exemplary": true
+ },
+ {
+  "brand": "Burger King Türkiye",
+  "url": "https://www.burgerking.com.tr",
+  "country": "TR",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "bold",
+    "appetising",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Uses red with orange, the warm quick-service code.",
+  "exemplary": false
+ },
+ {
+  "brand": "Baydöner",
+  "url": "https://www.baydoner.com",
+  "country": "TR",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "local",
+    "bold",
+    "appetising"
+   ]
+  },
+  "strategy_note": "Uses red, the Turkish fast-food default.",
+  "exemplary": false,
+  "role_note": "Red header and logo confirmed as primary; low measurement confidence."
+ },
+ {
+  "brand": "HD İskender",
+  "url": "https://www.hdiskender.com",
+  "country": "TR",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "local",
+    "warm",
+    "appetising"
+   ]
+  },
+  "strategy_note": "Uses orange, a warm quick-service colour.",
+  "exemplary": false
+ },
+ {
+  "brand": "Mado",
+  "url": "https://www.mado.com.tr",
+  "country": "TR",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "heritage",
+    "local",
+    "classic"
+   ]
+  },
+  "strategy_note": "Uses navy, a cooler choice for an ice-cream and dessert chain.",
+  "exemplary": false
+ },
+ {
+  "brand": "Komagene",
+  "url": "https://www.komagene.com.tr",
+  "country": "TR",
+  "industry": "restaurant-delivery",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "local",
+    "bold",
+    "appetising"
+   ]
+  },
+  "strategy_note": "Uses red, the Turkish fast-food default.",
+  "exemplary": false
+ },
+ {
+  "brand": "ALDI UK",
+  "url": "https://www.aldi.co.uk",
+  "country": "DE",
+  "industry": "retail",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "practical",
+    "bargain",
+    "clear"
+   ]
+  },
+  "strategy_note": "Uses navy with red, the discounter flag palette.",
+  "exemplary": false
+ },
+ {
+  "brand": "Marks & Spencer",
+  "url": "https://www.marksandspencer.com",
+  "country": "GB",
+  "industry": "retail",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "classic",
+    "quality",
+    "british"
+   ]
+  },
+  "strategy_note": "Black-and-white UI with campaign colour blocks.",
+  "exemplary": false,
+  "role_note": "Black-and-white UI with a berry campaign block as primary; M&S green is not on the page."
+ },
+ {
+  "brand": "Decathlon",
+  "url": "https://www.decathlon.com",
+  "country": "FR",
+  "industry": "retail",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "sporty",
+    "practical",
+    "friendly"
+   ]
+  },
+  "strategy_note": "Owns a strong blue across sports retail.",
+  "exemplary": true,
+  "role_note": "Decathlon blue confirmed (geo modal open)."
+ },
+ {
+  "brand": "Koçtaş",
+  "url": "https://www.koctas.com.tr",
+  "country": "TR",
+  "industry": "retail",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "practical",
+    "friendly",
+    "warm"
+   ]
+  },
+  "strategy_note": "Uses orange, the DIY-retail code.",
+  "exemplary": false
+ },
+ {
+  "brand": "Macrocenter",
+  "url": "https://www.macrocenter.com.tr",
+  "country": "TR",
+  "industry": "retail",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "refined",
+    "gourmet",
+    "quiet"
+   ]
+  },
+  "strategy_note": "A premium grocer using a muted grey monochrome, away from discounter red and yellow.",
+  "exemplary": false,
+  "role_note": "Monochrome grey UI confirmed; low measurement confidence."
+ },
+ {
+  "brand": "English Home",
+  "url": "https://www.englishhome.com",
+  "country": "TR",
+  "industry": "retail",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "homely",
+    "classic",
+    "warm"
+   ]
+  },
+  "strategy_note": "Uses navy with burgundy, a classic home-textile palette.",
+  "exemplary": false
+ },
+ {
+  "brand": "MediaMarkt Türkiye",
+  "url": "https://www.mediamarkt.com.tr",
+  "country": "TR",
+  "industry": "retail",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "bold",
+    "bargain",
+    "energetic"
+   ]
+  },
+  "strategy_note": "Uses red with yellow, the electronics-discounter code.",
+  "exemplary": false
+ },
+ {
+  "brand": "Mopaş",
+  "url": "https://www.mopas.com.tr",
+  "country": "TR",
+  "industry": "retail",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "practical",
+    "local",
+    "familiar"
+   ]
+  },
+  "strategy_note": "Uses navy and red, the conforming grocery palette.",
+  "exemplary": false,
+  "role_note": "Blue and red confirmed under a consent overlay; the blue is Bootstrap's default and the header navy."
+ },
+ {
+  "brand": "Türksat Kablonet",
+  "url": "https://www.turksatkablo.com.tr",
+  "country": "TR",
+  "industry": "telecom",
+  "positioning": {
+   "price": "mid",
+   "tone": [
+    "public",
+    "friendly",
+    "clear"
+   ]
+  },
+  "strategy_note": "Uses sky blue with indigo, conforming to telecom blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Hostelworld",
+  "url": "https://www.hostelworld.com",
+  "country": "IE",
+  "industry": "travel-hospitality",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "youthful",
+    "social",
+    "energetic"
+   ]
+  },
+  "strategy_note": "Uses violet with an orange accent, a youthful break from travel blue.",
+  "exemplary": false
+ },
+ {
+  "brand": "Agoda",
+  "url": "https://www.agoda.com",
+  "country": "SG",
+  "industry": "travel-hospitality",
+  "positioning": {
+   "price": "budget",
+   "tone": [
+    "practical",
+    "bargain",
+    "clear"
+   ]
+  },
+  "strategy_note": "Uses blue with red, inside the travel blue code.",
+  "exemplary": false
+ },
+ {
+  "brand": "Aman",
+  "url": "https://www.aman.com",
+  "country": "CH",
+  "industry": "travel-hospitality",
+  "positioning": {
+   "price": "luxury",
+   "tone": [
+    "serene",
+    "minimal",
+    "quiet"
+   ]
+  },
+  "strategy_note": "Uses warm sand and grey with no brand hue, the quiet-luxury hospitality code.",
+  "exemplary": true,
+  "role_note": "Warm sand ground with grey type confirmed; monochrome by design (low measurement confidence)."
+ },
+ {
+  "brand": "Divan",
+  "url": "https://www.divan.com.tr",
+  "country": "TR",
+  "industry": "travel-hospitality",
+  "positioning": {
+   "price": "premium",
+   "tone": [
+    "heritage",
+    "warm",
+    "festive"
+   ]
+  },
+  "strategy_note": "Uses blue with purple campaign surfaces, a Turkish hotel and patisserie group.",
+  "exemplary": false
+ }
+]

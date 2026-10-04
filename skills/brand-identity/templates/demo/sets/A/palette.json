@@ -1,0 +1,260 @@
+{
+  "schema": "brand-identity/palette@1",
+  "name": "Spoke Line",
+  "direction": "Workshop green with one signal-orange spoke.",
+  "brand": [
+    {
+      "id": "brand-1",
+      "name": "Workshop Green",
+      "hex": "#14524a",
+      "source": "chosen",
+      "locked": true,
+      "usage": "logo, headers, primary surfaces",
+      "print": {
+        "lab_d50": [
+          30.9,
+          -21.8,
+          -1.2
+        ],
+        "cmyk": null,
+        "pantone_ref": null
+      }
+    },
+    {
+      "id": "brand-2",
+      "name": "Signal Orange",
+      "hex": "#e4572e",
+      "source": "chosen",
+      "locked": true,
+      "usage": "the spoke; calls to action only",
+      "print": {
+        "lab_d50": [
+          56.3,
+          54.4,
+          52.1
+        ],
+        "cmyk": null,
+        "pantone_ref": null
+      }
+    }
+  ],
+  "scales": {
+    "primary": {
+      "anchor": "900",
+      "steps": {
+        "50": "#edfbf8",
+        "100": "#d6f7f1",
+        "200": "#a9efe3",
+        "300": "#93d8cc",
+        "400": "#77bcb1",
+        "500": "#64a99e",
+        "600": "#488c82",
+        "700": "#2f756b",
+        "800": "#1b6259",
+        "900": "#14524a",
+        "950": "#1a2d2a"
+      }
+    },
+    "neutral": {
+      "tint_of": "primary",
+      "steps": {
+        "50": "#f8fbfa",
+        "100": "#f1f4f3",
+        "200": "#e3e7e6",
+        "300": "#cfd6d4",
+        "400": "#99a4a2",
+        "500": "#687774",
+        "600": "#4a5956",
+        "700": "#344542",
+        "800": "#202f2c",
+        "900": "#101f1d",
+        "950": "#061210"
+      }
+    },
+    "accent": {
+      "anchor": "600",
+      "steps": {
+        "50": "#fff5f2",
+        "100": "#ffebe5",
+        "200": "#fed8cd",
+        "300": "#febba8",
+        "400": "#fe9577",
+        "500": "#f87a57",
+        "600": "#e4572e",
+        "700": "#bf4019",
+        "800": "#9d310f",
+        "900": "#82280c",
+        "950": "#46180c"
+      }
+    },
+    "success": {
+      "hue": 165.0,
+      "steps": {
+        "50": "#ecfcf4",
+        "100": "#d7f8e8",
+        "200": "#9cf4ce",
+        "300": "#66e3b3",
+        "400": "#3fc797",
+        "500": "#2bb385",
+        "600": "#0d946b",
+        "700": "#087a58",
+        "800": "#066448",
+        "900": "#04543b",
+        "950": "#073122"
+      }
+    },
+    "warning": {
+      "hue": 70.0,
+      "steps": {
+        "50": "#fff6ec",
+        "100": "#ffebd6",
+        "200": "#f9d9b4",
+        "300": "#f3bd7f",
+        "400": "#e59b37",
+        "500": "#cf8925",
+        "600": "#ad6e0a",
+        "700": "#8f5a06",
+        "800": "#764a04",
+        "900": "#633d03",
+        "950": "#3a2305"
+      }
+    },
+    "danger": {
+      "hue": 24.0,
+      "steps": {
+        "50": "#fff5f4",
+        "100": "#ffe9e7",
+        "200": "#fed3cf",
+        "300": "#feb2ac",
+        "400": "#fe837d",
+        "500": "#f8605e",
+        "600": "#df313a",
+        "700": "#b33134",
+        "800": "#922c2d",
+        "900": "#7a2425",
+        "950": "#471615"
+      }
+    },
+    "info": {
+      "hue": 250.0,
+      "steps": {
+        "50": "#f2f8ff",
+        "100": "#e3f0ff",
+        "200": "#c7e2fe",
+        "300": "#9ecdfe",
+        "400": "#66b2fd",
+        "500": "#3e9ef7",
+        "600": "#2681d2",
+        "700": "#196aaf",
+        "800": "#125792",
+        "900": "#0f487a",
+        "950": "#0c2a46"
+      }
+    }
+  },
+  "modes": {
+    "light": {
+      "background": "#ffffff",
+      "surface": "#f8fbfa",
+      "surfaceAlt": "#f1f4f3",
+      "border": "#e3e7e6",
+      "text": "#101f1d",
+      "textMuted": "#4a5956",
+      "primary": "#14524a",
+      "onPrimary": "#ffffff",
+      "accent": "#bf4019",
+      "onAccent": "#ffffff",
+      "link": "#2f756b",
+      "focus": "#14524a",
+      "success": "#087a58",
+      "warning": "#8f5a06",
+      "danger": "#b33134",
+      "info": "#196aaf"
+    },
+    "dark": {
+      "background": "#061210",
+      "surface": "#101f1d",
+      "surfaceAlt": "#202f2c",
+      "border": "#344542",
+      "text": "#f1f4f3",
+      "textMuted": "#99a4a2",
+      "primary": "#64a99e",
+      "onPrimary": "#061210",
+      "accent": "#e4572e",
+      "onAccent": "#061210",
+      "link": "#64a99e",
+      "focus": "#64a99e",
+      "success": "#3fc797",
+      "warning": "#e59b37",
+      "danger": "#fe837d",
+      "info": "#66b2fd"
+    }
+  },
+  "rationale": [],
+  "feels": [
+    "steady",
+    "quick",
+    "local"
+  ],
+  "audit": null,
+  "build": {
+    "generator": "brand-identity/palette_build.py",
+    "seed": "#14524a",
+    "accent": {
+      "hex": "#e4572e",
+      "how": "given",
+      "strategy": null
+    },
+    "neutral": {
+      "tint_hue": 182.6,
+      "chroma": 0.022
+    },
+    "grounds": {
+      "light": "white",
+      "dark": "neutral-950"
+    },
+    "adjustments": [
+      {
+        "mode": "light",
+        "role": "accent",
+        "scale": "accent",
+        "from_step": "600",
+        "to_step": "700",
+        "reason": "step 600 only carries a dark label, which reads muddy on a mid-tone fill; step 700 carries white"
+      },
+      {
+        "mode": "light",
+        "role": "link",
+        "scale": "primary",
+        "from_step": "900",
+        "to_step": "700",
+        "reason": "step 900 misses 4.5:1 on the light surfaces or 3:1 against body text (G183, links without underline)"
+      },
+      {
+        "mode": "dark",
+        "role": "primary",
+        "scale": "primary",
+        "from_step": "900",
+        "to_step": "500",
+        "reason": "step 900 is below 4.5:1 on the dark background (lightened derivative)"
+      }
+    ],
+    "warnings": [],
+    "semantic_shifts": [
+      {
+        "scale": "danger",
+        "hue_from": 27.0,
+        "hue_to": 24.0,
+        "min_delta_e2000": 10.85,
+        "reason": "role colour too close to a brand role (CIEDE2000 < 10)"
+      },
+      {
+        "scale": "success",
+        "hue_from": 170.0,
+        "hue_to": 165.0,
+        "min_delta_e2000": 8.84,
+        "reason": "role colour too close to a brand role (CIEDE2000 < 10); success and danger collapse under colour-vision-deficiency simulation (< 10); no hue in the family fully clears it"
+      }
+    ]
+  }
+}

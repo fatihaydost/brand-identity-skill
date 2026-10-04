@@ -1,0 +1,23 @@
+{
+  "name": "brand-identity",
+  "description": "Brand identity sets from one brief: logo, typography and colour palette built together, measured (contrast, colour-blindness, glyph coverage, licences, small-size logo renders), compared side by side as identity cards, shown on your own site, then a brand guidelines kit for the one you pick.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Fatih Aydost"
+  },
+  "homepage": "https://github.com/fatihaydost/brand-identity-skill",
+  "repository": "https://github.com/fatihaydost/brand-identity-skill",
+  "license": "MIT",
+  "keywords": [
+    "brand",
+    "identity",
+    "logo",
+    "typography",
+    "fonts",
+    "color",
+    "palette",
+    "brand-guidelines",
+    "accessibility",
+    "design-tokens"
+  ]
+}

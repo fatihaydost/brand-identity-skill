@@ -1,0 +1,405 @@
+{
+  "schema": "brand-identity/palette@1",
+  "name": "Harbor",
+  "direction": "Stay in the category's blue family, own a deeper, greener blue; warm accent for action.",
+  "brand": [
+    {
+      "id": "brand-1",
+      "name": "Harbor Blue",
+      "hex": "#1f5f7a",
+      "source": "chosen",
+      "locked": true,
+      "usage": "logo, primary surfaces, headings",
+      "print": {
+        "lab_d50": [
+          37.3,
+          -13.5,
+          -21.5
+        ],
+        "cmyk": null,
+        "pantone_ref": null
+      }
+    },
+    {
+      "id": "brand-2",
+      "name": "Ember",
+      "hex": "#ea8a28",
+      "source": "derived",
+      "locked": false,
+      "usage": "calls to action, highlights; small areas only",
+      "print": {
+        "lab_d50": [
+          67.0,
+          32.8,
+          63.9
+        ],
+        "cmyk": null,
+        "pantone_ref": null
+      }
+    },
+    {
+      "id": "brand-3",
+      "name": "Kelp",
+      "hex": "#2f5d46",
+      "source": "chosen",
+      "locked": true,
+      "usage": "product line, charts",
+      "print": {
+        "lab_d50": [
+          35.7,
+          -21.1,
+          8.2
+        ],
+        "cmyk": null,
+        "pantone_ref": null
+      },
+      "role": "extended"
+    },
+    {
+      "id": "brand-4",
+      "name": "Sand",
+      "hex": "#9c7440",
+      "source": "chosen",
+      "locked": true,
+      "usage": "illustration, packaging",
+      "print": {
+        "lab_d50": [
+          52.1,
+          11.8,
+          34.8
+        ],
+        "cmyk": null,
+        "pantone_ref": null
+      },
+      "role": "extended"
+    },
+    {
+      "id": "brand-5",
+      "name": "Dusk",
+      "hex": "#8a6fb8",
+      "source": "chosen",
+      "locked": true,
+      "usage": "charts, editorial",
+      "print": {
+        "lab_d50": [
+          51.8,
+          22.6,
+          -35.0
+        ],
+        "cmyk": null,
+        "pantone_ref": null
+      },
+      "role": "extended"
+    }
+  ],
+  "scales": {
+    "primary": {
+      "anchor": "800",
+      "steps": {
+        "50": "#f0f9fe",
+        "100": "#e5f1f8",
+        "200": "#cbe4f0",
+        "300": "#a1d1ea",
+        "400": "#70b9db",
+        "500": "#5da6c8",
+        "600": "#408aab",
+        "700": "#2a7291",
+        "800": "#1f5f7a",
+        "900": "#174f66",
+        "950": "#182c35"
+      }
+    },
+    "neutral": {
+      "tint_of": "primary",
+      "steps": {
+        "50": "#f8fbfc",
+        "100": "#f1f3f5",
+        "200": "#e3e7e9",
+        "300": "#d0d5d8",
+        "400": "#9aa3a8",
+        "500": "#69757b",
+        "600": "#4a585e",
+        "700": "#35434b",
+        "800": "#212d34",
+        "900": "#111e24",
+        "950": "#071116"
+      }
+    },
+    "accent": {
+      "anchor": "400",
+      "steps": {
+        "50": "#fff6ee",
+        "100": "#ffead9",
+        "200": "#fed2af",
+        "300": "#fdb06f",
+        "400": "#ea8a28",
+        "500": "#d57911",
+        "600": "#b06309",
+        "700": "#925106",
+        "800": "#794204",
+        "900": "#673703",
+        "950": "#3e2002"
+      }
+    },
+    "success": {
+      "hue": 170.0,
+      "steps": {
+        "50": "#ecfcf5",
+        "100": "#d6f8eb",
+        "200": "#98f4d5",
+        "300": "#66e2bc",
+        "400": "#3fc6a0",
+        "500": "#2bb28e",
+        "600": "#0d9373",
+        "700": "#08795e",
+        "800": "#06644d",
+        "900": "#045440",
+        "950": "#073025"
+      }
+    },
+    "warning": {
+      "hue": 76.0,
+      "steps": {
+        "50": "#fff6e9",
+        "100": "#fbedd6",
+        "200": "#f4dbb4",
+        "300": "#f2bf6c",
+        "400": "#dda037",
+        "500": "#c88d25",
+        "600": "#aa700a",
+        "700": "#8f5a06",
+        "800": "#784804",
+        "900": "#653c07",
+        "950": "#3b220a"
+      }
+    },
+    "danger": {
+      "hue": 27.0,
+      "steps": {
+        "50": "#fff5f3",
+        "100": "#ffe9e6",
+        "200": "#fed3cd",
+        "300": "#feb2a8",
+        "400": "#fe8477",
+        "500": "#f86156",
+        "600": "#e0312e",
+        "700": "#b4312b",
+        "800": "#922c27",
+        "900": "#7a2520",
+        "950": "#471713"
+      }
+    },
+    "info": {
+      "hue": 253.0,
+      "steps": {
+        "50": "#f2f8ff",
+        "100": "#e4f0ff",
+        "200": "#c9e1fe",
+        "300": "#a2ccfe",
+        "400": "#6db0fd",
+        "500": "#4a9cf7",
+        "600": "#287fd9",
+        "700": "#2668b0",
+        "800": "#1d5692",
+        "900": "#18477a",
+        "950": "#0f2946"
+      }
+    },
+    "ext-1": {
+      "anchor": "800",
+      "steps": {
+        "50": "#f1faf5",
+        "100": "#dff5e8",
+        "200": "#b8edcf",
+        "300": "#9dd7b7",
+        "400": "#82ba9c",
+        "500": "#6fa789",
+        "600": "#52896d",
+        "700": "#3c7257",
+        "800": "#2f5d46",
+        "900": "#264e3a",
+        "950": "#1d2d24"
+      }
+    },
+    "ext-2": {
+      "anchor": "600",
+      "steps": {
+        "50": "#fdf6ee",
+        "100": "#f7ede1",
+        "200": "#eddbc5",
+        "300": "#e5c193",
+        "400": "#d1a267",
+        "500": "#bc8f55",
+        "600": "#9c7440",
+        "700": "#835e30",
+        "800": "#6d4d26",
+        "900": "#5b4020",
+        "950": "#342516"
+      }
+    },
+    "ext-3": {
+      "anchor": "600",
+      "steps": {
+        "50": "#f8f6ff",
+        "100": "#f1ebfe",
+        "200": "#e3d9f7",
+        "300": "#cfc0ec",
+        "400": "#b6a2dc",
+        "500": "#a48dcf",
+        "600": "#8a6fb8",
+        "700": "#73589f",
+        "800": "#5e4980",
+        "900": "#4e3d6b",
+        "950": "#2c233b"
+      }
+    }
+  },
+  "modes": {
+    "light": {
+      "background": "#ffffff",
+      "surface": "#f8fbfc",
+      "surfaceAlt": "#f1f3f5",
+      "border": "#e3e7e9",
+      "text": "#111e24",
+      "textMuted": "#4a585e",
+      "primary": "#1f5f7a",
+      "onPrimary": "#ffffff",
+      "accent": "#ea8a28",
+      "onAccent": "#071116",
+      "link": "#2a7291",
+      "focus": "#1f5f7a",
+      "success": "#08795e",
+      "warning": "#8f5a06",
+      "danger": "#b4312b",
+      "info": "#2668b0"
+    },
+    "dark": {
+      "background": "#071116",
+      "surface": "#111e24",
+      "surfaceAlt": "#212d34",
+      "border": "#35434b",
+      "text": "#f1f3f5",
+      "textMuted": "#9aa3a8",
+      "primary": "#5da6c8",
+      "onPrimary": "#071116",
+      "accent": "#ea8a28",
+      "onAccent": "#071116",
+      "link": "#5da6c8",
+      "focus": "#5da6c8",
+      "success": "#3fc6a0",
+      "warning": "#dda037",
+      "danger": "#fe8477",
+      "info": "#6db0fd"
+    }
+  },
+  "rationale": [
+    {
+      "claim": "Differentiation first: the category is crowded with saturated royal blues; Harbor keeps the blue family (a category code) but owns a deeper, greener blue (OKLCH h 230, low chroma).",
+      "evidence": "practice",
+      "source": "references/color-strategy.md"
+    },
+    {
+      "claim": "Warm accent on a cool base: orange/amber with blue is a frequent, well-rated pairing in large palette datasets; the accent stays in small areas.",
+      "evidence": "strong",
+      "source": "https://www.dgp.toronto.edu/~donovan/color/colorcomp.pdf"
+    },
+    {
+      "claim": "Every text and button pair passes WCAG 2.2 AA (4.5:1) in light and dark mode; the dark mode shows the brand through a lightened step of the same scale.",
+      "evidence": "strong",
+      "source": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+    }
+  ],
+  "feels": [
+    "calm",
+    "dependable",
+    "maritime"
+  ],
+  "extended": [
+    {
+      "id": "ext-1",
+      "name": "Kelp",
+      "hex": "#2f5d46",
+      "on": "#ffffff",
+      "dark": {
+        "hex": "#3c7257",
+        "on": "#ffffff"
+      },
+      "usage": "product line, charts"
+    },
+    {
+      "id": "ext-2",
+      "name": "Sand",
+      "hex": "#9c7440",
+      "on": "#071116",
+      "dark": {
+        "hex": "#9c7440",
+        "on": "#071116"
+      },
+      "usage": "illustration, packaging"
+    },
+    {
+      "id": "ext-3",
+      "name": "Dusk",
+      "hex": "#8a6fb8",
+      "on": "#071116",
+      "dark": {
+        "hex": "#8a6fb8",
+        "on": "#071116"
+      },
+      "usage": "charts, editorial"
+    }
+  ],
+  "audit": null,
+  "build": {
+    "generator": "brand-identity/palette_build.py",
+    "seed": "#1f5f7a",
+    "accent": {
+      "hex": "#ea8a28",
+      "how": "blue family: amber/orange accent (warm on cool)",
+      "strategy": "family"
+    },
+    "neutral": {
+      "tint_hue": 230.1,
+      "chroma": 0.022
+    },
+    "grounds": {
+      "light": "white",
+      "dark": "neutral-950"
+    },
+    "adjustments": [
+      {
+        "mode": "light",
+        "role": "link",
+        "scale": "primary",
+        "from_step": "800",
+        "to_step": "700",
+        "reason": "step 800 misses 4.5:1 on the light surfaces or 3:1 against body text (G183, links without underline)"
+      },
+      {
+        "mode": "dark",
+        "role": "primary",
+        "scale": "primary",
+        "from_step": "800",
+        "to_step": "500",
+        "reason": "step 800 is below 4.5:1 on the dark background (lightened derivative)"
+      }
+    ],
+    "warnings": [],
+    "semantic_shifts": [
+      {
+        "scale": "warning",
+        "hue_from": 70.0,
+        "hue_to": 76.0,
+        "min_delta_e2000": 10.04,
+        "reason": "role colour too close to a brand role (CIEDE2000 < 10)"
+      },
+      {
+        "scale": "info",
+        "hue_from": 250.0,
+        "hue_to": 253.0,
+        "min_delta_e2000": 10.02,
+        "reason": "role colour too close to a brand role (CIEDE2000 < 10)"
+      }
+    ]
+  }
+}

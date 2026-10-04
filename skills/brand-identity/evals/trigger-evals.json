@@ -1,0 +1,82 @@
+[
+  {
+    "query": "we're opening a small coffee roastery next month and need branding - logo, fonts and colours. where do we start?",
+    "should_trigger": true
+  },
+  {
+    "query": "I already have a logo but need a font pairing and a colour palette that fit it. can you propose a few options and show them on our site https://example.org?",
+    "should_trigger": true
+  },
+  {
+    "query": "yeni bir pilates stüdyosu açıyoruz, marka kimliği lazım: logo, yazı tipi ve renkler. üç farklı yön görüp aralarından seçmek istiyorum",
+    "should_trigger": true
+  },
+  {
+    "query": "we just picked our new identity direction. can you turn it into a brand guidelines PDF with logo usage, colours, typography and the logo files?",
+    "should_trigger": true
+  },
+  {
+    "query": "our logo is from 2012 and looks dated, all gradients and a drop shadow. refresh it but keep what customers recognise",
+    "should_trigger": true
+  },
+  {
+    "query": "what do you think of our brand identity? site is https://example.org and the logo is attached as logo.svg. be honest and give me numbers, not a redesign",
+    "should_trigger": true
+  },
+  {
+    "query": "Wir brauchen für unser Fintech-Startup ein Logo und eine passende Schrift. Farben haben wir schon (#0B3D2E und #F2C14E).",
+    "should_trigger": true
+  },
+  {
+    "query": "pick fonts for our brand: a display face and a text face. we write in Turkish and Vietnamese and the app is full of numbers, so glyph coverage matters",
+    "should_trigger": true
+  },
+  {
+    "query": "design a logo + font combo for my bike repair shop. three concepts as svg please, and tell me which typeface goes with each",
+    "should_trigger": true
+  },
+  {
+    "query": "necesitamos una identidad de marca completa para nuestra panadería: logotipo, tipografía y paleta de colores. todavía no tenemos web",
+    "should_trigger": true
+  },
+  {
+    "query": "honestly I just need 'branding' for my podcast. no idea what that even includes",
+    "should_trigger": true
+  },
+  {
+    "query": "button:hover background isn't changing in Safari 17 but works fine in Chrome and Firefox. here is the css: .btn { background: var(--brand); transition: background .2s }",
+    "should_trigger": false
+  },
+  {
+    "query": "my sales dashboard has a 6-series line chart and the lines blur together. pick a colour-blind-safe categorical palette for the chart and tell me how to apply it",
+    "should_trigger": false
+  },
+  {
+    "query": "bu portre fotoğrafın ten tonları sarıya kaçıyor, Lightroom'da renk düzeltmesini nasıl yaparım? beyaz dengesi mi ayarlanmalı?",
+    "should_trigger": false
+  },
+  {
+    "query": "make me a 12-slide investor pitch deck as pptx for our seed round. use our existing colours #1F5F7A and #F2C14E",
+    "should_trigger": false
+  },
+  {
+    "query": "convert #1F5F7A to rgb and hsl for me please",
+    "should_trigger": false
+  },
+  {
+    "query": "i'm choosing a paint colour for my living room wall. the room faces north and the furniture is dark walnut. which shade will feel warmer?",
+    "should_trigger": false
+  },
+  {
+    "query": "make me a custom VS Code colour theme: dark, muted greens, good syntax contrast. I want to publish it on the marketplace",
+    "should_trigger": false
+  },
+  {
+    "query": "what is the hex code of Coca-Cola red, and which typeface is in their logo?",
+    "should_trigger": false
+  },
+  {
+    "query": "here is a screenshot of linear.app. extract its design tokens (spacing scale, radii, shadows, colours) into a JSON file I can feed to my generator",
+    "should_trigger": false
+  }
+]

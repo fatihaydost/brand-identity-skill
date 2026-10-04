@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+out/
+.DS_Store
+dist/
+*-workspace/
+evals/results/
+
+# internal research, reviews and specs (kept out of the public repo)
+internal/

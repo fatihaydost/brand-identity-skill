@@ -1,0 +1,31 @@
+{
+  "schema": "brand-identity/brief@1",
+  "brand": "Ferrow",
+  "tagline": "Fixed today, riding tomorrow.",
+  "site": null,
+  "languages": [
+    "en",
+    "de"
+  ],
+  "numbers": true,
+  "components": {
+    "logo": "new",
+    "type": "new",
+    "palette": "new"
+  },
+  "sources": {},
+  "sets": 3,
+  "sector": "urban bicycle repair and rental co-op",
+  "audience": "city commuters and students",
+  "attributes": [
+    "quick",
+    "honest",
+    "local"
+  ],
+  "competitors": [],
+  "axes": [
+    "warm_cool",
+    "playful_serious",
+    "quiet_loud"
+  ]
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{DOC_LANG}}">
+<head>
+<meta charset="utf-8">
+<title>{{BRAND}} · {{T_DOC}}</title>
+<style>
+{{FRAME_FONT}}
+:root{--w:{{WIDTH}}px;--cols:{{COLS}}}
+{{CSS}}
+</style>
+</head>
+<body>
+<main class="page" data-name="board" data-frame>
+  <header class="meta">
+    <div class="b" lang="{{LANG}}">{{BRAND}}</div>
+    <div class="s">{{ARROW}}<div><b>{{T_DOC}}</b><span>{{T_SUB}}</span></div></div>
+    <div class="d"><span>{{VERSION}}</span><span>{{DATE}}</span><span>{{T_PICK}}</span></div>
+    <div class="n">{{N}}</div>
+  </header>
+  <section class="title">
+    <h1>{{TITLE}}</h1>
+    <p>{{LEDE}}</p>
+  </section>
+  <section class="cards">{{CARDS}}</section>
+  <section class="tbl">
+    <div class="lab">{{T_COMPARISON}}</div>
+    {{TABLE}}
+    {{WARNINGS}}
+  </section>
+  <footer class="foot"><span>{{T_DRAFT}}</span><span>{{FOOT_MID}}</span><span>© {{YEAR}}</span></footer>
+</main>
+</body>
+</html>

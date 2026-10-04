@@ -1,0 +1,133 @@
+{
+  "schema": "brand-identity/identity@1",
+  "brand": {
+    "name": "Ferrow",
+    "tagline": "Fixed today, riding tomorrow.",
+    "languages": [
+      "en",
+      "de"
+    ],
+    "sector": "urban bicycle repair and rental co-op",
+    "numbers": true
+  },
+  "set": {
+    "id": "B",
+    "name": "Workshop Ledger",
+    "recommended": false,
+    "mechanism": "The repair ledger on the bench: slab-serif entries, a ruled line under every job and rust ink on kraft paper.",
+    "expression_move": "The ruled line under the name, repeated as the only divider.",
+    "differs_by": "Warmer and more crafted than the category's sporty sans logos; reads as a trade, not a brand."
+  },
+  "axes": {
+    "warm_cool": -2,
+    "playful_serious": 1,
+    "quiet_loud": -1
+  },
+  "components": {
+    "logo": {
+      "mode": "new",
+      "status": "proposed",
+      "source": null,
+      "sha256": null
+    },
+    "type": {
+      "mode": "new",
+      "status": "proposed",
+      "source": null,
+      "sha256": null
+    },
+    "palette": {
+      "mode": "new",
+      "status": "proposed",
+      "source": null,
+      "sha256": null
+    }
+  },
+  "type": {
+    "pairing_mode": "contrast",
+    "display": {
+      "family": "Arvo",
+      "source": "google",
+      "license": "OFL-1.1",
+      "weights": [
+        400
+      ],
+      "location": {},
+      "features": [],
+      "case": "as-is",
+      "tracking": -10,
+      "fallback": "Rockwell, Georgia, serif",
+      "file": null
+    },
+    "text": {
+      "family": "Outfit",
+      "source": "google",
+      "license": "OFL-1.1",
+      "weights": [
+        400,
+        600
+      ],
+      "location": {
+        "wght": 400
+      },
+      "features": [
+        "tnum"
+      ],
+      "case": "as-is",
+      "tracking": 0,
+      "fallback": "system-ui, sans-serif",
+      "file": null
+    },
+    "mono": null
+  },
+  "logo": {
+    "type": "wordmark",
+    "concept": "The name written into the ledger and underlined once.",
+    "symbol": null,
+    "wordmark": {
+      "text": "Ferrow",
+      "role": "display",
+      "location": null,
+      "tracking": -10,
+      "case": "as-is"
+    },
+    "monogram": null,
+    "lockups": [
+      "horizontal"
+    ],
+    "colors": {
+      "wordmark": "primary",
+      "rule": "accent"
+    },
+    "tags": [],
+    "clear_space": {
+      "unit": "cap-height",
+      "multiple": 1,
+      "inferred": true
+    },
+    "min_size": {
+      "px": 24,
+      "mm": 8
+    }
+  },
+  "palette": "palette.json",
+  "palette_build": {
+    "strategy": null,
+    "accent": null,
+    "light_bg": "#f3ecdf",
+    "dark_bg": null,
+    "neutral_tint": null,
+    "neutral_chroma": null,
+    "extra": []
+  },
+  "defaults_used": [],
+  "rationale": [
+    {
+      "claim": "Demo data: a fictional brand used to exercise the card, board and kit templates.",
+      "evidence": "practice",
+      "source": "templates/demo"
+    }
+  ],
+  "derived": [],
+  "audit": null
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kettle Works | Small batch tea</title>
+<meta name="theme-color" content="#2f6b4f">
+<style>
+@font-face { font-family: "Site Slab"; src: url("../../fixtures/fonts/Arvo-Regular.ttf") format("truetype"); font-weight: 400 700; }
+@font-face { font-family: "Site Sans"; src: url("../../fixtures/fonts/Outfit[wght].ttf") format("truetype"); font-weight: 100 900; }
+:root { --brand: #2f6b4f; --ink: #1d2320; --paper: #fbfaf6; --muted: #5d6660; --line: #dcd9d0; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Site Sans", Arial, sans-serif; font-size: 17px; line-height: 1.5; }
+header { display: flex; align-items: center; gap: 32px; height: 72px; padding: 0 40px; border-bottom: 1px solid var(--line); background: #ffffff; }
+header .logo img { display: block; height: 36px; width: auto; }
+nav { display: flex; gap: 24px; }
+nav a { color: var(--muted); text-decoration: none; white-space: nowrap; }
+.btn { display: inline-block; width: 150px; height: 44px; line-height: 44px; overflow: hidden; text-align: center; background: var(--brand); color: #fff; border-radius: 8px; text-decoration: none; font-weight: 700; }
+h1, h2 { font-family: "Site Slab", Georgia, serif; font-weight: 700; color: var(--ink); }
+h1 { font-size: 56px; line-height: 1.05; max-width: 15ch; margin: 48px 40px 16px; }
+h2 { font-size: 30px; margin: 32px 40px 8px; }
+p { max-width: 60ch; margin: 0 40px 16px; }
+.fit { width: 166px; white-space: normal; }
+.chip { display: block; width: 166px; white-space: nowrap; overflow: hidden; margin: 0 40px 16px; }
+/* .chart: the label fits the site font (130px in 137px) but a wider face is clipped by the svg box */
+.chart { display: block; margin: 0 40px 16px; }
+.weights { margin: 0 40px 16px; }
+/* .fit and .chip fit the site font (Outfit, 159px) but not a wider identity text face: layoutStress fixtures */
+.tag { display: inline-block; width: 120px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-left: 40px; color: var(--brand); border: 1px solid var(--line); padding: 2px 8px; }
+code { font-family: ui-monospace, monospace; }
+footer { margin-top: 48px; padding: 24px 40px; border-top: 1px solid var(--line); color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="/"><img src="old-logo.svg" alt="Kettle Works"></a>
+  <nav><a href="#teas">Teas</a><a href="#about">About us</a><a href="#journal">Journal</a><a href="#visit">Visit</a></nav>
+  <a class="btn" href="#shop" style="margin-left:auto">Shop teas</a>
+</header>
+<main>
+  <h1>Tea that tastes of the hillside</h1>
+  <span class="tag">Small batch since 2014</span>
+  <p class="fit">Woven Mountain Mix</p>
+  <span class="chip">Warm Monsoon Malt</span>
+  <p>We buy leaf from four family gardens and blend it in our workshop, by hand, in batches small enough to taste every one. <code>v2.1</code></p>
+  <svg class="chart" width="137" height="24" role="img" aria-label="Thickness weight"><text x="4" y="17">Thickness 0.2599</text></svg>
+  <table class="weights"><tr><td>Price</td><td class="n">0.1872</td></tr><tr><td>Mass</td><td class="n">0.2000</td></tr></table>
+  <h2>Our gardens</h2>
+  <p>Every garden is visited twice a year. Prices are agreed before the harvest so growers can plan, and we publish them.</p>
+  <h2>Visit the workshop</h2>
+  <p>Open Thursday to Sunday. Tastings at eleven and three, no booking needed. <a href="/journal">Read the journal</a>.</p>
+</main>
+<footer><a class="logo" href="/"><img src="old-logo.svg" alt="Kettle Works" height="24"></a> Kettle Works, 12 Mill Lane</footer>
+</body>
+</html>

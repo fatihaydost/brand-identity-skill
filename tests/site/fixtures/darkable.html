@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark"><title>Darkable</title>
+<style>
+:root{--bg:#fafaf7;--text:#1c1c1a;--primary:#2f6b3a;--on-primary:#ffffff;--line:#e3e3dc}
+@media (prefers-color-scheme: dark){:root{--bg:#121412;--text:#e8eae5;--primary:#7fc28b;--on-primary:#0b140c;--line:#2b2f2b}}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.5 system-ui,sans-serif}
+main{padding:48px;max-width:720px;border-top:1px solid var(--line)}
+.btn{display:inline-block;background:var(--primary);color:var(--on-primary);padding:12px 22px;border-radius:8px;text-decoration:none}
+</style></head><body><main><h1>Light and dark</h1>
+<p>This page follows prefers-color-scheme with named custom properties, so the extractor can read both schemes and a
+dark preview can recolour the site's own dark theme instead of the light page.</p>
+<p>Another paragraph of body copy for the text vote.</p><a class="btn" href="#x">Continue</a></main></body></html>

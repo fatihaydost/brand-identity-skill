@@ -1,0 +1,5 @@
+---
+type: regex
+pattern: '^<svg xmlns="http:\/\/www\.w3\.org\/2000\/svg" viewBox="0 0 120 120" role="img" aria-labelledby="t">\n  <title id="t">Mulberry mark<\/title>\n  <circle cx="44" cy="58" r="16" fill="#5b1f3a"\/>\n  <circle cx="76" cy="58" r="16" fill="#5b1f3a"\/>\n  <circle cx="60" cy="84" r="16" fill="#5b1f3a"\/>\n  <path d="M60 42 C60 24 72 14 90 12 C88 30 78 40 60 42 Z" fill="#3f6b3a"\/>\n<\/svg>\n?$'
+target: { source: file, path: 'site/logo.svg' }
+---

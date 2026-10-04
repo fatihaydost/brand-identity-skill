@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Alpha colours</title>
+<style>
+/* colours the in-page parser cannot read, so they go through the canvas fallback (semi-transparent on purpose) */
+body{margin:0;background:#ffffff;color:#1d1d1f;font:17px/1.5 system-ui,sans-serif}
+.band{background:color(srgb 0.1 0.69 0.08 / 0.5);padding:60px 40px}
+.card{background:lab(62 40 -50 / 0.4);padding:30px;margin:30px 40px;border:2px solid color(display-p3 0.9 0.2 0.1 / 0.6)}
+.card p{color:lab(30 20 -40 / 0.85)}
+.btn{display:inline-block;background:color(srgb 0.85 0.3 0.05);color:#fff;padding:12px 20px;border-radius:8px}
+</style></head><body>
+<section class="band"><h1>Translucent band painted with color(srgb … / 0.5)</h1></section>
+<div class="card"><p>Body copy inside a translucent lab() card with a display-p3 border, long enough to count as text for the
+role votes on this page and to exercise the canvas colour fallback in the extractor.</p><a class="btn" href="#x">Act now</a></div>
+<p style="margin:30px 40px">A second paragraph of ordinary body text on the white page so the text role has plenty of evidence.</p>
+</body></html>

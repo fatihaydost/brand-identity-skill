@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topo | hero over image + gradient</title>
+<style>
+body{margin:0;background:#ffffff;color:#1b1b1b;font:17px/1.55 system-ui,sans-serif}
+nav{padding:16px 40px;border-bottom:1px solid #e5e5e5}nav a{color:#3465a4;margin-right:18px}
+/* the htmx.org pattern: an image layer over a dark gradient, light text on top, white page behind */
+.hero{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M0 20h40' stroke='%23ffffff' stroke-opacity='.06'/%3E%3C/svg%3E"),linear-gradient(160deg,#141018,#2a2230);padding:90px 40px;text-align:center}
+.hero h1{color:#f8f9fc;font-size:64px;margin:0}.hero .tag{color:#e9e6ef;font-style:italic}
+main{max-width:760px;margin:40px auto;padding:0 20px}main a{color:#3465a4}
+.btn{display:inline-block;background:#3465a4;color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none}
+</style></head><body>
+<nav><a href="/">home</a><a href="#docs">docs</a><a href="#examples">examples</a></nav>
+<section class="hero"><h1>Topo hero</h1><p class="tag">light words on a dark textured gradient</p></section>
+<main><h2>Introduction</h2>
+<p>This page reproduces a hero whose background is an image layer painted over a dark gradient, with light text on top
+and a white page behind it. A contrast repair that climbs past the hero to the white body would wrongly darken this text.
+<a href="#more">Read more</a> about it.</p>
+<p>Second paragraph of ordinary body copy so the text role is measured from plenty of characters on the page.</p>
+<a class="btn" href="#start">Get started</a></main>
+</body></html>

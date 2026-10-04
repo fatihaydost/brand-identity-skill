@@ -1,0 +1,58 @@
+/* Comparison board: the frame is neutral (one embedded OFL face), the cards carry each set's own fonts and
+   colours. Columns follow the number of sets; the RECOMMENDED card is framed. */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#ecebe6}
+body{font-family:"BI Instrument Sans",system-ui,sans-serif;color:#1c1c1a;-webkit-font-smoothing:antialiased}
+.page{width:var(--w);padding:56px 72px 48px;background:#ecebe6}
+.meta{display:grid;grid-template-columns:repeat(12,1fr);column-gap:32px;font-size:13px;letter-spacing:.11em;
+  text-transform:uppercase;line-height:1.4}
+.meta .b{grid-column:1/4;font-size:22px;letter-spacing:0;text-transform:none;font-weight:700;line-height:1.05}
+.meta .s{grid-column:4/8;display:flex;gap:16px}
+.meta .s b{font-weight:600;display:block}
+.meta .s span{color:#5e5d58;display:block}
+.ico-arrow{width:30px;height:11px;display:block;margin-top:4px}
+.meta .d{grid-column:8/12;display:flex;gap:30px;font-weight:600}
+.meta .n{grid-column:12/13;justify-self:end;font-size:30px;font-weight:600;letter-spacing:0;line-height:.9}
+.title{display:grid;grid-template-columns:repeat(12,1fr);column-gap:32px;margin-top:56px;align-items:end}
+.title h1{grid-column:1/8;font-size:96px;font-weight:600;letter-spacing:-.025em;line-height:.95}
+.title p{grid-column:8/13;font-size:19px;line-height:1.45;color:#3b3a36;padding-bottom:8px}
+.title p b{font-weight:600;color:#1c1c1a}
+.cards{display:grid;grid-template-columns:repeat(var(--cols),1fr);gap:40px;margin-top:52px}
+.col{display:flex;flex-direction:column;min-width:0}
+.col .hd{display:flex;align-items:baseline;gap:14px;height:34px;margin-bottom:18px;font-size:13px;letter-spacing:.11em;
+  text-transform:uppercase;color:#5e5d58}
+.col .hd b{font-size:20px;letter-spacing:0;text-transform:none;color:#1c1c1a;font-weight:600}
+.col .hd .rec{margin-left:auto;background:#1c1c1a;color:#ecebe6;padding:4px 10px 3px;font-weight:600}
+.col .hd .fail{margin-left:auto;background:#a3271f;color:#fff;padding:4px 10px 3px;font-weight:600}
+.shot{display:block;width:100%;height:auto;box-shadow:0 1px 2px rgba(0,0,0,.08),0 12px 32px -12px rgba(0,0,0,.18)}
+.col.is-rec .shot{outline:4px solid #1c1c1a;outline-offset:10px}
+.site{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:22px}
+.site img{width:100%;height:auto;display:block;box-shadow:inset 0 0 0 1px #d4d2cb}
+.site .cap{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#5e5d58;margin-top:6px}
+.tbl{margin-top:64px;border-top:2px solid #1c1c1a}
+.tbl .lab{font-size:13px;letter-spacing:.11em;text-transform:uppercase;color:#5e5d58;padding:14px 0 6px}
+table{width:100%;border-collapse:collapse;font-size:16px;line-height:1.42}
+th{text-align:left;font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:#5e5d58;font-weight:600;
+  padding:10px 20px 10px 0;border-bottom:1px solid #1c1c1a;vertical-align:bottom}
+td{padding:14px 20px 16px 0;border-bottom:1px solid #cfcdc6;vertical-align:top}
+td:first-child{white-space:nowrap;font-weight:600}
+td .sw{display:inline-block;width:14px;height:14px;margin-right:3px;vertical-align:-2px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+td.risk{color:#3b3a36}
+td.risk .g{color:#a3271f;font-weight:600}
+.warns{margin-top:22px;font-size:15px;color:#3b3a36}
+.foot{display:flex;justify-content:space-between;margin-top:44px;font-size:12px;letter-spacing:.12em;
+  text-transform:uppercase;color:#5e5d58}
+
+/* review image: 2x2 grid, 2000 x 1250 max */
+.review{width:2000px;height:1250px;display:grid;grid-template-columns:1000px 1000px;grid-template-rows:625px 625px;
+  background:#ecebe6;padding:0}
+.review .cell{position:relative;overflow:hidden}
+.review .cell img{width:1000px;height:625px;display:block}
+.review .cell .tag{position:absolute;left:0;top:0;background:#1c1c1a;color:#fff;font-size:18px;font-weight:600;
+  padding:6px 12px;letter-spacing:.04em}
+.review .cell.is-rec:after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 6px #1f6f3f}
+.review .tcell{padding:36px 40px;font-size:17px;line-height:1.4}
+.review .tcell h2{font-size:15px;letter-spacing:.11em;text-transform:uppercase;color:#5e5d58;margin-bottom:12px;font-weight:600}
+.review .tcell .r{display:grid;grid-template-columns:40px 1fr;gap:12px;padding:10px 0;border-top:1px solid #cfcdc6}
+.review .tcell .r b{font-size:22px}
+.review .tcell .r .g{color:#a3271f;font-weight:600}

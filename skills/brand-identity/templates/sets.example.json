@@ -1,0 +1,466 @@
+{
+  "schema": "brand-identity/sets@1",
+  "sets": [
+    {
+      "identity": {
+        "set": {
+          "id": "A",
+          "name": "Spoke Line",
+          "recommended": true,
+          "mechanism": "One spoke does all the work: a single straight stroke crosses the wheel in the mark, sets the geometric type and is the only orange in the palette.",
+          "expression_move": "The orange spoke is the only saturated colour anywhere.",
+          "differs_by": "Local repair shops use hand-drawn script and red; this is a calm geometric sans on workshop green with one signal orange."
+        },
+        "axes": {
+          "warm_cool": 1,
+          "playful_serious": 0,
+          "quiet_loud": -1
+        },
+        "type": {
+          "pairing_mode": "single-family",
+          "display": {
+            "family": "Outfit",
+            "source": "google",
+            "license": "OFL-1.1",
+            "weights": [
+              700
+            ],
+            "location": {
+              "wght": 700
+            },
+            "features": [],
+            "case": "lower",
+            "tracking": -20,
+            "fallback": "system-ui, sans-serif",
+            "file": null
+          },
+          "text": {
+            "family": "Outfit",
+            "source": "google",
+            "license": "OFL-1.1",
+            "weights": [
+              400,
+              600
+            ],
+            "location": {
+              "wght": 400
+            },
+            "features": [
+              "tnum"
+            ],
+            "case": "as-is",
+            "tracking": 0,
+            "fallback": "system-ui, sans-serif",
+            "file": null
+          },
+          "mono": null
+        },
+        "logo": {
+          "type": "symbol+wordmark",
+          "concept": "A wheel with a single spoke: the shop fixes the one thing that is broken.",
+          "symbol": "logo/symbol.svg",
+          "wordmark": {
+            "text": "Ferrow",
+            "role": "display",
+            "location": null,
+            "tracking": -20,
+            "case": "lower"
+          },
+          "monogram": null,
+          "lockups": [
+            "horizontal",
+            "stacked"
+          ],
+          "colors": {
+            "ring": "primary",
+            "spoke": "accent",
+            "wordmark": "text"
+          },
+          "tags": [
+            "abstract-geometric"
+          ],
+          "clear_space": {
+            "unit": "cap-height",
+            "multiple": 1,
+            "inferred": true
+          },
+          "min_size": {
+            "px": 24,
+            "mm": 8
+          }
+        },
+        "palette_build": {
+          "strategy": null,
+          "accent": null,
+          "light_bg": null,
+          "dark_bg": null,
+          "neutral_tint": null,
+          "neutral_chroma": null,
+          "extra": []
+        },
+        "defaults_used": [],
+        "rationale": [
+          {
+            "claim": "Demo data: a fictional brand used to exercise the card, board and kit templates.",
+            "evidence": "practice",
+            "source": "templates/demo"
+          }
+        ]
+      },
+      "palette": {
+        "schema": "brand-identity/palette@1",
+        "name": "Spoke Line",
+        "direction": "Workshop green with one signal-orange spoke.",
+        "brand": [
+          {
+            "id": "brand-1",
+            "name": "Workshop Green",
+            "hex": "#14524a",
+            "source": "chosen",
+            "locked": true,
+            "usage": "logo, headers, primary surfaces",
+            "print": {
+              "lab_d50": [
+                30.9,
+                -21.8,
+                -1.2
+              ],
+              "cmyk": null,
+              "pantone_ref": null
+            }
+          },
+          {
+            "id": "brand-2",
+            "name": "Signal Orange",
+            "hex": "#e4572e",
+            "source": "chosen",
+            "locked": true,
+            "usage": "the spoke; calls to action only",
+            "print": {
+              "lab_d50": [
+                56.3,
+                54.4,
+                52.1
+              ],
+              "cmyk": null,
+              "pantone_ref": null
+            }
+          }
+        ],
+        "feels": [
+          "steady",
+          "quick",
+          "local"
+        ]
+      },
+      "symbol_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><g id=\"ring\" data-color=\"primary\"><path fill-rule=\"evenodd\" d=\"M0.00 50.00a50.00 50.00 0 1 0 100.00 0a50.00 50.00 0 1 0 -100.00 0Z M13.00 50.00a37.00 37.00 0 1 0 74.00 0a37.00 37.00 0 1 0 -74.00 0Z\"/></g><g id=\"spoke\" data-color=\"accent\"><path d=\"M53.89 53.89L80.76 27.02L72.98 19.24L46.11 46.11Z\"/><circle cx=\"50\" cy=\"50\" r=\"11\"/></g></svg>\n",
+      "symbol_small_svg": null,
+      "wordmark_detail_svg": null
+    },
+    {
+      "identity": {
+        "set": {
+          "id": "B",
+          "name": "Workshop Ledger",
+          "recommended": false,
+          "mechanism": "The repair ledger on the bench: slab-serif entries, a ruled line under every job and rust ink on kraft paper.",
+          "expression_move": "The ruled line under the name, repeated as the only divider.",
+          "differs_by": "Warmer and more crafted than the category's sporty sans logos; reads as a trade, not a brand."
+        },
+        "axes": {
+          "warm_cool": -2,
+          "playful_serious": 1,
+          "quiet_loud": -1
+        },
+        "type": {
+          "pairing_mode": "contrast",
+          "display": {
+            "family": "Arvo",
+            "source": "google",
+            "license": "OFL-1.1",
+            "weights": [
+              400
+            ],
+            "location": {},
+            "features": [],
+            "case": "as-is",
+            "tracking": -10,
+            "fallback": "Rockwell, Georgia, serif",
+            "file": null
+          },
+          "text": {
+            "family": "Outfit",
+            "source": "google",
+            "license": "OFL-1.1",
+            "weights": [
+              400,
+              600
+            ],
+            "location": {
+              "wght": 400
+            },
+            "features": [
+              "tnum"
+            ],
+            "case": "as-is",
+            "tracking": 0,
+            "fallback": "system-ui, sans-serif",
+            "file": null
+          },
+          "mono": null
+        },
+        "logo": {
+          "type": "wordmark",
+          "concept": "The name written into the ledger and underlined once.",
+          "symbol": null,
+          "wordmark": {
+            "text": "Ferrow",
+            "role": "display",
+            "location": null,
+            "tracking": -10,
+            "case": "as-is"
+          },
+          "monogram": null,
+          "lockups": [
+            "horizontal"
+          ],
+          "colors": {
+            "wordmark": "primary",
+            "rule": "accent"
+          },
+          "tags": [],
+          "clear_space": {
+            "unit": "cap-height",
+            "multiple": 1,
+            "inferred": true
+          },
+          "min_size": {
+            "px": 24,
+            "mm": 8
+          }
+        },
+        "palette_build": {
+          "strategy": null,
+          "accent": null,
+          "light_bg": "#f3ecdf",
+          "dark_bg": null,
+          "neutral_tint": null,
+          "neutral_chroma": null,
+          "extra": []
+        },
+        "defaults_used": [],
+        "rationale": [
+          {
+            "claim": "Demo data: a fictional brand used to exercise the card, board and kit templates.",
+            "evidence": "practice",
+            "source": "templates/demo"
+          }
+        ]
+      },
+      "palette": {
+        "schema": "brand-identity/palette@1",
+        "name": "Workshop Ledger",
+        "direction": "Rust ink on kraft paper, ochre for marks.",
+        "brand": [
+          {
+            "id": "brand-1",
+            "name": "Ledger Rust",
+            "hex": "#8a3a14",
+            "source": "chosen",
+            "locked": true,
+            "usage": "wordmark, headings",
+            "print": {
+              "lab_d50": [
+                35.5,
+                33.3,
+                39.0
+              ],
+              "cmyk": null,
+              "pantone_ref": null
+            }
+          },
+          {
+            "id": "brand-2",
+            "name": "Ochre Rule",
+            "hex": "#c98a1c",
+            "source": "chosen",
+            "locked": true,
+            "usage": "the underline, highlights",
+            "print": {
+              "lab_d50": [
+                62.7,
+                18.7,
+                62.2
+              ],
+              "cmyk": null,
+              "pantone_ref": null
+            }
+          }
+        ],
+        "feels": [
+          "warm",
+          "honest",
+          "handmade"
+        ]
+      },
+      "symbol_svg": null,
+      "symbol_small_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><path id=\"initial\" data-glyphs=\"F\" data-cap=\"64\" data-x=\"50\" data-baseline=\"76\" data-anchor=\"middle\" data-color=\"primary\"/><rect id=\"ledger-rule\" x=\"14\" y=\"76\" width=\"72\" height=\"12\" data-color=\"primary\"/></svg>",
+      "wordmark_detail_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\"><rect id=\"foot-serif-off\" x=\"0\" y=\"88\" width=\"60\" height=\"14\" data-op=\"subtract\" data-glyph=\"1\"/><rect id=\"stem-down\" x=\"18.93\" y=\"80\" width=\"12.93\" height=\"38\"/><rect id=\"ledger-rule\" x=\"18.93\" y=\"107\" width=\"438\" height=\"11\"/></svg>"
+    },
+    {
+      "identity": {
+        "set": {
+          "id": "C",
+          "name": "Night Ride",
+          "recommended": false,
+          "mechanism": "Reflective gear after dark: wide light capitals, a headlight mark and one reflective yellow on night navy.",
+          "expression_move": "Tracked-out capitals that read like reflective tape.",
+          "differs_by": "The only direction built for evening commuters; cool and technical where the others are workshop-warm."
+        },
+        "axes": {
+          "warm_cool": 2,
+          "playful_serious": 1,
+          "quiet_loud": 1
+        },
+        "type": {
+          "pairing_mode": "single-family",
+          "display": {
+            "family": "Outfit",
+            "source": "google",
+            "license": "OFL-1.1",
+            "weights": [
+              300
+            ],
+            "location": {
+              "wght": 300
+            },
+            "features": [],
+            "case": "upper",
+            "tracking": 120,
+            "fallback": "system-ui, sans-serif",
+            "file": null
+          },
+          "text": {
+            "family": "Outfit",
+            "source": "google",
+            "license": "OFL-1.1",
+            "weights": [
+              400,
+              600
+            ],
+            "location": {
+              "wght": 400
+            },
+            "features": [
+              "tnum"
+            ],
+            "case": "as-is",
+            "tracking": 0,
+            "fallback": "system-ui, sans-serif",
+            "file": null
+          },
+          "mono": null
+        },
+        "logo": {
+          "type": "symbol+wordmark",
+          "concept": "A headlight over the road line: half lit, half dark.",
+          "symbol": "logo/symbol.svg",
+          "wordmark": {
+            "text": "Ferrow",
+            "role": "display",
+            "location": null,
+            "tracking": 120,
+            "case": "upper"
+          },
+          "monogram": null,
+          "lockups": [
+            "horizontal",
+            "stacked"
+          ],
+          "colors": {
+            "lamp": "primary",
+            "wordmark": "text"
+          },
+          "tags": [
+            "circle-container"
+          ],
+          "clear_space": {
+            "unit": "cap-height",
+            "multiple": 1,
+            "inferred": true
+          },
+          "min_size": {
+            "px": 24,
+            "mm": 8
+          }
+        },
+        "palette_build": {
+          "strategy": null,
+          "accent": null,
+          "light_bg": null,
+          "dark_bg": null,
+          "neutral_tint": null,
+          "neutral_chroma": 0.012,
+          "extra": []
+        },
+        "defaults_used": [],
+        "rationale": [
+          {
+            "claim": "Demo data: a fictional brand used to exercise the card, board and kit templates.",
+            "evidence": "practice",
+            "source": "templates/demo"
+          }
+        ]
+      },
+      "palette": {
+        "schema": "brand-identity/palette@1",
+        "name": "Night Ride",
+        "direction": "Night-road navy with one reflective yellow.",
+        "brand": [
+          {
+            "id": "brand-1",
+            "name": "Night Navy",
+            "hex": "#18233d",
+            "source": "chosen",
+            "locked": true,
+            "usage": "logo, dark grounds",
+            "print": {
+              "lab_d50": [
+                13.8,
+                2.1,
+                -18.5
+              ],
+              "cmyk": null,
+              "pantone_ref": null
+            }
+          },
+          {
+            "id": "brand-2",
+            "name": "Reflector Yellow",
+            "hex": "#e9d43a",
+            "source": "chosen",
+            "locked": true,
+            "usage": "highlights on dark grounds only",
+            "print": {
+              "lab_d50": [
+                84.8,
+                -4.0,
+                73.0
+              ],
+              "cmyk": null,
+              "pantone_ref": null
+            }
+          }
+        ],
+        "feels": [
+          "cool",
+          "alert",
+          "precise"
+        ]
+      },
+      "symbol_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><g id=\"lamp\" data-color=\"primary\"><path fill-rule=\"evenodd\" d=\"M0.00 50.00a50.00 50.00 0 1 0 100.00 0a50.00 50.00 0 1 0 -100.00 0Z M11.00 50.00a39.00 39.00 0 1 0 78.00 0a39.00 39.00 0 1 0 -78.00 0Z\"/><path d=\"M18 56 H82 A32 32 0 0 1 18 56 Z\"/></g></svg>\n",
+      "symbol_small_svg": null,
+      "wordmark_detail_svg": null
+    }
+  ]
+}

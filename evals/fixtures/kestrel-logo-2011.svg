@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="t">
+  <title id="t">Kestrel logo (2011)</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4a261"/>
+      <stop offset="1" stop-color="#e76f51"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="2" dy="3" stdDeviation="2" flood-opacity="0.35"/></filter>
+  </defs>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#1d3557" stroke-width="10"/>
+  <path d="M34 128 C70 150 140 150 172 108 C138 128 88 132 34 128 Z" fill="url(#g)"/>
+  <path d="M58 92 L100 70 L150 54 L124 82 L160 86 L112 100 L92 124 L90 100 Z" fill="#1d3557" filter="url(#s)"/>
+</svg>

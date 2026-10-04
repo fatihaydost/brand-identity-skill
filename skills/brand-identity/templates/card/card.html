@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="{{DOC_LANG}}">
+<head>
+<meta charset="utf-8">
+<title>{{BRAND}} · {{SET_LABEL}} · {{T_TITLE}}</title>
+<style>
+{{FONT_FACES}}
+{{FRAME_FONT}}
+:root{ {{THEME}} {{ROLE_VARS}} --font-ui:{{FONT_UI}}; }
+{{CSS}}
+</style>
+</head>
+<body>
+<main class="card {{CLASSES}}" data-frame>
+  <div class="tex" aria-hidden="true"></div>
+
+  <header class="meta">
+    <div class="m-brand" data-role="display" lang="{{LANG}}">{{BRAND}}</div>
+    <div class="m-sec">
+      <span class="m-arrow">{{ARROW}}</span>
+      <div class="m-sec-t"><b>[ {{SET_ID}} ]&ensp;{{SET_NAME_UP}}</b><span>{{SET_SUB}}</span></div>
+    </div>
+    <div class="m-doc"><span>{{T_DOC}}</span><span>{{VERSION}}</span><span>{{DATE}}</span>{{FAILED_CHIP}}</div>
+    <div class="m-no" data-role="display">{{SET_ID}}<i>/{{SET_TOTAL}}</i></div>
+  </header>
+
+  <section class="hero">
+    <div class="intro" data-squeeze>
+      <h1 class="name" data-role="display" data-fit>{{SET_NAME}}</h1>
+      <p class="mech" data-role="text" data-shrink>{{MECHANISM}}</p>
+      <div class="duo" data-shrink>
+        <p class="move"><span class="lab">{{T_MOVE}}</span>{{MOVE}}</p>
+        <p class="move"><span class="lab">{{T_DIFFERS}}</span>{{DIFFERS}}</p>
+      </div>
+      <div class="axes">{{AXES}}</div>
+    </div>
+    {{LOGO_BLOCK}}
+  </section>
+
+  {{PALETTE_BLOCK}}
+
+  <section class="lower">
+    {{TYPE_BLOCK}}
+    {{APP_BLOCK}}
+  </section>
+
+  <section class="checks">{{CHECKS}}</section>
+
+  <footer class="foot">
+    <span>{{FOOT_LEFT}}</span><span>{{FOOT_MID}}</span><span>{{FOOT_RIGHT}}</span>
+  </footer>
+</main>
+<script>
+/* shrink [data-fit] text until it fits its box (set names vary in length; the grid does not) */
+(function () {
+  function fit() {
+    document.querySelectorAll('[data-fit]').forEach(function (el) {
+      var s = parseFloat(getComputedStyle(el).fontSize), min = s * 0.5, n = 0;
+      while ((el.scrollWidth > el.clientWidth + 1 || el.scrollHeight > el.clientHeight + 0.3 * s) && s > min && n++ < 40) {
+        s *= 0.96; el.style.fontSize = s + 'px';
+      }
+    });
+  }
+  function squeeze() {  /* a long name or idea: shrink the name until its column fits */
+    document.querySelectorAll('[data-squeeze]').forEach(function (box) {
+      var el = box.querySelector('[data-fit]'), n = 0;
+      if (!el) return;
+      var s = parseFloat(getComputedStyle(el).fontSize), min = s * 0.55;
+      while (box.scrollHeight > box.clientHeight + 1 && s > min && n++ < 40) { s *= 0.95; el.style.fontSize = s + 'px'; }
+      /* still too long: the idea texts step down too, to 75% at most */
+      box.querySelectorAll('[data-shrink]').forEach(function (t) { t.dataset.fs = parseFloat(getComputedStyle(t).fontSize); });
+      for (var k = 1; k <= 10 && box.scrollHeight > box.clientHeight + 1; k++)
+        box.querySelectorAll('[data-shrink]').forEach(function (t) {
+          t.style.fontSize = (t.dataset.fs * (1 - 0.025 * k)) + 'px';
+        });
+      /* still too long at 75%: clamp "where it differs", then "one loud thing", then the mechanism with an
+         ellipsis (the full text stays in table.md; the probe reports it as a warn) */
+      var targets = [].slice.call(box.querySelectorAll('.duo .move')).reverse();
+      if (box.querySelector('.mech')) targets.push(box.querySelector('.mech'));
+      targets.forEach(function (t) {
+        if (box.scrollHeight <= box.clientHeight + 1) return;
+        var lh = parseFloat(getComputedStyle(t).lineHeight) || 16;
+        var lines = Math.round(t.getBoundingClientRect().height / lh);
+        t.setAttribute('data-clamped', '');
+        t.style.display = '-webkit-box'; t.style.webkitBoxOrient = 'vertical'; t.style.overflow = 'hidden';
+        while (lines > 2 && box.scrollHeight > box.clientHeight + 1) { lines--; t.style.webkitLineClamp = String(lines); }
+      });
+    });
+    /* mock site header: shrink the links, drop links from the end, shrink the logo (not below its
+       minimum), then move the call to action below the headline; whatever is left is a warn, not a gate */
+    document.querySelectorAll('[data-nav]').forEach(function (nav) {
+      var over = function () { return nav.scrollWidth > nav.clientWidth + 1; };
+      var s = parseFloat(getComputedStyle(nav).fontSize), min = s * 0.8, n = 0;
+      while (over() && s > min && n++ < 10) { s *= 0.96; nav.style.fontSize = s + 'px'; }
+      var links = [].slice.call(nav.querySelectorAll('a:not(.btn)'));
+      while (over() && links.length) links.pop().classList.add('is-hidden');
+      var lg = nav.querySelector('[data-logo]');
+      if (lg && over()) {
+        var h = parseFloat(lg.style.height), lmin = parseFloat(lg.dataset.min || '0') || 16, k = 0;
+        while (over() && h > lmin && k++ < 30) { h = Math.max(lmin, h - 1); lg.style.height = h + 'px'; }
+      }
+      var fr = nav.closest('.frame, .site');
+      if (over() && fr) fr.classList.add('cta-down');
+    });
+    /* mock copy boxes: step the copy down to 70% before it is clipped */
+    document.querySelectorAll('[data-fit-box]').forEach(function (box) {
+      var kids = [].slice.call(box.querySelectorAll('[data-shrink-mock]'));
+      kids.forEach(function (t) { t.dataset.fs = parseFloat(getComputedStyle(t).fontSize); });
+      for (var k = 1; k <= 12 && box.scrollHeight > box.clientHeight + 1; k++)
+        kids.forEach(function (t) { t.style.fontSize = (t.dataset.fs * (1 - 0.025 * k)) + 'px'; });
+    });
+  }
+  function all() { fit(); squeeze(); }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(all); else all();
+})();
+</script>
+</body>
+</html>

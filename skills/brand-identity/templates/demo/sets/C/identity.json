@@ -1,0 +1,138 @@
+{
+  "schema": "brand-identity/identity@1",
+  "brand": {
+    "name": "Ferrow",
+    "tagline": "Fixed today, riding tomorrow.",
+    "languages": [
+      "en",
+      "de"
+    ],
+    "sector": "urban bicycle repair and rental co-op",
+    "numbers": true
+  },
+  "set": {
+    "id": "C",
+    "name": "Night Ride",
+    "recommended": false,
+    "mechanism": "Reflective gear after dark: wide light capitals, a headlight mark and one reflective yellow on night navy.",
+    "expression_move": "Tracked-out capitals that read like reflective tape.",
+    "differs_by": "The only direction built for evening commuters; cool and technical where the others are workshop-warm."
+  },
+  "axes": {
+    "warm_cool": 2,
+    "playful_serious": 1,
+    "quiet_loud": 1
+  },
+  "components": {
+    "logo": {
+      "mode": "new",
+      "status": "proposed",
+      "source": null,
+      "sha256": null
+    },
+    "type": {
+      "mode": "new",
+      "status": "proposed",
+      "source": null,
+      "sha256": null
+    },
+    "palette": {
+      "mode": "new",
+      "status": "proposed",
+      "source": null,
+      "sha256": null
+    }
+  },
+  "type": {
+    "pairing_mode": "single-family",
+    "display": {
+      "family": "Outfit",
+      "source": "google",
+      "license": "OFL-1.1",
+      "weights": [
+        300
+      ],
+      "location": {
+        "wght": 300
+      },
+      "features": [],
+      "case": "upper",
+      "tracking": 120,
+      "fallback": "system-ui, sans-serif",
+      "file": null
+    },
+    "text": {
+      "family": "Outfit",
+      "source": "google",
+      "license": "OFL-1.1",
+      "weights": [
+        400,
+        600
+      ],
+      "location": {
+        "wght": 400
+      },
+      "features": [
+        "tnum"
+      ],
+      "case": "as-is",
+      "tracking": 0,
+      "fallback": "system-ui, sans-serif",
+      "file": null
+    },
+    "mono": null
+  },
+  "logo": {
+    "type": "symbol+wordmark",
+    "concept": "A headlight over the road line: half lit, half dark.",
+    "symbol": "logo/symbol.svg",
+    "wordmark": {
+      "text": "Ferrow",
+      "role": "display",
+      "location": null,
+      "tracking": 120,
+      "case": "upper"
+    },
+    "monogram": null,
+    "lockups": [
+      "horizontal",
+      "stacked"
+    ],
+    "colors": {
+      "lamp": "primary",
+      "wordmark": "text"
+    },
+    "tags": [
+      "circle-container"
+    ],
+    "clear_space": {
+      "unit": "cap-height",
+      "multiple": 1,
+      "inferred": true
+    },
+    "min_size": {
+      "px": 24,
+      "mm": 8
+    }
+  },
+  "palette": "palette.json",
+  "palette_build": {
+    "strategy": null,
+    "accent": null,
+    "light_bg": null,
+    "dark_bg": null,
+    "neutral_tint": null,
+    "neutral_chroma": 0.012,
+    "extra": []
+  },
+  "defaults_used": [],
+  "rationale": [
+    {
+      "claim": "Demo data: a fictional brand used to exercise the card, board and kit templates.",
+      "evidence": "practice",
+      "source": "templates/demo"
+    }
+  ],
+  "derived": [],
+  "audit": null
+}

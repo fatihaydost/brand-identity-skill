@@ -1,0 +1,36 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Python ${{ matrix.python }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # checkout v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # setup-python v7.0.0
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install Python dependencies (gflanguages too, for the bundled language data check)
+        run: python -m pip install -r requirements-dev.txt
+      - name: Unit tests
+        env:
+          PYTHONUTF8: "1"
+        run: python -m unittest discover -s tests
+      - name: Smoke test (scripts run end to end the way an agent runs them)
+        run: python tools/smoke_test.py

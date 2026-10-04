@@ -1,0 +1,3 @@
+-r requirements.txt
+# dev only: tools/export_languages.py and the equivalence test of the bundled language data
+gflanguages>=0.6

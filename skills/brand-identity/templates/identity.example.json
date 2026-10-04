@@ -1,0 +1,154 @@
+{
+  "schema": "brand-identity/identity@1",
+  "brand": {
+    "name": "Moonvault",
+    "tagline": "Savings that keep their shape.",
+    "languages": [
+      "en",
+      "tr"
+    ],
+    "doc_lang": "en",
+    "sector": "consumer fintech, savings app",
+    "numbers": true
+  },
+  "set": {
+    "id": "A",
+    "name": "Night Ledger",
+    "recommended": true,
+    "mechanism": "A ledger rule that turns into a horizon: one straight line carries the mark, the type's baseline and the palette's single bright accent.",
+    "expression_move": "The accent line is the only saturated colour anywhere.",
+    "differs_by": "Competitors use rounded geometric sans and bright greens; this set is a sharp grotesk on deep ink with one cold accent."
+  },
+  "axes": {
+    "warm_cool": 1,
+    "classic_contemporary": 1,
+    "quiet_loud": -1,
+    "friend_authority": 1
+  },
+  "components": {
+    "logo": {
+      "mode": "new",
+      "status": "proposed",
+      "source": null,
+      "sha256": null
+    },
+    "type": {
+      "mode": "new",
+      "status": "proposed",
+      "source": null,
+      "sha256": null
+    },
+    "palette": {
+      "mode": "new",
+      "status": "proposed",
+      "source": null,
+      "sha256": null
+    }
+  },
+  "type": {
+    "pairing_mode": "superfamily",
+    "display": {
+      "family": "IBM Plex Sans",
+      "source": "google",
+      "license": "OFL-1.1",
+      "weights": [
+        600
+      ],
+      "features": [],
+      "case": "as-is",
+      "tracking": -10,
+      "fallback": "system-ui, sans-serif",
+      "file": null,
+      "location": {}
+    },
+    "text": {
+      "family": "IBM Plex Sans",
+      "source": "google",
+      "license": "OFL-1.1",
+      "weights": [
+        400,
+        600
+      ],
+      "features": [
+        "tnum"
+      ],
+      "case": "as-is",
+      "tracking": 0,
+      "fallback": "system-ui, sans-serif",
+      "file": null,
+      "location": {}
+    },
+    "mono": null
+  },
+  "logo": {
+    "type": "symbol+wordmark",
+    "concept": "A single horizontal rule cut by a quarter-circle rising from it: the moment a balance line becomes a horizon.",
+    "symbol": "logo/symbol.svg",
+    "wordmark": {
+      "text": "Moonvault",
+      "role": "display",
+      "location": null,
+      "tracking": -10,
+      "case": "as-is"
+    },
+    "lockups": [
+      "horizontal",
+      "stacked"
+    ],
+    "colors": {
+      "symbol": "primary",
+      "wordmark": "text"
+    },
+    "clear_space": {
+      "unit": "cap-height",
+      "multiple": 1,
+      "inferred": true
+    },
+    "min_size": {
+      "px": 24,
+      "mm": 8
+    },
+    "monogram": null,
+    "tags": [
+      "abstract-geometric"
+    ],
+    "misuse": [
+      {
+        "do": "stretch"
+      },
+      {
+        "do": "recolour"
+      },
+      {
+        "do": "crowd"
+      },
+      {
+        "do": "rearrange"
+      },
+      {
+        "svg": "logo/misuse-1.svg",
+        "label": "Don't close the gap where the quarter-circle cuts the rule"
+      }
+    ]
+  },
+  "palette": "palette.json",
+  "defaults_used": [],
+  "rationale": [
+    {
+      "claim": "Category leaders in this market use their own or commercial sans faces; a plain grotesk with tabular figures reads as precise without copying them.",
+      "evidence": "practice",
+      "source": "references/type.md"
+    }
+  ],
+  "derived": [],
+  "audit": null,
+  "palette_build": {
+    "strategy": null,
+    "accent": null,
+    "light_bg": null,
+    "dark_bg": null,
+    "neutral_tint": null,
+    "neutral_chroma": null,
+    "extra": []
+  }
+}

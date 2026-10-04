@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: palette-only-with-existing-logo
+context:
+  scaffold_script: scaffold.sh
