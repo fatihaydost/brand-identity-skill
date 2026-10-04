@@ -662,9 +662,10 @@ def lang_id(code):
     cands = [k for k in langs if k.split("_")[0] == base and k.count("_") == 1]
     if not cands:
         raise ValueError(f"unknown language code {code!r}; use ISO 639 codes such as en, tr, de, ar, sr-Latn")
-    # Living languages with exemplar data first, then the most speakers.
-    return max(cands, key=lambda k: (not langs[k].historical, bool(langs[k].exemplar_chars.base),
-                                     langs[k].population or 0))
+    # Living languages with exemplar data first, then the most speakers; a tie goes to the first id alphabetically
+    # (gflanguages' own record order follows the file system's listing, so it differs between machines).
+    return max(sorted(cands), key=lambda k: (not langs[k].historical, bool(langs[k].exemplar_chars.base),
+                                             langs[k].population or 0))
 
 
 def bcp47(code):

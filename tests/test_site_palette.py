@@ -412,6 +412,57 @@ class PythonUnits(unittest.TestCase):
         self.assertFalse(a(Path(os.path.abspath(os.sep)).joinpath("etc", "passwd").as_uri(), page)["ok"])
         self.assertFalse(a(page.rsplit("/", 1)[0] + "/../.ssh/id", page)["ok"])
 
+    def test_goto_does_not_depend_on_the_order_of_commit_and_lifecycle_messages(self):
+        """A scripted DevTools peer: Page.navigate is answered with the events given, in that order."""
+        import types
+
+        def ev(method, sid="S", **params):
+            return json.dumps({"method": method, "params": params, "sessionId": sid})
+
+        class Scripted:
+            def __init__(self, on_navigate):
+                self.queue, self.on_navigate = [], on_navigate
+
+            def send(self, text):
+                msg = json.loads(text)
+                if msg["method"] == "Page.navigate":
+                    self.queue += self.on_navigate(json.dumps({"id": msg["id"], "sessionId": "S",
+                                                               "result": {"frameId": "F", "loaderId": "L1"}}))
+                else:
+                    self.queue.append(json.dumps({"id": msg["id"], "result": {}}))
+
+            def poll(self, timeout):
+                out, self.queue = self.queue, []
+                return out
+
+            def close(self):
+                pass
+
+        def page(on_navigate):
+            conn = cdplib.Connection(Scripted(on_navigate))
+            client = types.SimpleNamespace(conn=conn, browser=types.SimpleNamespace(pipe=False))
+            p = cdplib.Page(client, None, {"color_scheme": "light", "reduced_motion": "reduce"})
+            p._attach("S")
+            p._frame_tree({"frame": {"id": "F", "loaderId": "L0", "url": "about:blank"}}, "S")
+            return p
+
+        nav = ev("Page.frameNavigated", frame={"id": "F", "loaderId": "L1", "url": "file:///x.html"})
+        dcl = ev("Page.lifecycleEvent", frameId="F", loaderId="L1", name="DOMContentLoaded")
+        orders = {"reply, commit, DOMContentLoaded": lambda r: [r, nav, dcl],
+                  "commit before the reply": lambda r: [nav, r, dcl],
+                  "DOMContentLoaded before the commit": lambda r: [r, dcl, nav]}
+        for name, order in orders.items():
+            p = page(order)
+            p.goto("file:///x.html", timeout=2)
+            self.assertEqual((p.main_frame.document, p.url()), ("L1", "file:///x.html"), name)
+            self.assertIn("domcontentloaded", p.main_frame.fired, name)
+        # a document that never commits: the timeout says where it stopped
+        with self.assertRaises(cdplib.NavigationError) as cm:
+            page(lambda r: [r]).goto("file:///x.html", timeout=0.3)
+        self.assertEqual(str(cm.exception), "page.goto: Timeout 300ms exceeded.")
+        self.assertRegex(cm.exception.detail, r"^the new document never committed; document L1 not requested; "
+                                              r"main frame about:blank .*transport websocket$")
+
     def test_load_palette_reads_modes_light_and_dark(self):
         p = M.load_palette(EXAMPLE, "light")
         self.assertTrue(p["roles"]["background"] and p["roles"]["text"] and p["roles"]["primary"])

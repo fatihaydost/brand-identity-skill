@@ -120,7 +120,12 @@ class BrowserExited(CDPError, render_png.StartupExit):
 
 
 class NavigationError(RuntimeError):
-    """page.goto failed; the message reads like Playwright's (`page.goto: net::ERR_... at URL`)."""
+    """page.goto failed; the message reads like Playwright's (`page.goto: net::ERR_... at URL`). `detail` says, for a
+    timeout, which step never finished and what the page had reached by then (one line, for diagnosis)."""
+
+    def __init__(self, message, detail=None):
+        super().__init__(message)
+        self.detail = detail
 
 
 # ----------------------------------------------------------------------------- values across the protocol
@@ -671,7 +676,9 @@ class Browser:
     def __init__(self, executable, timeout=60, pipe=None):
         self.executable = executable
         self._tmp = tempfile.mkdtemp(prefix="bi-site-")
-        self.pipe = (os.name == "posix") if pipe is None else pipe
+        if pipe is None:  # BRAND_IDENTITY_CDP=websocket runs the Windows transport anywhere (tests, diagnosis)
+            pipe = os.name == "posix" and os.environ.get("BRAND_IDENTITY_CDP", "").strip().lower() != "websocket"
+        self.pipe = pipe
         self.clients = []
         self.created = {}    # target id -> the client that made it
         self.lock = threading.RLock()
@@ -881,6 +888,7 @@ class _Frame:
         self.url = ""
         self.document = None
         self.fired = {"commit"}
+        self.early = {}      # loader id -> lifecycle events that arrived before that document's frameNavigated
         self.inflight = set()
         self.timer = None
         self.idle_self = False
@@ -932,6 +940,9 @@ class _Frame:
             self.start_idle_timer()
         self.page.main_frame_recalc(self)
         self.lifecycle("commit")
+        for event in self.early.pop(self.document, ()):  # the new document's events that came first
+            self.lifecycle(event)
+        self.early.clear()
 
 
 # ----------------------------------------------------------------------------- page
@@ -955,6 +966,7 @@ class Page:
         self.style_texts = None      # list once collect_stylesheets() is on: bodies in the order they were read
         self.route = None            # callable(css text, url) -> css text, for stylesheets
         self.media = {"color_scheme": opts["color_scheme"], "reduced_motion": opts["reduced_motion"]}
+        self.lifecycle_log = []      # last main-frame lifecycle events as (loader id prefix, name), for diagnosis
         self.closed = False
 
     # -- set-up (Playwright FrameSession._initialize)
@@ -1130,9 +1142,17 @@ class Page:
 
     def _lifecycle(self, p):
         f = self.frames.get(p.get("frameId"))
-        name = p.get("name")
+        name, loader = p.get("name"), p.get("loaderId")
+        if f is not None and f is self.main_frame and loader:
+            self.lifecycle_log.append((loader[:8], name))
+            del self.lifecycle_log[:-12]
         if f and name in ("load", "DOMContentLoaded"):
-            f.lifecycle("load" if name == "load" else "domcontentloaded")
+            event = "load" if name == "load" else "domcontentloaded"
+            f.lifecycle(event)
+            if loader and f.document and loader != f.document:
+                # for a document not committed yet (its frameNavigated comes later and clears the events): kept
+                # and replayed at its commit, so the order of the two messages cannot stall goto()
+                f.early.setdefault(loader, []).append(event)
 
     def main_frame_recalc(self, allows_removing=None):
         if self.main_frame:
@@ -1264,23 +1284,24 @@ class Page:
         """Navigate and wait for DOMContentLoaded of the new document; returns its final response
         {status, headers, url} or None. Errors read like Playwright's."""
         deadline = time.monotonic() + timeout
+        main = self.main_frame
+        before = main.document  # taken before the call: a commit that arrives ahead of the reply still counts
+        timed_out = f"page.goto: Timeout {int(timeout * 1000)}ms exceeded."
         try:
-            r = self.conn.call("Page.navigate", {"url": url, "frameId": self.main_frame.id,
+            r = self.conn.call("Page.navigate", {"url": url, "frameId": main.id,
                                                  "referrerPolicy": "unsafeUrl"}, self.session, timeout)
         except CDPError as exc:
             if "timed out" in str(exc):
-                raise NavigationError(f"page.goto: Timeout {int(timeout * 1000)}ms exceeded.") from None
+                raise NavigationError(timed_out, self._stall("no reply to Page.navigate", None)) from None
             raise NavigationError(f"page.goto: {exc}") from None
         if r.get("errorText"):
             raise NavigationError(f"page.goto: {r['errorText']} at {url}")
         loader = r.get("loaderId")
-        main = self.main_frame
-        before = main.document
         if loader:  # the first new document decides (Playwright: else "interrupted by another navigation")
             ok = self.conn.wait(lambda: main.document != before or loader in self.failures,
                                 max(0.0, deadline - time.monotonic()))
             if not ok:
-                raise NavigationError(f"page.goto: Timeout {int(timeout * 1000)}ms exceeded.")
+                raise NavigationError(timed_out, self._stall("the new document never committed", loader))
             if main.document == before and loader in self.failures:
                 raise NavigationError(f"page.goto: {self.failures[loader]}")
             if main.document != loader:
@@ -1288,9 +1309,23 @@ class Page:
                                       f'"{main.url}"')
         if not self.conn.wait(lambda: "domcontentloaded" in self.main_frame.fired,
                               max(0.0, deadline - time.monotonic())):
-            raise NavigationError(f"page.goto: Timeout {int(timeout * 1000)}ms exceeded.")
+            raise NavigationError(timed_out, self._stall("committed, no DOMContentLoaded", loader))
         resp = self.responses.get(loader) if loader else None
         return dict(resp) if resp else None
+
+    def _stall(self, step, loader):
+        """One line on where a navigation stopped, for the timeout's `detail`."""
+        main = self.main_frame
+        req = self.requests.get(loader) if loader else None
+        resp = self.responses.get(loader) if loader else None
+        doc = ("no document request" if not loader else
+               f"document {loader[:8]} " + ("failed " + self.failures[loader] if loader in self.failures else
+                                            f"response {resp.get('status')}" if resp else
+                                            "requested, no response" if req else "not requested"))
+        events = " ".join(f"{lid}:{name}" for lid, name in self.lifecycle_log) or "none"
+        return (f"{step}; {doc}; main frame {main.url[:80] if main else '?'} (document "
+                f"{(main.document or '')[:8] if main else '?'}, fired {sorted(main.fired) if main else []}); "
+                f"lifecycle {events}; transport {'pipe' if self.browser.pipe else 'websocket'}")
 
     def wait_for_load_state(self, state, timeout):
         key = {"networkidle": "networkidle", "load": "load", "domcontentloaded": "domcontentloaded"}[state]

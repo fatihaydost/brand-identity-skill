@@ -1,7 +1,7 @@
 """The bundled language data (assets/languages.json.gz) against gflanguages, which is a dev dependency only.
 
-With gflanguages installed (requirements-dev.txt, CI) every language and script must match field for field and in
-order; without it the comparison is skipped and only the bundled file is checked.
+With gflanguages installed (requirements-dev.txt, CI) every language and script must match field for field (the
+order of gflanguages' records follows the file system's listing, so it is not compared); without it the comparison is skipped and only the bundled file is checked.
 """
 import os
 import sys
@@ -41,10 +41,10 @@ class Bundled(unittest.TestCase):
 
 @unittest.skipIf(gflanguages is None, "gflanguages not installed (pip install -r requirements-dev.txt)")
 class SameAsGflanguages(unittest.TestCase):
-    def test_every_language_matches_field_for_field_and_in_order(self):
+    def test_every_language_matches_field_for_field(self):
         ref = gflanguages.LoadLanguages()
         ours = typelib.languages()
-        self.assertEqual(list(ours), list(ref), "ids or their order differ")
+        self.assertEqual(sorted(ours), sorted(ref), "language ids differ")
         bad = []
         for lid, r in ref.items():
             o = ours[lid]
@@ -61,7 +61,7 @@ class SameAsGflanguages(unittest.TestCase):
         self.assertEqual(typelib.scripts(), ref)
 
     def test_lang_id_resolves_like_gflanguages_for_every_language_code(self):
-        """lang_id breaks ties by record order; run it over every base code with both data sources."""
+        """lang_id breaks ties alphabetically, so both data sources resolve every base code alike in any record order."""
         codes = sorted({k.split("_")[0] for k in gflanguages.LoadLanguages()})
 
         def resolve(c):
@@ -73,7 +73,8 @@ class SameAsGflanguages(unittest.TestCase):
         ours = {c: resolve(c) for c in codes}
         saved = typelib.languages()
         try:
-            typelib._LANGS = gflanguages.LoadLanguages()
+            ref_langs = gflanguages.LoadLanguages()
+            typelib._LANGS = dict(reversed(list(ref_langs.items())))   # another record order must not matter
             ref = {c: resolve(c) for c in codes}
         finally:
             typelib._LANGS = saved

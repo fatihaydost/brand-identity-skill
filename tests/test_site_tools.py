@@ -661,7 +661,7 @@ class TestSiteCommand(unittest.TestCase):
         self.assertEqual(r.returncode, 0, r.stderr)
         self.assertLessEqual(len(r.stdout.strip().splitlines()), 15)
         self.assertIn("fonts: heading Site Slab · body Site Sans", r.stdout)
-        self.assertRegex(r.stdout, r"logo: img 144x36 -> .*site/logo\.svg \(kept-logo source\)")
+        self.assertRegex(r.stdout, r"logo: img 144x36 -> .*site[\\/]logo\.svg \(kept-logo source\)")
         r = self.brand("site", "apply", url, self.work, "--sets", "A")
         self.assertEqual(r.returncode, 0, r.stderr)
         self.assertLessEqual(len(r.stdout.strip().splitlines()), 15)

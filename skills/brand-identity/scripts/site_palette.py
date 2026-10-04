@@ -55,6 +55,7 @@ import urllib.request
 import zlib
 from datetime import datetime, timezone
 from decimal import ROUND_HALF_UP, Decimal
+from pathlib import Path
 
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -300,7 +301,10 @@ def open_page(S, page, url, check_block=True):
     try:
         resp = page.goto(url, NAV_TIMEOUT)
     except cdplib.NavigationError as e:
-        raise RuntimeError(f"could not load {url}: {str(e).splitlines()[0]}. If the site blocks headless browsers, "
+        if e.detail:  # where a timed-out load stopped (stderr only; the error line stays as it was)
+            log(f"note: {url}: {e.detail}")
+        first = str(e).splitlines()[0].rstrip(".")
+        raise RuntimeError(f"could not load {url}: {first}. If the site blocks headless browsers, "
                            f"ask the user for screenshots. {NO_SITE_FALLBACK}") from None
     settle(S, page)
     if check_block:
@@ -1228,7 +1232,7 @@ def cmd_check():
         t0 = time.monotonic()
         try:
             S = Session(browser)
-            url = S.eng.call("checkUrl", "file://" + urllib.request.pathname2url(os.path.abspath(SELFTEST)))
+            url = S.eng.call("checkUrl", Path(SELFTEST).resolve().as_uri())  # file:///C:/... on Windows
             cmd_extract(S, url, out, "light", quiet=True)
             with open(os.path.join(out, "extract.json"), encoding="utf-8") as fh:
                 ex = json.load(fh)
