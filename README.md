@@ -14,6 +14,8 @@ pharmacy in Athens, a techno label in Berlin, a floating sauna in Oslo, a childr
 start-up, a honey co-op on the Black Sea and more. Mascots, emblems, monograms, stencils and plain wordmarks; every
 mark, typeface and colour above came out of a run of this skill.</sub>
 
+![A short animated walk-through of the skill](docs/images/brand-identity.gif)
+
 **[What you get](#what-you-get)** · **[Examples](#examples)** · **[Install](#install)** · **[Use](#use)** ·
 **[How it works](#how-it-works)** · **[Network and privacy](#network-and-privacy)** · **[Develop](#develop)**
 
