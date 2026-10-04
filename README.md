@@ -44,8 +44,8 @@ sign, an online marketplace.*
 ![Three directions for Fernhill Books with the comparison table](docs/images/fernhill-board.jpg)
 
 **A · Manicule** (recommended, picked): the pointing hand readers drew in margins is the mark, Literata carries both
-display and text, and the palette is press black with one rubric red. **B · Full Stop**: the dot of the *i* slides
-to the end of the name. **C · Close**: an Old Town passage under a tenement, on a dark ground.
+display and text, and the palette is press black with one rubric red. **B · Full Stop**: a quiet lowercase name that
+ends on a blue proofreader's full stop. **C · Close**: an Old Town passage under a tenement, on a dark ground.
 
 | Kit: cover | Kit: typography |
 |---|---|
@@ -71,7 +71,7 @@ duration bar. **C · Night Floor**: two L-pieces lock into one square, dark-firs
 | Brief | Languages | Directions (recommended first) |
 |---|---|---|
 | ![](docs/images/gallery/molino.jpg) **Molino Coffee**, a specialty coffee shop in Lisbon | en, pt | Vizinho · Mó · Bloco |
-| ![](docs/images/gallery/hartwell.jpg) **Hartwell & Oduya**, a commercial law firm in London | en | The Bar Between · Redline · Counterparts |
+| ![](docs/images/gallery/hartwell.jpg) **Hartwell & Oduya**, a commercial law firm in London | en | The Bar Between · Equal Measure · Counterparts |
 | ![](docs/images/gallery/parallax.jpg) **Parallax Labs**, AI planning agents for supply chains | en | Depth Field · Parallax Error · Computation Pad |
 | ![](docs/images/gallery/fauvel.jpg) **Domaine Fauvel**, a natural wine estate in Burgundy | en, fr | La Taille · Climat · Fauve |
 | ![](docs/images/gallery/moonvault.jpg) **Moonvault**, a self-custody crypto wallet | en | Held Moon · Two O's · Lamp Arcade |

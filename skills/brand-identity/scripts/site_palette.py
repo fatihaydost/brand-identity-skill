@@ -39,6 +39,7 @@ Playwright cache, or an installed Chrome / Chromium / Edge / Brave. The browser 
 Read-only: never clicks, types or submits anything.
 """
 import base64
+import contextlib
 import gzip
 import json
 import math
@@ -1184,10 +1185,25 @@ def cmd_competitors(S, urls, out, concurrency=3):
 
         # one browser per extra worker over the pipe (one client each), else one more client per worker
         extra = [cdplib.Browser(S.browser.executable) for _ in range(workers - 1)] if S.browser.pipe else []
+        shared = not extra   # websocket: all workers are clients of one browser
+        sessions, running = [S], [workers]
+
+        def work(sess):
+            try:
+                _guard(errors, run, sess)
+            finally:
+                with lock:
+                    running[0] -= 1
+                if shared:
+                    # Chrome holds every new page's navigation until each client lets it go: a finished worker keeps
+                    # answering until the last one is done (else the last pages time out in page.goto)
+                    with contextlib.suppress(Exception):
+                        sess.client.idle(lambda: running[0] == 0)
+
         try:
-            sessions = [S] + ([Session(b) for b in extra] if extra else
-                              [Session(S.browser, S.browser.client()) for _ in range(workers - 1)])
-            threads = [threading.Thread(target=lambda s=s: _guard(errors, run, s), daemon=True) for s in sessions]
+            sessions += ([Session(b) for b in extra] if extra else
+                         [Session(S.browser, S.browser.client()) for _ in range(workers - 1)])
+            threads = [threading.Thread(target=work, args=(s,), daemon=True) for s in sessions]
             for t in threads:
                 t.start()
             for t in threads:
@@ -1195,6 +1211,10 @@ def cmd_competitors(S, urls, out, concurrency=3):
         finally:
             for b in extra:
                 b.close()
+            if shared:
+                for sess in sessions[1:]:
+                    with contextlib.suppress(Exception):
+                        sess.client.close()
         if errors:
             raise errors[0]
     doc = {"schema": "brand-identity/competitors@1", "measuredAt": now_iso(),

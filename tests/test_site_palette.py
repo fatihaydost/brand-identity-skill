@@ -711,6 +711,28 @@ class Integration(unittest.TestCase):
         self.assertEqual(meta["layoutStress"]["desktop"], 0)
         self.assertTrue(meta["roles"]["primary"])
 
+    def test_websocket_clients_idle_or_closed_do_not_hold_other_clients_pages(self):
+        """Chrome holds a new page's navigation until every auto-attached client lets it go (Windows competitors: a
+        finished worker that stopped reading made the last pages time out)."""
+        b, done = cdplib.Browser(BROWSER, pipe=False), threading.Event()
+        try:
+            other = b.client()
+            t = threading.Thread(target=other.idle, args=(done.is_set,), daemon=True)
+            t.start()
+            page = b.main.new_page(viewport=(800, 600))
+            self.assertEqual(page.goto(fixture_url("cafe.html"), timeout=15)["status"], 200)
+            page.close()
+            done.set()
+            t.join(5)
+            other.close()
+            self.assertEqual(b.clients, [b.main])
+            page = b.main.new_page(viewport=(800, 600))
+            page.goto(fixture_url("cafe.html"), timeout=15)
+            page.close()
+        finally:
+            done.set()
+            b.close()
+
     def test_competitors_parked_challenge_and_403_sites_are_kept_out_of_the_map(self):
         def page(name):
             with open(os.path.join(FIXTURES, name), "rb") as fh:
@@ -738,20 +760,22 @@ class Integration(unittest.TestCase):
         try:
             urls = [srv.base + p for p in ("/ok", "/parked", "/challenge", "/forbidden", "/missing")]
             r = run_tool("competitors", *urls, "--out", self.tmp)
-            self.assertEqual(r.returncode, 0, r.stderr)
+            msg = f"stdout:\n{r.stdout}\nstderr:\n{r.stderr}"  # stderr carries the driver's notes on a failed load
+            self.assertEqual(r.returncode, 0, msg)
             doc = read_json(os.path.join(self.tmp, "competitors.json"))
-            self.assertEqual([[s["url"], s["status"]] for s in doc["sites"]], [[srv.base + "/ok", "ok"]])
+            self.assertEqual([[s["url"], s["status"]] for s in doc["sites"]], [[srv.base + "/ok", "ok"]], msg)
             st = {e["url"].replace(srv.base, ""): e["status"] for e in doc["errors"]}
-            self.assertEqual(st, {"/parked": "parked", "/challenge": "blocked", "/forbidden": "blocked", "/missing": "error"})
+            self.assertEqual(st, {"/parked": "parked", "/challenge": "blocked", "/forbidden": "blocked", "/missing": "error"},
+                             msg)
             out = r.stdout
-            self.assertRegex(out, r"^competitors: 1 ok, 1 parked, 2 blocked, 1 failed")
-            self.assertRegex(out, r"parked +parked, skipped: page says")
-            self.assertRegex(out, r'blocked +blocked, skipped: (page title "Just a moment|Cloudflare challenge)')
-            self.assertRegex(out, r"blocked +blocked, skipped: HTTP 403")
-            self.assertRegex(out, r"error +failed, skipped: HTTP 404")
-            self.assertRegex(out, r"1 of 5 competitors measured; positioning falls back to the brief")
-            self.assertNotRegex(out, r"mock|site_preview")  # an unreadable competitor is no reason to preview on mocks
-            self.assertRegex(out, r"127\.0\.0\.1 +ok +#1f5f7a blue")
+            self.assertRegex(out, r"^competitors: 1 ok, 1 parked, 2 blocked, 1 failed", msg)
+            self.assertRegex(out, r"parked +parked, skipped: page says", msg)
+            self.assertRegex(out, r'blocked +blocked, skipped: (page title "Just a moment|Cloudflare challenge)', msg)
+            self.assertRegex(out, r"blocked +blocked, skipped: HTTP 403", msg)
+            self.assertRegex(out, r"error +failed, skipped: HTTP 404", msg)
+            self.assertRegex(out, r"1 of 5 competitors measured; positioning falls back to the brief", msg)
+            self.assertNotRegex(out, r"mock|site_preview", msg)  # an unreadable competitor is no reason to preview on mocks
+            self.assertRegex(out, r"127\.0\.0\.1 +ok +#1f5f7a blue", msg)
         finally:
             srv.close()
 

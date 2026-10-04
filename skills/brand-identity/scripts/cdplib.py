@@ -820,7 +820,11 @@ class Client:
     """One websocket to the browser; makes pages (each in its own incognito context unless context=False).
 
     Like Playwright, new pages are auto-attached paused (Target.setAutoAttach, waitForDebuggerOnStart) so every
-    emulation is in place before their first document; pages made by another client are let go at once."""
+    emulation is in place before their first document; pages made by another client are let go at once.
+
+    Every client is auto-attached to every new page, and Chrome holds a new page's navigations until each of them
+    has let it go. So a client must keep reading its socket while other clients work (`idle`), or be closed
+    (`close`): a client nobody pumps stalls every later page of the other clients (page.goto times out)."""
 
     def __init__(self, browser):
         self.browser = browser
@@ -839,6 +843,22 @@ class Client:
             return
         self.conn.send("Runtime.runIfWaitingForDebugger", session=sid)
         self.conn.send("Target.detachFromTarget", {"sessionId": sid})
+
+    def idle(self, until, step=0.1):
+        """Keep answering the browser (letting other clients' new pages go) until until() is true."""
+        while not until():
+            self.conn.pump(step)
+
+    def close(self):
+        """Disconnect a websocket client (not the browser's main client); Chrome drops its auto-attachments."""
+        if self.browser.pipe or self is self.browser.main:
+            raise CDPError("only an extra websocket client can be closed")
+        with self.browser.lock:
+            for tid in [t for t, c in self.browser.created.items() if c is self]:
+                del self.browser.created[tid]
+        if self in self.browser.clients:
+            self.browser.clients.remove(self)
+        self.conn.close()
 
     def new_page(self, viewport=(1280, 720), device_scale_factor=1, mobile=False, has_touch=False, user_agent=None,
                  color_scheme="light", reduced_motion="reduce", locale="en-US", bypass_csp=True,
