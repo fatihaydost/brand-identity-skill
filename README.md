@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src=".claude-plugin/icon.png" width="112" alt="brand-identity icon">
+
 # brand-identity
 
 [![Tests](https://github.com/fatihaydost/brand-identity-skill/actions/workflows/test.yml/badge.svg)](https://github.com/fatihaydost/brand-identity-skill/actions/workflows/test.yml)
