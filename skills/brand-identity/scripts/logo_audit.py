@@ -250,16 +250,23 @@ def _adjacent(a, b):
     return not logolib._empty(hit)
 
 
-def _ground_like(hexcol, palette):
-    if not hexcol:
+def _ground_like(col, palette):
+    """A part colour that matches a ground of the same mode (a dark-ink part is compared with the dark grounds in
+    its dark-mode colour, not in its light one)."""
+    if not col:
         return False
     modes = (palette or {}).get("modes") or {}
     for mode in ("light", "dark"):
+        hexcol = logolib._raw_hex(col) if col.startswith("raw:") else logolib.resolve_color(palette, col, mode)
+        if not hexcol:
+            continue
+        if mode == "light" and hexcol.lower() in ("#ffffff", "#fff"):
+            return True
         for role in logolib.GROUND_ROLES:
             g = (modes.get(mode) or {}).get(role)
             if g and colorlib.contrast_ratio(hexcol, g) < 1.1:
                 return True
-    return hexcol.lower() in ("#ffffff", "#fff")
+    return False
 
 
 def audit(identity, palette, build_dir):
@@ -375,9 +382,7 @@ def audit(identity, palette, build_dir):
     for key, rep in reports.items():
         for ov in rep["overlaps"]:
             col = ov["upper_color"]
-            hexcol = logolib._raw_hex(col) if col and col.startswith("raw:") else \
-                logolib.resolve_color(palette, col, "light")
-            if (col in logolib.GROUND_ROLES) or _ground_like(hexcol, palette):
+            if (col in logolib.GROUND_ROLES) or _ground_like(col, palette):
                 out.append(_f("logo.false-hole", "gate",
                               f"{key}.svg: {ov['upper']} is a ground-coloured shape over {ov['lower']} (a fake hole: "
                               "it shows as a patch on any other ground and vanishes in one colour)",
@@ -438,10 +443,14 @@ def audit(identity, palette, build_dir):
 
     for mode in ("light", "dark"):
         for sw in man.get(f"{mode}_swaps") or []:
-            out.append(_f("logo.light-swap" if mode == "light" else "logo.dark-swap", "info",
+            lost = sw.get("colour_lost") and sw["version"].startswith("full-color")
+            out.append(_f("logo.light-swap" if mode == "light" else "logo.dark-swap", "warn" if lost else "info",
                           f"{sw['version']}: {sw['role']} {sw['from']} is {sw['ratio']:.2f}:1 on {sw['ground']}; "
-                          f"drawn in the {mode} text colour {sw['to']} (a colour stays only where it reads)",
-                          measured=sw["ratio"], roles=[sw["role"]]))
+                          f"drawn in the {mode} text colour {sw['to']} (a colour stays only where it reads)"
+                          + ("; no brand colour is left in this version" if lost else ""),
+                          measured=sw["ratio"], roles=[sw["role"]],
+                          **({"fix": "fine for a one-colour mark; otherwise give a part a colour that reads on "
+                                     "this ground, or declare logo.device tile"} if lost else {})))
 
     # 7. thinnest stroke/gap at the minimum size and at 16 px for the favicon source (warn: k is uncalibrated)
     min_px = int(((lg.get("min_size") or {}).get("px")) or 24)

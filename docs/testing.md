@@ -2,7 +2,7 @@
 
 ## Code
 
-- **471 unit tests** (`python -m unittest discover -s tests`), run in CI on Linux, macOS and Windows with Python 3.10
+- **474 unit tests** (`python -m unittest discover -s tests`), run in CI on Linux, macOS and Windows with Python 3.10
   and 3.12. They include the live-site tool (`tests/test_site_palette.py`, ported from the former Node tests) on
   the fixture pages in `tests/site/fixtures/`, the bundled language data against gflanguages
   (`tests/test_languages_data.py`, needs `requirements-dev.txt`) and the uv re-run of the entry scripts

@@ -123,18 +123,24 @@ class AuditCase(unittest.TestCase):
         self.assertEqual(dark["primary"], pal["modes"]["dark"]["primary"])     # the dark versions keep the colour
         self.assertTrue(any(f["id"] == "logo.light-swap" for f in fs))
 
-    def test_all_parts_weak_keeps_the_gate(self):
-        # no part would keep its colour: a swap would hide that the mark needs a device or another colour
+    def test_all_parts_weak_are_drawn_in_ink_with_a_warn(self):
+        # Kovan A, Ridgeline A: a one-colour mark in a dark brand ink gated on the dark ground and agents recoloured the
+        # design to pass. The mark is drawn in the ground's ink like any reversed logo; the audit warns that no brand
+        # colour is left in that version instead of blocking the build
         pal = example_palette()
         pal["modes"]["light"].update(primary="#bccb5c", onPrimary=pal["modes"]["light"]["text"])
 
         def mutate(ident):
             ident["logo"]["colors"] = {"symbol": "primary", "wordmark": "primary"}
         fs = self.run_audit(CLEAN, palette=pal, mutate=mutate)
-        self.assertTrue(any(f["id"] == "logo.contrast" and f["severity"] == "gate" and "full-color:" in f["message"]
-                            for f in fs))
+        self.assertFalse([f for f in fs if f["id"] == "logo.contrast" and f["severity"] == "gate"
+                          and f["message"].startswith(("full-color:", "on-light-background:"))])
         with open(os.path.join(self.tmp.name, "sets", "A", "logo", "build", "manifest.json"), encoding="utf-8") as fh:
-            self.assertNotIn("light_swaps", json.load(fh))
+            man = json.load(fh)
+        ink = pal["modes"]["light"]["text"]
+        self.assertEqual({p["hex"] for p in man["versions"]["full-color"]["parts"]}, {ink})
+        lost = [f for f in fs if f["id"] == "logo.light-swap" and f["severity"] == "warn"]
+        self.assertTrue(lost and "no brand colour is left" in lost[0]["message"])
 
     def test_clean_mark_has_no_gates(self):
         fs = self.run_audit(CLEAN)
@@ -172,6 +178,13 @@ class AuditCase(unittest.TestCase):
         real = fake.replace('data-color="background"', 'data-op="subtract"')
         self.assertNotIn("logo.false-hole", self.ids(self.run_audit(real)))
 
+    def test_dark_ink_detail_is_not_a_false_hole(self):
+        # Petal A, Tomo A: a text-ink detail over a coloured part was called ground-coloured because its light-mode
+        # hex (#111e24) was compared with the dark grounds (dark surface is #111e24); each mode uses its own colour
+        detail = ('<svg viewBox="0 0 100 100"><circle id="disc" cx="50" cy="50" r="40" data-color="primary"/>'
+                  '<circle id="eye" cx="50" cy="50" r="10" data-color="text"/></svg>')
+        self.assertNotIn("logo.false-hole", self.ids(self.run_audit(detail), "gate"))
+
     def test_raw_colour_and_unknown_role(self):
         fs = self.run_audit(CLEAN.replace('data-color="primary"', 'fill="#1f5f7a"'))
         self.assertIn("logo.color-role", self.ids(fs, "gate"))
@@ -180,17 +193,17 @@ class AuditCase(unittest.TestCase):
         fs = self.run_audit(CLEAN.replace('data-color="primary"', 'data-color="brand-2"'))
         self.assertNotIn("logo.color-role", self.ids(fs))
 
-    def test_low_contrast_main_part_is_a_gate(self):
+    def test_low_contrast_main_part_is_drawn_in_ink_or_tiled(self):
         pal = example_palette()
         pal["modes"]["light"]["primary"] = "#f2f4f5"
         pal["modes"]["light"]["onPrimary"] = "#111e24"   # keep the palette itself consistent
 
-        def all_primary(ident):   # no part keeps a readable colour on white: no swap, the gate stays
+        def all_primary(ident):   # no part reads on white: the light versions are drawn in ink, the swap warns
             ident["logo"]["colors"] = {"symbol": "primary", "wordmark": "primary"}
         fs = self.run_audit(CLEAN, palette=pal, mutate=all_primary)
-        gates = [f for f in fs if f["id"] == "logo.contrast" and f["severity"] == "gate"]
-        self.assertTrue(gates)
-        self.assertLess(gates[0]["measured"], 3.0)
+        self.assertTrue([f for f in fs if f["id"] == "logo.light-swap" and f["severity"] == "warn"])
+        self.assertFalse([f for f in fs if f["id"] == "logo.contrast" and f["severity"] == "gate"
+                          and f["message"].startswith("full-color:")])
 
         def tile(ident):   # the symbol on a tile; the wordmark in the text colour
             ident["logo"]["device"] = "tile"

@@ -7,11 +7,12 @@ A skill for Claude Code that designs a brand identity as one system: **logo, typ
 together from one idea**, measured, shown side by side as identity cards, and handed over as a brand guidelines kit
 for the set you pick.
 
-![24 logo lockups from eight briefs, all made by the skill](docs/images/hero.jpg)
+![24 logos for 24 different brands, all made by the skill](docs/images/hero.jpg)
 
-<sub>Eight briefs, three directions each: a bookshop, a developer tool, a coffee shop, a law firm, an AI start-up, a
-wine estate, a crypto wallet and a breakfast restaurant. Every mark, typeface pairing and colour above came out of a
-run of this skill.</sub>
+<sub>Twenty-four briefs, one direction shown from each: a light festival in Lyon, a taquería in Mexico City, a
+pharmacy in Athens, a techno label in Berlin, a floating sauna in Oslo, a children's dentist, a weeding-robot
+start-up, a honey co-op on the Black Sea and more. Mascots, emblems, monograms, stencils and plain wordmarks; every
+mark, typeface and colour above came out of a run of this skill.</sub>
 
 **[What you get](#what-you-get)** · **[Examples](#examples)** · **[Install](#install)** · **[Use](#use)** ·
 **[How it works](#how-it-works)** · **[Network and privacy](#network-and-privacy)** · **[Develop](#develop)**
@@ -25,9 +26,9 @@ run of this skill.</sub>
   measurement is a gate the set must pass; a heuristic is labelled as a warning; taste is labelled as judgement.
 - **Sets that don't look like every other AI brand.** The skill knows what plain models reach for and asks for a
   reason from the brief whenever a set uses it ([below](#why-the-sets-dont-look-like-every-other-ai-brand)).
-- **A brand guidelines kit** for the chosen set: a 13-page PDF (cover, idea, logo, variations, logo on colour and
-  misuse drawn for *this* mark, colours, typography, applications, grid, dark mode, accessibility, iconography,
-  imagery), logo files (SVG and PNG: full colour, one colour, reversed, app icon, favicon), design tokens (CSS,
+- **A brand guidelines kit** for the chosen set: an 8-page PDF (cover, idea, logo, variations, logo on colour and
+  misuse drawn for *this* mark, colours, typography, applications; `--full` adds grid, dark mode, accessibility,
+  iconography and imagery for 13), logo files (SVG and PNG: full colour, one colour, reversed, app icon, favicon), design tokens (CSS,
   SCSS, Tailwind, DTCG JSON) and a font sheet with embed code.
 - **Your site, restyled.** Give it a URL and it reads the current logo, type and colours, then previews each set on
   your own pages. Keep the parts you like (`keep`), evolve others (`refresh`).
@@ -90,6 +91,7 @@ duration bar. **C · Night Floor**: two L-pieces lock into one square, dark-firs
 
 ```bash
 git clone https://github.com/fatihaydost/brand-identity-skill
+mkdir -p ~/.claude/skills
 ln -s "$PWD/brand-identity-skill/skills/brand-identity" ~/.claude/skills/brand-identity
 ```
 
@@ -98,6 +100,10 @@ ln -s "$PWD/brand-identity-skill/skills/brand-identity" ~/.claude/skills/brand-i
 skia-pathops) into a cached environment on first use; nothing to `pip install`. Run
 `python3 skills/brand-identity/scripts/brand.py check` to see what is missing. Tested end to end on Linux, including
 a clean container; unit tests run in CI on Linux, macOS and Windows.
+
+**Other hosts.** The skill is a standard `SKILL.md` folder, so agents that read Agent Skills can load
+`skills/brand-identity`; it is tested end to end in Claude Code. In claude.ai chat the code sandbox does not allow
+Google Fonts by default, so type measurement and rendering fail there; use Claude Code.
 
 ## Use
 
@@ -155,8 +161,8 @@ The skill runs locally. It contacts:
 - **PyPI**, through uv, once, for its Python packages;
 - **your site and the competitor sites you name**, opened in a headless browser, only when you give their URLs.
 
-No telemetry; nothing is uploaded. Fonts are never subset or redistributed: the kit links to them and gives embed
-code. Licences are checked per family (OFL by default; Fontshare and commercial faces get a licence note).
+No telemetry; nothing is uploaded. The brand's fonts are never subset or redistributed: the kit links to them and
+gives embed code. Licences are checked per family (OFL by default; Fontshare and commercial faces get a licence note).
 
 ## Develop
 

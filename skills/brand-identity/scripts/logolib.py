@@ -2420,19 +2420,17 @@ def variants(identity, palette, out_dir, set_dir=None, font_path=None):
                        **({"device": ids[0][len("device-"):]} if ids and ids[0].startswith("device-") else {})}
                       for r, ids, p in parts]}
 
-    def ground_safe(name, use, paint, ground, mode, judge=None, devices=True):
+    def ground_safe(name, use, paint, ground, mode, devices=True):
         """Keep the logo readable on its ground. When the largest part (the one the contrast gate judges) is under
         3:1 on `ground` and no tile/outline device carries it, its colour is drawn in that mode's text colour: dark
         ink on a light ground, the reversed ink on a dark ground (a light block on the night ground becomes a dark
-        block on paper, a navy wordmark becomes white on the night ground). Smaller weak parts stay as they are
-        (the audit warns). The swap needs another part of the logo (`judge`, default `use`) that keeps its own
-        colour and reads on this ground; when nothing would, the version is left as painted and the gate stays: a
-        full-colour version with none of its colours is the one-colour version under another name, and the mark
-        needs a decision (a device, another colour). Swaps go to manifest.light_swaps / dark_swaps."""
+        block on paper, a navy wordmark becomes white on the night ground, a one-colour chestnut seal becomes white
+        on the dark ground). Smaller weak parts stay as they are (the audit warns). Swaps go to
+        manifest.light_swaps / dark_swaps and the audit reports them, so a mark that loses all its colour on a
+        ground is visible without blocking the build."""
         import colorlib
         if not ground or not use:
             return paint
-        judge_use, judge_paint = judge or (use, paint)
 
         def carried(role, parts):   # favicons draw no device (devices=False)
             return devices and device in ("tile", "outline") and not any(is_wordmark_part(ids) for r, ids, _p in parts
@@ -2443,13 +2441,13 @@ def variants(identity, palette, out_dir, set_dir=None, font_path=None):
         ratio = colorlib.contrast_ratio(paint[role], ground)
         if ratio >= DEVICE_CONTRAST:
             return paint
-        if not any(r != role and not r.startswith("raw:") and r in judge_paint and
-                   (colorlib.contrast_ratio(judge_paint[r], ground) >= DEVICE_CONTRAST or carried(r, judge_use))
-                   for r, _i, _p in judge_use):
-            return paint
         ink = ink_dark if mode == "light" else ink_light
+        kept = any(r != role and not r.startswith("raw:") and r in paint and
+                   (colorlib.contrast_ratio(paint[r], ground) >= DEVICE_CONTRAST or carried(r, use))
+                   for r, _i, _p in use)
         manifest.setdefault(f"{mode}_swaps", []).append(
-            {"version": name, "role": role, "from": paint[role], "to": ink, "ground": ground, "ratio": round(ratio, 2)})
+            {"version": name, "role": role, "from": paint[role], "to": ink, "ground": ground, "ratio": round(ratio, 2),
+             "colour_lost": not kept})
         return dict(paint, **{role: ink})
 
     version("full-color", pparts, pad_view,
@@ -2500,7 +2498,7 @@ def variants(identity, palette, out_dir, set_dir=None, font_path=None):
         if symbol is not None:
             version("symbol-only", sparts, _pad_view(sbox, 0.25 * max(sbox[2] - sbox[0], sbox[3] - sbox[1])),
                     ground_safe("symbol-only", sparts, _paint(sparts, palette, "light"), light.get("background"),
-                                "light", judge=(pparts, _paint(pparts, palette, "light"))), "light")
+                                "light"), "light")
         fav_svg = small or icon_svg
         _v, _a, fparts = parse_parts(fav_svg)
         fbox = _union_bounds([_bounds(p) for _r, _i, p in fparts])
@@ -2510,7 +2508,7 @@ def variants(identity, palette, out_dir, set_dir=None, font_path=None):
         for px in (16, 32, 48):
             version(f"favicon-{px}", fparts, fview,
                     ground_safe(f"favicon-{px}", fparts, _paint(fparts, palette, "light"), light.get("background"),
-                                "light", judge=(pparts, _paint(pparts, palette, "light")), devices=False),
+                                "light", devices=False),
                     "light", png_px=px)
         dparts = [(r, ids, _inset(p, DARK_INSET_UNITS * (fview[2] / 100.0))) for r, ids, p in fparts]
         for px in (16, 32):
