@@ -19,5 +19,8 @@
     "brand-guidelines",
     "accessibility",
     "design-tokens"
-  ]
+  ],
+  "displayName": "Brand Identity",
+  "supportUrl": "https://github.com/fatihaydost/brand-identity-skill/issues",
+  "privacyPolicyUrl": "https://github.com/fatihaydost/brand-identity-skill#network-and-privacy"
 }
