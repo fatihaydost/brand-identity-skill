@@ -1,9 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- **Fixed (docs):** contrast is measured with WCAG 2.2 only. The 1.0.0 notes and README said "WCAG 2 and APCA";
+  APCA was never implemented, because its licence restricts independent implementations.
+
 ## 1.1.0 (2026-10-10)
 
 Fixes from a first outside contribution (thanks, @brunomolteni, #2).
-
 
 - **One-colour logos:** parts that end up the same colour are one path, so knocked-out parts no longer show hairline
   seams in PNGs and vector viewers.
@@ -20,7 +24,7 @@ First public release.
 
 - **Identity sets from one brief:** logo, typography and colour palette built together from one mechanism, three sets
   by default (up to four), each on one identity card, compared on one board with a comparison table.
-- **Measured:** contrast (WCAG 2 and APCA), colour-blindness simulation, glyph coverage for the brand's languages,
+- **Measured:** contrast (WCAG 2.2; the original note said "and APCA", corrected above), colour-blindness simulation, glyph coverage for the brand's languages,
   font licences, tabular figures, logo renders at 16 and 32 px. Failed measurements are gates; heuristics are warnings.
 - **Logo pipeline:** symbol, wordmark and lockups from one SVG source, with one-colour, reversed, app icon and favicon
   versions. A part that does not read on a ground is drawn in that ground's ink.

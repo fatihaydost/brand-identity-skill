@@ -33,8 +33,8 @@ mark, typeface and colour above came out of a run of this skill.</sub>
 
 - **Three (up to four) identity sets**, each built around a single mechanism that produces the mark, the type choice
   and the palette at once, so the parts belong together instead of being picked separately.
-- **Measured, not asserted.** Contrast (WCAG 2 and APCA), colour-blindness simulation, glyph coverage for the
-  languages the brand writes in, font licences, tabular figures, and the logo rendered at 16 and 32 px. A failed
+- **Measured, not asserted.** Contrast (WCAG 2.2), colour-blindness simulation, glyph coverage for the
+  languages the brand writes in, font licences, tabular figures, and logo renders at 16 and 32 px for review. A failed
   measurement is a gate the set must pass; a heuristic is labelled as a warning; taste is labelled as judgement.
 - **Sets that don't look like every other AI brand.** The skill knows what plain models reach for and asks for a
   reason from the brief whenever a set uses it ([below](#why-the-sets-dont-look-like-every-other-ai-brand)).
