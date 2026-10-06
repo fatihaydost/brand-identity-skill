@@ -756,7 +756,7 @@ def page_icons(k):
     body = (f'<div class="body g12">{side}<div style="grid-column:5/13;display:grid;grid-template-columns:'
             f'repeat(6,1fr);gap:16px;align-content:start">{icons}</div></div>')
     return {"name": "iconography", "section": k.tr("kit.sec.icons"), "subs": [k.tr("kit.sec.icons")],
-            "content": head(k.tr("kit.head.icons"), "") + body}
+            "content": head(k.tr("kit.head.icons"), e(k.tr("kit.icons.lede"))) + body}
 
 
 def page_imagery(k):
@@ -769,7 +769,7 @@ def page_imagery(k):
             f'gap:24px;height:100%">{blocks}</div></div>')
     return {"name": "imagery", "section": k.tr("kit.sec.imagery"),
             "subs": [k.tr("kit.sec.imagery"), k.tr("kit.sec.colour_treatment")],
-            "content": head(k.tr("kit.head.imagery"), "") + body}
+            "content": head(k.tr("kit.head.imagery"), e(k.tr("kit.imagery.lede"))) + body}
 
 
 def page_dark(k):
