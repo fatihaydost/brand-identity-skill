@@ -178,6 +178,18 @@ The skill runs locally. It contacts:
 No telemetry; nothing is uploaded. The brand's fonts are never subset or redistributed: the kit links to them and
 gives embed code. Licences are checked per family (OFL by default; Fontshare and commercial faces get a licence note).
 
+**Your brief and Claude.** The skill sends nothing anywhere, but what you tell Claude (the brief, the strategy, client
+and competitor names) is processed by Anthropic under your plan's terms. On Free, Pro and Max, including Claude Code,
+retention and training follow your privacy setting
+([consumer terms](https://www.anthropic.com/news/updates-to-our-consumer-terms)); under the Commercial Terms (Team,
+Enterprise, API) Anthropic may not train models on customer content
+([Commercial Terms](https://www.anthropic.com/legal/commercial-terms)). Check your plan before pasting confidential
+client material.
+
+**Trademark clearance is yours.** The skill does not search trademark registers, and Anthropic's IP indemnity under
+the Commercial Terms excludes trademark claims based on using an output in trade or commerce. Before a logo goes into
+use, have it cleared in the countries where the brand will trade.
+
 ## Develop
 
 ```bash
