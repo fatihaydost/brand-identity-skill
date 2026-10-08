@@ -539,6 +539,9 @@ def _vals(hx, pal):
             ("Lab D50", f"{lab[0]:.1f} {lab[1]:.1f} {lab[2]:.1f}")]
 
 
+COLOUR_ROWS_FIT = 6   # full colour rows (112 px) that fill the 672 px band area; more turn extended rows thin
+
+
 def page_colours(k):
     lt = k.pal["modes"]["light"]
     tr = k.tr
@@ -556,19 +559,23 @@ def page_colours(k):
                 word += f" · UI {bc['role_hex'].upper()}"
             hx = bc["hex"]
         rows.append(((bc or {}).get("name") or pl.role_word(role, tr), word, hx, w))
+    core = len(rows)
     for x in (k.pal.get("extended") or [])[:3]:
         rows.append((x.get("name") or x["id"], tr("kit.col.supporting"), x["hex"], 8))
+    compact = len(rows) > COLOUR_ROWS_FIT
     cells = []
-    for name, word, hx, w in rows:
+    for i, (name, word, hx, w) in enumerate(rows):
         fg = pl.ink_on(hx)
-        vals = "".join(f"<span>{e(a)}</span><span>{e(b)}</span>" for a, b in _vals(hx, k.pal))
+        thin = compact and i >= core
+        vals = "".join(f"<span>{e(a)}</span><span>{e(b)}</span>" for a, b in _vals(hx, k.pal)[:1 if thin else None])
         if colorlib.hex_to_oklch(hx)[0] > 0.93:  # tints of a near-white ground are not distinguishable
             tints = '<div class="tn" style="grid-column:span 3;background:var(--paper)"></div>'
         else:
             tints = "".join(f'<div class="tn" style="background:{pl.tint(hx, p)};color:{pl.ink_on(pl.tint(hx, p))}">'
                             f'{p}%</div>' for p in (80, 50, 20))
         line = "" if colorlib.contrast_ratio(hx, k.t["paper"]) > 1.15 else ";box-shadow:inset 0 0 0 1px var(--line)"
-        cells.append(f'<div class="row" style="flex:{w} 1 0;min-height:112px"><div class="main" '
+        size = "flex:1 1 0;min-height:0" if thin else "flex:0 0 112px" if compact else f"flex:{w} 1 0;min-height:112px"
+        cells.append(f'<div class="row{" thin" if thin else ""}" style="{size}"><div class="main" '
                      f'style="background:{hx};color:{fg}{line}"><div><div class="nm">{e(name)}</div>'
                      f'<div class="rl">{e(word)}</div></div><div class="vals">{vals}</div></div>{tints}</div>')
     side = (f'<div class="side"><p class="p">{e(tr("kit.col.side"))}</p>'
@@ -600,7 +607,11 @@ def page_type(k):
                 continue
             seen.add((face["family"], w))
             cols.append((role, face, w))
-    cols = cols[:4]
+    first = {}
+    for c in cols:
+        first.setdefault(c[0], c)
+    more = [c for c in cols if c is not first[c[0]]][:max(0, 4 - len(first))]
+    cols = [c for c in cols if c is first[c[0]] or c in more]  # every role keeps a column: each face gets embedded
     lang, sample = next(((c, x) for c, x in pl.sample_sentences(k.brand.get("languages"),
                                                              pl.brand_copy(k.brand, tr)["sentences"]) if x),
                         ("en", ""))
@@ -618,14 +629,18 @@ def page_type(k):
     srows = "".join(f'<tr><td>{e(n)}</td><td>{s}px</td><td>{lh:g}</td><td>{t:+.3f}em</td>'
                     f'<td>{e(tr(f"type_role.{r}"))}</td></tr>' for n, s, lh, t, r in scale)
     feats = sorted({f for face in (disp, text) for f in (face.get("features") or [])})
-    lic = "; ".join(sorted({f"{f['family']} · {f.get('license', '?')} · {f.get('source', '?')}" for f in (disp, text)}))
+    lic = "; ".join(sorted({f"{f['family']} · {f.get('license', '?')} · {f.get('source', '?')}"
+                            for f in (disp, text, ty.get("mono")) if f}))
+    mono = ty.get("mono")
     gfam = {}
-    for face in (disp, text):
-        if face.get("source") == "google":
+    for face in (disp, text, mono):
+        if face and face.get("source") == "google":
             gfam.setdefault(face["family"], set()).update(face.get("weights") or [400])
     code = _gf_link(gfam) if gfam else f"/* {tr('kit.type.self_host')} */"
     code += (f"\n:root {{ --font-display: \"{disp['family']}\", {disp.get('fallback') or 'sans-serif'};"
-             f" --font-text: \"{text['family']}\", {text.get('fallback') or 'sans-serif'}; }}")
+             f" --font-text: \"{text['family']}\", {text.get('fallback') or 'sans-serif'};"
+             + (f" --font-mono: \"{mono['family']}\", {mono.get('fallback') or 'monospace'};" if mono else "")
+             + " }")
     def case(face):
         return e(tr.word("case", face.get("case", "as-is")))
     roles = (f'<table><tr><th>{e(tr("kit.type.role"))}</th><th>{e(tr("kit.type.family"))}</th>'

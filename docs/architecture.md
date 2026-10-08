@@ -438,8 +438,10 @@ risks.
 ≥ 8 pages, reference page template (meta strip `→ [ n.m ] SECTION`, `BRAND GUIDELINES · VERSION · date · page`):
 1 Cover · 2 Brand idea · 3 Logo (primary, construction, clear space) · 4 Variations + minimum sizes (px, mm) ·
 5 Logo on colour (2×2) + 4–6 misuses · 6 Colours (proportion bands, 80/50/20 tints, HEX/RGB/OKLCH, Lab D50;
-"ask your printer for CMYK/Pantone with their profile") · 7 Typography (roles, weight columns, giant "Aa", scale,
-features, licence line, embed code) · 8 Applications (business card, social avatar, site header).
+"ask your printer for CMYK/Pantone with their profile"; past six full rows the extended colours become name + HEX
+rows) · 7 Typography (roles, weight columns: at most four, at least one per role, so every face is embedded; giant
+"Aa", scale, features, licence line, embed code with the mono variable) · 8 Applications (business card, social
+avatar, site header).
 Outputs (per set, `kit/<SET>/`): `pages/*.png`, `<brand>-guidelines.pdf`, `logo/` (variants SVG+PNG), `tokens/`
 (`export_tokens.py`, plus font CSS variables), `fonts.md` (sources, licences, links; no font files).
 `--full` adds grid, iconography, imagery, dark mode and accessibility pages. Pages for `none` components are omitted.
