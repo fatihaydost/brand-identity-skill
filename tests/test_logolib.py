@@ -382,7 +382,55 @@ class Variants(unittest.TestCase):
             self.assertIn("viewBox", text)
 
 
+STRIPED = ('<svg viewBox="0 0 100 100"><rect id="block" width="100" height="100" data-color="text"/>'
+           '<rect id="stripe" y="40" width="100" height="20" data-color="textMuted"/></svg>')
+
+
+class OneColour(unittest.TestCase):
+    def test_parts_painted_alike_are_one_path(self):
+        # a tonal stripe knocked into an ink block: in one colour the two abutting paths showed a hairline seam
+        px, L.DELIVERY_PX = L.DELIVERY_PX, 128
+        self.addCleanup(setattr, L, "DELIVERY_PX", px)
+        with tempfile.TemporaryDirectory() as tmp:
+            os.makedirs(os.path.join(tmp, "logo"))
+            with open(os.path.join(tmp, "logo", "symbol.svg"), "w", encoding="utf-8") as fh:
+                fh.write(STRIPED)
+            build = os.path.join(tmp, "logo", "build")
+            man = L.variants(example_identity(), example_palette(), build)
+            self.assertGreaterEqual(len({p["hex"] for p in man["versions"]["full-color"]["parts"]}), 2)
+            for name in ("one-color-dark", "one-color-light"):
+                self.assertEqual(len(man["versions"][name]["parts"]), 1, name)
+                with open(os.path.join(build, f"{name}.svg"), encoding="utf-8") as fh:
+                    self.assertEqual(fh.read().count("<path"), 1, name)
+
+
 class Sync(unittest.TestCase):
+    def test_logos_palette_has_the_extended_colours(self):
+        # palette_build.extra reaches `logos` as it reaches `build`: a part in ext-1 failed the colour-role gate in
+        # `logos` only, because the built palette lists extended colours in brand[] and never matched the draft
+        import colorlib
+        import palette_build
+        partial = {"schema": colorlib.SCHEMA_ID, "name": "Rays", "brand": [
+            {"id": "brand-1", "name": "Emerald", "hex": "#009d5c", "source": "chosen", "locked": True},
+            {"id": "brand-2", "name": "Lagoon", "hex": "#82d6de", "source": "chosen", "locked": True}]}
+        ident = {"palette_build": {"extra": ["#9ea3a0:Ray grey:logo detail"]}}
+        with tempfile.TemporaryDirectory() as sd, contextlib.redirect_stderr(io.StringIO()):
+            pal, err = L._palette_for(partial, sd, ident)            # no palette.json yet: built in memory
+            self.assertIsNone(err)
+            self.assertEqual(L.resolve_color(pal, "ext-1"), "#9ea3a0")
+            built = palette_build.build_palette(None, partial=colorlib.validate_palette(
+                json.loads(json.dumps(partial)), partial=True), extras=[palette_build.parse_extra(ident[
+                    "palette_build"]["extra"][0])])
+            built["modes"]["light"]["textMuted"] = "#000001"          # marks the file: reuse vs. rebuild
+            with open(os.path.join(sd, "palette.json"), "w", encoding="utf-8") as fh:
+                json.dump(built, fh)
+            pal, _err = L._palette_for(partial, sd, ident)
+            self.assertEqual(pal["modes"]["light"]["textMuted"], "#000001")
+            ident["palette_build"]["extra"].append("#556b2f:Moss:charts")
+            pal, _err = L._palette_for(partial, sd, ident)           # an extra the file lacks: built again
+            self.assertNotEqual(pal["modes"]["light"]["textMuted"], "#000001")
+            self.assertEqual(L.resolve_color(pal, "ext-2"), "#556b2f")
+
     def test_logos_reuse_the_built_palette_when_the_build_reordered_brand(self):
         # palette_build puts seed and accent first (a dark ground listed first moves back); `logos` must still use
         # palette.json instead of a second in-memory build with other neutrals
