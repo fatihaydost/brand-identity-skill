@@ -624,13 +624,14 @@ def _audit(family_or_path, langs, numbers=False, uses=("web", "logo"), role=None
                           measured=detected, threshold=license,
                           suggested_fix="check the licence; the declared one is used for the checks below"))
     lic = canon_license(license) if license else detected
-    if not lic:
+    if not lic or lic not in (*FREE_LICENSES, *LICENSE_NOTES):
         findings.append(F("type.license", "type", "gate",
-                          f"{fam}: licence unknown (no OFL/Apache/UFL/FFL text in the font's name table)",
-                          measured=None, threshold="known licence covering " + ", ".join(uses),
+                          f"{fam}: licence unknown or unsupported ({lic!r}); no recognised licence declaration",
+                          measured=lic, threshold="known licence covering " + ", ".join(uses),
                           suggested_fix="confirm the licence covers logo outline, web, app and PDF embedding, then "
-                                        "pass it (identity type.<role>.license), or pick a Google Fonts family"))
-    elif lic in LICENSE_NOTES or lic not in FREE_LICENSES:
+                                        "declare OFL-1.1, Apache-2.0, UFL-1.0, ITF-FFL-2.0 or commercial "
+                                        "(identity type.<role>.license), or pick a Google Fonts family"))
+    elif lic in LICENSE_NOTES:
         note = LICENSE_NOTES.get(lic, LICENSE_NOTES["commercial"])
         findings.append(F("type.license", "type", "info", f"{fam}: {note}", measured=lic, threshold=None,
                           suggested_fix="show this note on the card; offer a rendered Google Fonts alternative"))
