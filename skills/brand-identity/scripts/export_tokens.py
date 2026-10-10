@@ -44,6 +44,11 @@ def slug(name):
     return re.sub(r"[^a-z0-9]+", "-", str(name).lower()).strip("-") or "x"
 
 
+def comment_label(value):
+    """Keep free-form names inside one generated CSS/SCSS/JS comment."""
+    return " ".join(str(value).splitlines()).replace("*/", "* /")
+
+
 def scale_items(pal):
     for name, sc in (pal.get("scales") or {}).items():
         steps = sc.get("steps") or {}
@@ -77,15 +82,15 @@ def brand_items(pal):
 # ----------------------------------------------------------------------------- css / scss / tailwind
 
 def to_css(pal):
-    out = [f"/* brand-identity tokens: {pal['name']}. {HEADER} */", ":root {", "  color-scheme: light;"]
+    out = [f"/* brand-identity tokens: {comment_label(pal['name'])}. {HEADER} */", ":root {", "  color-scheme: light;"]
     for bid, hx, nm in brand_items(pal):
-        out.append(f"  --bi-{bid}: {hx}; /* {nm} */")
+        out.append(f"  --bi-{bid}: {hx}; /* {comment_label(nm)} */")
     for sc, k, hx in scale_items(pal):
         out.append(f"  --bi-{sc}-{k}: {hx};")
     for role, hx in role_items(pal, "light"):
         out.append(f"  --bi-{kebab(role)}: {hx};")
     for name, hx, nm in ext_items(pal, "light"):
-        out.append(f"  --bi-{name}: {hx}; /* {nm} */")
+        out.append(f"  --bi-{name}: {hx}; /* {comment_label(nm)} */")
     out.append("}")
     dark = [f"    --bi-{kebab(role)}: {hx};" for role, hx in role_items(pal, "dark")]
     dark += [f"    --bi-{name}: {hx};" for name, hx, nm in ext_items(pal, "dark")]
@@ -97,9 +102,9 @@ def to_css(pal):
 
 
 def to_scss(pal):
-    out = [f"// brand-identity tokens: {pal['name']}. {HEADER}", ""]
+    out = [f"// brand-identity tokens: {comment_label(pal['name'])}. {HEADER}", ""]
     for bid, hx, nm in brand_items(pal):
-        out.append(f"$bi-{bid}: {hx}; // {nm}")
+        out.append(f"$bi-{bid}: {hx}; // {comment_label(nm)}")
     out.append("")
     scales = {}
     for sc, k, hx in scale_items(pal):
@@ -115,7 +120,7 @@ def to_scss(pal):
     ext_light = list(ext_items(pal, "light"))
     if ext_light:
         out.append("")
-        out += [f"$bi-{name}: {hx}; // {nm}" for name, hx, nm in ext_light]
+        out += [f"$bi-{name}: {hx}; // {comment_label(nm)}" for name, hx, nm in ext_light]
         for mode in ("light", "dark"):
             out += ["", f"$bi-extended-{mode}: ("] + [f"  {name}: {hx}," for name, hx, _ in ext_items(pal, mode)] \
                 + [");"]
@@ -123,7 +128,7 @@ def to_scss(pal):
 
 
 def to_tailwind(pal):
-    lines = [f"/** brand-identity Tailwind preset: {pal['name']}. {HEADER}",
+    lines = [f"/** brand-identity Tailwind preset: {comment_label(pal['name'])}. {HEADER}",
              " * Values are CSS variables from tokens.css, so light/dark switch without rebuilding.",
              " * Tailwind v3: module.exports = { presets: [require('./tailwind.palette.js')], ... }",
              " * Tailwind v4: @config \"./tailwind.palette.js\"; (or map the --bi-* variables in @theme). */",
