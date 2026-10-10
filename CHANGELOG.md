@@ -1,11 +1,15 @@
 # Changelog
 
-## Unreleased
+## 1.1.0 (2026-10-10)
+
+Fixes from a first outside contribution (thanks, @brunomolteni, #2).
+
 
 - **One-colour logos:** parts that end up the same colour are one path, so knocked-out parts no longer show hairline
   seams in PNGs and vector viewers.
 - **Extended colours in logos:** `logos` builds the palette with `palette_build.extra`, so a part coloured `ext-n`
-  no longer gates as "not a palette role".
+  no longer gates as "not a palette role". The saved palette is reused whatever the spelling of the extra's hex
+  (`#9EA`, `9ea3a0`, `#9EA3A0`).
 - **Kit type page:** every role keeps a weight column, so a mono face is shown, embedded in the PDF and in the embed
   code (`--font-mono`).
 - **Kit colour page:** past six full rows, extended colours shrink to name + HEX rows instead of overflowing.

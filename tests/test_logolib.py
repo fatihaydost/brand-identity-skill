@@ -426,6 +426,10 @@ class Sync(unittest.TestCase):
                 json.dump(built, fh)
             pal, _err = L._palette_for(partial, sd, ident)
             self.assertEqual(pal["modes"]["light"]["textMuted"], "#000001")
+            ident["palette_build"]["extra"] = ["9EA3A0:Ray grey:logo detail"]   # same colour, other spelling
+            pal, _err = L._palette_for(partial, sd, ident)
+            self.assertEqual(pal["modes"]["light"]["textMuted"], "#000001")
+            ident["palette_build"]["extra"] = ["#9ea3a0:Ray grey:logo detail"]
             ident["palette_build"]["extra"].append("#556b2f:Moss:charts")
             pal, _err = L._palette_for(partial, sd, ident)           # an extra the file lacks: built again
             self.assertNotEqual(pal["modes"]["light"]["textMuted"], "#000001")

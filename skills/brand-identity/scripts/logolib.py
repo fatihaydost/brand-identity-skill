@@ -2741,7 +2741,14 @@ def _palette_for(partial, set_dir, identity):
 
     def seeds(pal):  # the build lists extended colours in brand[] too (role "extended") and reorders the seeds
         return sorted(b.get("hex", "").lower() for b in pal.get("brand") or [] if b.get("role") != "extended")
-    extra = {str(x).split(":", 1)[0].strip().lower() for x in opts.get("extra") or []}
+    def norm(x):  # the build stores extras as canonical '#rrggbb'; '#9EA' or a hash-less spec must still match
+        hx = str(x).split(":", 1)[0].strip()
+        try:
+            import colorlib
+            return colorlib.normalize_hex(hx)
+        except (ImportError, ValueError):
+            return hx.lower()
+    extra = {norm(x) for x in opts.get("extra") or []}
     if disk and (disk.get("modes") or {}).get("light") and seeds(disk) == seeds(partial) and \
             extra <= {x.get("hex", "").lower() for x in disk.get("extended") or []}:
         return disk, None
