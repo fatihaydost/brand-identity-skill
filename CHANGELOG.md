@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- **GIMP palette export:** palette and colour names are flattened to one line in `palette.gpl`, so a name with a
+  line break can no longer end its row early or add a stray colour row.
+
 ## 1.1.1 (2026-10-11)
 
 Fixes from @andromia3 (#3, #4).

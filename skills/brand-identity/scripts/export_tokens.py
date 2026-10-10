@@ -44,9 +44,14 @@ def slug(name):
     return re.sub(r"[^a-z0-9]+", "-", str(name).lower()).strip("-") or "x"
 
 
+def one_line(value):
+    """Free-form name on one line (CR/LF and Unicode line separators become spaces)."""
+    return " ".join(str(value).splitlines())
+
+
 def comment_label(value):
     """Keep free-form names inside one generated CSS/SCSS/JS comment."""
-    return " ".join(str(value).splitlines()).replace("*/", "* /")
+    return one_line(value).replace("*/", "* /")
 
 
 def scale_items(pal):
@@ -200,20 +205,20 @@ def to_dtcg_mode(pal, mode):
 
 
 def to_gpl(pal):
-    out = ["GIMP Palette", f"Name: {pal['name']}", "Columns: 11", f"# {HEADER}"]
+    out = ["GIMP Palette", f"Name: {one_line(pal['name'])}", "Columns: 11", f"# {HEADER}"]
 
     def row(hx, label):
         r, g, b = (int(round(c * 255)) for c in cl.parse_color(hx))
         return f"{r:3d} {g:3d} {b:3d}\t{label}"
     for bid, hx, nm in brand_items(pal):
-        out.append(row(hx, f"{bid} {nm}"))
+        out.append(row(hx, f"{bid} {one_line(nm)}"))
     for sc, k, hx in scale_items(pal):
         out.append(row(hx, f"{sc}-{k}"))
     for mode in ("light", "dark"):
         for role, hx in role_items(pal, mode):
             out.append(row(hx, f"{mode} {kebab(role)}"))
         for name, hx, nm in ext_items(pal, mode):
-            out.append(row(hx, f"{mode} {name} {nm}"))
+            out.append(row(hx, f"{mode} {name} {one_line(nm)}"))
     return "\n".join(out) + "\n"
 
 

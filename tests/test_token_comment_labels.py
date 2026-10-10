@@ -27,6 +27,17 @@ class CommentLabels(unittest.TestCase):
                 self.assertNotIn('\nreview-marker;', result)
                 self.assertIn('Blue * / review-marker; /*', result)
 
+    def test_gpl_names_stay_on_one_line(self):
+        label = 'Blue\r\n12 34 56\tfake\u2028row'
+        pal = {'name': label, 'brand': [{'id': 'brand-1', 'hex': '#123456', 'name': label}],
+               'extended': [{'id': 'ext-1', 'hex': '#abcdef', 'on': '#000000', 'name': label}],
+               'modes': {}}
+        lines = et.to_gpl(pal).splitlines()
+        self.assertIn('Name: Blue 12 34 56\tfake row', lines)
+        self.assertNotIn('12 34 56\tfake', [l for l in lines if l.startswith('12 34 56')])
+        rows = [l for l in lines[4:] if l.strip()]
+        self.assertTrue(all(l[:11].replace(' ', '').isdigit() for l in rows), rows)
+
 
 if __name__ == '__main__':
     unittest.main()
