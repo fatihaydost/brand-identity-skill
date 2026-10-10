@@ -1,7 +1,16 @@
 # Changelog
 
-## Unreleased
+## 1.1.1 (2026-10-11)
 
+Fixes from @andromia3 (#3, #4).
+
+- **Font licences:** a declared licence the skill does not recognise (`unknown`, a misspelling, any other identifier)
+  now gates instead of passing as a commercial-font note, and no longer overrides a detected licence. Supported:
+  `OFL-1.1`, `Apache-2.0`, `UFL-1.0`, `ITF-FFL-2.0` (with common spellings such as `OFL`, `Apache 2`) and
+  `commercial`. A face declared `proprietary` or by vendor name now gates; declare it `commercial`.
+- **Token export:** palette and colour names are kept inside their comments in `tokens.css`, `tokens.scss` and
+  `tailwind.palette.js`, so a name with `*/` or a line break can no longer end the comment early.
+- **Kit:** the `--full` icon and imagery pages are labelled as placeholders.
 - **Fixed (docs):** contrast is measured with WCAG 2.2 only. The 1.0.0 notes and README said "WCAG 2 and APCA";
   APCA was never implemented, because its licence restricts independent implementations.
 
