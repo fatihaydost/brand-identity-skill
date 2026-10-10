@@ -1584,6 +1584,20 @@ def inspect_symbol(svg_text, font_path=None, location=None, features=None, lang=
     return report
 
 
+def _merge_painted(parts, paint):
+    """Union parts that end up painted the same hex (one-colour versions, roles that resolve alike). Knock-outs
+    leave such parts edge to edge; drawn apart they show hairline seams in rasters and vector viewers."""
+    order, groups = [], {}
+    for r, ids, p in parts:
+        key = str(paint.get(r, r)).lower()
+        if key not in groups:
+            order.append(key)
+            groups[key] = (r, [], [])
+        groups[key][1].extend(i for i in ids if i not in groups[key][1])
+        groups[key][2].append(p)
+    return [(r, ids, ps[0] if len(ps) == 1 else _union(ps)) for r, ids, ps in (groups[k] for k in order)]
+
+
 def _parts_svg(parts, view, kind, extra_attrs="", ground=None, colors=None):
     """parts: [(role, ids, path)] -> SVG text. colors: {role: hex} paints fills (else data-color only)."""
     boxes = [_bounds(p) for _c, _i, p in parts]
@@ -2141,6 +2155,7 @@ def _kept_variants(identity, palette, out_dir, set_dir):
     view = _pad_view(pbox, 0.12 * (pbox[3] - pbox[1]))
 
     def version(name, use, view, paint, mode, ground=None, ground_role=None, one_color=False, png_px=None):
+        use = _merge_painted(use, paint)
         svg = _parts_svg(use, view, kind=name, ground=ground, colors=paint,
                          extra_attrs=f' data-mode="{mode}" data-kept="1"' +
                          (f' data-ground="{ground_role}"' if ground_role else ""))
@@ -2391,6 +2406,7 @@ def variants(identity, palette, out_dir, set_dir=None, font_path=None):
     def version(name, parts, view, paint, mode, ground_role=None, ground=None, one_color=False, png_px=None):
         dev_info = None
         eff_ground = ground or implicit.get(name)
+        parts = _merge_painted(parts, paint)
         if device in ("tile", "outline") and eff_ground and not name.startswith(("favicon", "small-", "app-icon")):
             dparts, dpaint, dev_info = _device_parts(device, parts, paint, eff_ground, mode, palette,
                                                      symbol_only=primary_key == "symbol" or name == "symbol-only")
@@ -2721,21 +2737,24 @@ def _palette_for(partial, set_dir, identity):
         return None, "palette: no palette in sets.json or palette.json; colours fall back to placeholders"
     if (partial.get("modes") or {}).get("light") and (partial.get("modes") or {}).get("dark"):
         return partial, None
-    seeds = [b.get("hex", "").lower() for b in partial.get("brand") or []]
-    if disk and (disk.get("modes") or {}).get("light") and \
-            sorted(b.get("hex", "").lower() for b in disk.get("brand") or []) == sorted(seeds):  # built reorders
+    opts = identity.get("palette_build") or {}
+
+    def seeds(pal):  # the build lists extended colours in brand[] too (role "extended") and reorders the seeds
+        return sorted(b.get("hex", "").lower() for b in pal.get("brand") or [] if b.get("role") != "extended")
+    extra = {str(x).split(":", 1)[0].strip().lower() for x in opts.get("extra") or []}
+    if disk and (disk.get("modes") or {}).get("light") and seeds(disk) == seeds(partial) and \
+            extra <= {x.get("hex", "").lower() for x in disk.get("extended") or []}:
         return disk, None
     try:
         import colorlib
         import palette_build
         part = copy.deepcopy(partial)
         colorlib.validate_palette(part, partial=True)
-        opts = identity.get("palette_build") or {}
         built = palette_build.build_palette(
             None, opts.get("accent"), opts.get("strategy") or None, opts.get("neutral_tint") or None,
             opts.get("neutral_chroma") if opts.get("neutral_chroma") is not None else 0.022,
             part.get("name"), part.get("direction"), part, True, opts.get("light_bg"), opts.get("dark_bg"),
-            None, part.get("feels"))
+            [palette_build.parse_extra(x) for x in opts.get("extra") or []], part.get("feels"))
         return built, None
     except Exception as e:  # noqa: BLE001 - reported as a finding, the logo still builds with placeholders
         return partial, f"palette: could not build the partial palette in memory: {e}"

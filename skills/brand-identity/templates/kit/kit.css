@@ -148,8 +148,9 @@ body{font-family:var(--font-text);font-weight:var(--text-weight);color:var(--ink
 .bands .vals span:nth-child(odd){letter-spacing:.1em;font-size:11px;text-transform:uppercase;padding-top:2px}
 .bands .tn{display:flex;align-items:flex-start;justify-content:flex-start;padding:16px 14px;font-size:12px;
   letter-spacing:.08em;font-feature-settings:"tnum"}
-.bands .thin .vals{display:none}
+.bands .thin .rl{display:none}
 .bands .thin .main{align-content:center;padding-top:0;padding-bottom:0}
+.bands .thin .tn{align-items:center;padding-top:0;padding-bottom:0}
 
 /* typography */
 .typo .side{grid-column:1/5;gap:18px}

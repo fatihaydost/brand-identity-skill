@@ -434,6 +434,48 @@ class TestKitApplications(unittest.TestCase):
         self.assertIn("Sample details", html)   # name and title stay samples
 
 
+class TestKitPages(unittest.TestCase):
+    """The type and colour pages as HTML (no browser)."""
+
+    def setUp(self):
+        _offline()
+        self.addCleanup(_restore)
+        self.tmp = tempfile.mkdtemp(prefix="bi-pages-")
+        self.addCleanup(shutil.rmtree, self.tmp, True)
+        self.work = _copy_demo(self.tmp)
+        self.sd = os.path.join(self.work, "sets", "A")
+
+    def test_type_page_keeps_a_column_for_every_role(self):
+        # display and text weights filled the four columns, so the data face was never drawn and the PDF gate
+        # failed on a declared face that was not embedded
+        def change(d):
+            d["type"]["display"]["weights"] = [500, 700]
+            d["type"]["mono"] = dict(d["type"]["text"], family="Arvo", weights=[400], location={"wght": 400},
+                                     fallback="ui-monospace, monospace")
+        _edit(os.path.join(self.sd, "identity.json"), change)
+        html = kb.page_type(kb.Kit(self.sd))["content"]
+        self.assertEqual(html.count('class="wcol"'), 4)
+        self.assertIn('data-role="mono"', html)
+        self.assertIn("family=Arvo", html)
+        self.assertIn("--font-mono", html)
+
+    def test_colour_page_fits_three_extended_colours(self):
+        # six 112 px rows fill the band area; a seventh overflowed the page
+        core = kb.page_colours(kb.Kit(self.sd))["content"].count('class="row')
+        with open(os.path.join(SKILL, "templates", "palette.example.json"), encoding="utf-8") as fh:
+            ext = json.load(fh)["extended"][:3]
+        _edit(os.path.join(self.sd, "palette.json"), lambda d: d.update(extended=ext))
+        html = kb.page_colours(kb.Kit(self.sd))["content"]
+        self.assertEqual(html.count('class="row'), core + 3)
+        self.assertGreater(core + 3, kb.COLOUR_ROWS_FIT)
+        self.assertEqual(html.count('class="row thin"'), 3)
+        thin = html[html.index('class="row thin"'):]
+        self.assertIn(ext[0]["hex"].upper(), thin)
+        self.assertNotIn("OKLCH", thin)
+        _edit(os.path.join(self.sd, "palette.json"), lambda d: d.update(extended=ext[:1]))
+        self.assertNotIn("thin", kb.page_colours(kb.Kit(self.sd))["content"])
+
+
 @unittest.skipUnless(BROWSER and HAS_FT, "needs a Chromium-based browser and fontTools")
 class TestKit(unittest.TestCase):
     @classmethod
