@@ -462,11 +462,16 @@ class TestKitPages(unittest.TestCase):
     def test_code_sample_uses_a_brand_face(self):
         # a system mono (Consolas on Windows) embeds as Type3 and fails the kit PDF gate
         css = open(os.path.join(SKILL, "templates", "kit", "kit.css"), encoding="utf-8").read()
-        self.assertIn(".typo pre{font-family:var(--font-mono);", css)
-        ident = {"type": {"text": {"family": "Inter"}, "mono": {"family": "Azeret Mono", "fallback": "monospace"}}}
-        self.assertIn('--font-mono:"Azeret Mono", monospace;', pl.role_vars(ident))
+        self.assertIn(".typo pre{font-family:var(--font-mono);font-weight:var(--mono-weight);", css)
+        ident = {"type": {"text": {"family": "Inter", "weights": [600]},
+                          "mono": {"family": "Azeret Mono", "weights": [400], "fallback": "monospace"}}}
+        rv = pl.role_vars(ident)
+        self.assertIn('--font-mono:"Azeret Mono", "Inter", monospace;', rv)
+        self.assertIn("--mono-weight:400;", rv)
         del ident["type"]["mono"]
-        self.assertIn('--font-mono:"Inter", sans-serif;', pl.role_vars(ident))
+        rv = pl.role_vars(ident)
+        self.assertIn('--font-mono:"Inter", sans-serif;', rv)
+        self.assertIn("--mono-weight:600;", rv)
 
     def test_colour_page_fits_three_extended_colours(self):
         # six 112 px rows fill the band area; a seventh overflowed the page

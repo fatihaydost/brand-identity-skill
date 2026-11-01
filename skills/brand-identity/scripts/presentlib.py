@@ -700,9 +700,15 @@ def role_vars(identity):
         out[f"--{name}-case"] = {"upper": "uppercase", "lower": "lowercase"}.get(case, "none")
         feats = (face or {}).get("features") or []
         out[f"--{name}-features"] = ", ".join(f'"{x}"' for x in feats) if feats else "normal"
-    # code samples use the brand's mono, else its text face: a system mono is not embeddable everywhere (Consolas -> Type3)
-    mono = ty.get("mono")
-    out["--font-mono"] = css_family(mono, "monospace") if mono else out["--font-text"]
+    # code samples use the brand's mono, else its text face: a system mono is not embeddable everywhere (Consolas -> Type3);
+    # glyphs the mono lacks fall back to the text face, and its own weight avoids faux bold (also Type3)
+    mono, tface = ty.get("mono"), text or disp
+    if mono:
+        chain = [f'"{mono["family"]}"'] + ([f'"{tface["family"]}"'] if tface else []) + [mono.get("fallback") or "monospace"]
+        out["--font-mono"] = ", ".join(chain)
+        out["--mono-weight"] = str((mono.get("weights") or [400])[0])
+    else:
+        out["--font-mono"], out["--mono-weight"] = out["--font-text"], out["--text-weight"]
     return "".join(f"{k}:{v};" for k, v in out.items())
 
 

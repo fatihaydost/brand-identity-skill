@@ -6,7 +6,9 @@
   line break can no longer end its row early or add a stray colour row.
 - **Kit PDF:** the typography page's code sample is set in the brand's mono face, or its text face when the set has
   no mono, instead of a system monospace stack. On Windows that stack embedded Consolas as a Type3 font and failed the
-  `pdf-type3-font` gate (#5, reported by @ChoYugyeong).
+  `pdf-type3-font` gate (#5, reported by @ChoYugyeong). The sample also uses the mono's own weight, so a text weight of
+  600 or more no longer makes Chrome synthesise a bold mono (embedded as Type3), and glyphs the mono lacks fall back to
+  the text face rather than a system font.
 
 ## 1.1.1 (2026-10-11)
 
