@@ -459,6 +459,15 @@ class TestKitPages(unittest.TestCase):
         self.assertIn("family=Arvo", html)
         self.assertIn("--font-mono", html)
 
+    def test_code_sample_uses_a_brand_face(self):
+        # a system mono (Consolas on Windows) embeds as Type3 and fails the kit PDF gate
+        css = open(os.path.join(SKILL, "templates", "kit", "kit.css"), encoding="utf-8").read()
+        self.assertIn(".typo pre{font-family:var(--font-mono);", css)
+        ident = {"type": {"text": {"family": "Inter"}, "mono": {"family": "Azeret Mono", "fallback": "monospace"}}}
+        self.assertIn('--font-mono:"Azeret Mono", monospace;', pl.role_vars(ident))
+        del ident["type"]["mono"]
+        self.assertIn('--font-mono:"Inter", sans-serif;', pl.role_vars(ident))
+
     def test_colour_page_fits_three_extended_colours(self):
         # six 112 px rows fill the band area; a seventh overflowed the page
         core = kb.page_colours(kb.Kit(self.sd))["content"].count('class="row')

@@ -4,6 +4,9 @@
 
 - **GIMP palette export:** palette and colour names are flattened to one line in `palette.gpl`, so a name with a
   line break can no longer end its row early or add a stray colour row.
+- **Kit PDF:** the typography page's code sample is set in the brand's mono face, or its text face when the set has
+  no mono, instead of a system monospace stack. On Windows that stack embedded Consolas as a Type3 font and failed the
+  `pdf-type3-font` gate (#5, reported by @ChoYugyeong).
 
 ## 1.1.1 (2026-10-11)
 

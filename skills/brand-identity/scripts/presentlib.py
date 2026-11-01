@@ -700,6 +700,9 @@ def role_vars(identity):
         out[f"--{name}-case"] = {"upper": "uppercase", "lower": "lowercase"}.get(case, "none")
         feats = (face or {}).get("features") or []
         out[f"--{name}-features"] = ", ".join(f'"{x}"' for x in feats) if feats else "normal"
+    # code samples use the brand's mono, else its text face: a system mono is not embeddable everywhere (Consolas -> Type3)
+    mono = ty.get("mono")
+    out["--font-mono"] = css_family(mono, "monospace") if mono else out["--font-text"]
     return "".join(f"{k}:{v};" for k, v in out.items())
 
 
