@@ -62,9 +62,11 @@ class TestPdfReport(unittest.TestCase):
         self.assertEqual(f[0]["severity"], "gate")
 
     def test_type3_is_a_gate(self):
-        r = rp.pdf_font_report(self.PDF + b"4 0 obj\n<</Type /Font /Subtype /Type3>>\nendobj\n")
+        r = rp.pdf_font_report(self.PDF + b"4 0 obj\n<</Type /Font /Subtype /Type3 /FontDescriptor 3 0 R>>\nendobj\n")
         self.assertEqual(r["type3"], 1)
-        self.assertIn("pdf-type3-font", [x["id"] for x in rp.pdf_font_findings(r, {"Outfit"})])
+        self.assertEqual(r["type3_names"], ["Arvo"])  # named, so the user sees which face was synthesised
+        f = [x for x in rp.pdf_font_findings(r, {"Outfit"}) if x["id"] == "pdf-type3-font"]
+        self.assertIn("(Arvo)", f[0]["message"])
 
 
 class TestProbeFindings(unittest.TestCase):

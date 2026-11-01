@@ -463,6 +463,8 @@ class TestKitPages(unittest.TestCase):
         # a system mono (Consolas on Windows) embeds as Type3 and fails the kit PDF gate
         css = open(os.path.join(SKILL, "templates", "kit", "kit.css"), encoding="utf-8").read()
         self.assertIn(".typo pre{font-family:var(--font-mono);font-weight:var(--mono-weight);", css)
+        body = css[css.index("\nbody{"):]
+        self.assertIn("font-synthesis:none;", body[:body.index("}")])  # a bare <b> on a 400-only face is faux bold
         ident = {"type": {"text": {"family": "Inter", "weights": [600]},
                           "mono": {"family": "Azeret Mono", "weights": [400], "fallback": "monospace"}}}
         rv = pl.role_vars(ident)

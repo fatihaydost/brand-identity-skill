@@ -9,6 +9,11 @@
   `pdf-type3-font` gate (#5, reported by @ChoYugyeong). The sample also uses the mono's own weight, so a text weight of
   600 or more no longer makes Chrome synthesise a bold mono (embedded as Type3), and glyphs the mono lacks fall back to
   the text face rather than a system font.
+- **Kit PDF:** the kit turns off font synthesis, so bold text on a face loaded without a bold weight (for example
+  `<b>` on a 400/500-only text face) is set in the nearest real weight instead of a synthesised bold that the PDF
+  embedded as Type3 (#5, diagnosis and fix by @ChoYugyeong).
+- **`pdf-type3-font` gate:** the finding names the face behind each Type3 font and says that a synthesised style is
+  the usual cause, not only a leaked variable font.
 
 ## 1.1.1 (2026-10-11)
 

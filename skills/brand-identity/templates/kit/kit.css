@@ -4,7 +4,7 @@
 @page{size:1920px 1080px;margin:0}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{background:var(--paper)}
-body{font-family:var(--font-text);font-weight:var(--text-weight);color:var(--ink);-webkit-font-smoothing:antialiased;
+body{font-family:var(--font-text);font-weight:var(--text-weight);font-synthesis:none;color:var(--ink);-webkit-font-smoothing:antialiased;
   text-rendering:geometricPrecision;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .page{position:relative;width:1920px;height:1080px;padding:56px 80px 0;overflow:hidden;background:var(--paper);
   break-after:page;page-break-after:always;display:flex;flex-direction:column}

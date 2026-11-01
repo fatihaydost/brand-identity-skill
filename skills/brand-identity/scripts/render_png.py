@@ -19,7 +19,7 @@ Usage:
 render(html, out, width, height, pdf=False, pages=False, probe=True) is the measured path used by the identity
 card, board and kit: one DevTools session that also reports FontFace states, each [data-role]'s computed font,
 overflowing text, text contrast and [data-logo] heights, screenshots every `.page` element, prints a PDF and lists
-its embedded fonts (Type3 = a variable font leaked through). screenshot_html(...) keeps its original behaviour.
+its embedded fonts (Type3 = a synthesised style or a variable font leaked through). screenshot_html(...) keeps its original behaviour.
 
 Exit codes: 0 ok, 1 render failed, 2 bad arguments, 3 no browser found.
 """
@@ -722,13 +722,19 @@ def pdf_font_report(data):
     if isinstance(data, str):
         with open(data, "rb") as fh:
             data = fh.read()
-    fonts = {}
+    fonts, names, type3_refs = {}, {}, []
     for chunk in re.split(rb"endobj", data):
+        if re.search(rb"/Subtype\s*/Type3", chunk):
+            ref = re.search(rb"/FontDescriptor\s+(\d+)\s+\d+\s+R", chunk)
+            type3_refs.append(ref.group(1) if ref else None)
         if b"/FontDescriptor" in chunk:
             m = re.search(rb"/FontName\s*/([^\s/\[\]<>()]+)", chunk)
             if not m:
                 continue
             name = re.sub(r"^[A-Z]{6}\+", "", m.group(1).decode("latin-1"))
+            num = re.search(rb"(\d+)\s+\d+\s+obj", chunk)
+            if num:
+                names[num.group(1)] = name
             kind = next((k for k in ("FontFile2", "FontFile3", "FontFile") if re.search(rb"/" + k.encode() + rb"[\s\d]", chunk)),
                         None)
             if kind or name not in fonts:
@@ -736,7 +742,8 @@ def pdf_font_report(data):
     base = sorted({re.sub(r"^[A-Z]{6}\+", "", m.decode("latin-1"))
                    for m in re.findall(rb"/BaseFont\s*/([^\s/\[\]<>()]+)", data)})
     return {"fonts": [{"name": n, "embedded": k} for n, k in sorted(fonts.items())], "base_fonts": base,
-            "type3": len(re.findall(rb"/Subtype\s*/Type3", data)), "opaque": b"/ObjStm" in data}
+            "type3": len(re.findall(rb"/Subtype\s*/Type3", data)),
+            "type3_names": sorted({names[r] for r in type3_refs if r in names}), "opaque": b"/ObjStm" in data}
 
 
 def pdf_font_findings(report, families):
@@ -753,10 +760,13 @@ def pdf_font_findings(report, families):
                                measured=[f["name"] for f in report["fonts"]], threshold="embedded",
                                suggested_fix="use a static instance (typelib.resolve_font) in @font-face"))
     if report["type3"]:
+        named = ", ".join(report.get("type3_names") or []) or "unnamed"
         out.append(finding("pdf-type3-font", "kit", "gate",
-                           f"PDF has {report['type3']} Type3 font(s): a variable font leaked through",
+                           f"PDF has {report['type3']} Type3 font(s) ({named}): a synthesised bold/italic or a "
+                           "variable font leaked through",
                            measured=report["type3"], threshold=0,
-                           suggested_fix="pin every fvar axis (static instance) before rendering"))
+                           suggested_fix="load every weight the page uses (or font-synthesis:none) and pin every fvar "
+                                         "axis (static instance) before rendering"))
     return out
 
 
