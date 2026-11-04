@@ -17,6 +17,8 @@ A skill for Claude Code that designs a brand identity as one system: **logo, typ
 together from one idea**, measured, shown side by side as identity cards, and handed over as a brand guidelines kit
 for the set you pick.
 
+Korean reference: [Brand identity skill guide](skills/brand-identity/SKILL.ko.md).
+
 ![24 logos for 24 different brands, all made by the skill](docs/images/hero.jpg)
 
 <sub>Twenty-four briefs, one direction shown from each: a light festival in Lyon, a taquería in Mexico City, a
