@@ -207,6 +207,10 @@ evals/                   behaviour evals and fixtures
 docs/                    architecture, testing, images
 ```
 
+## Translations
+
+[한국어 (Korean)](translations/ko/SKILL.md) — the English `skills/brand-identity/SKILL.md` is canonical.
+
 ## Licence
 
 MIT, see [LICENSE](LICENSE). Adapted code and bundled data: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Brand
