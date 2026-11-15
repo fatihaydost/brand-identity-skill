@@ -213,5 +213,50 @@ text and a second line that the box clips away completely</span></div>
         self.assertNotIn("fonts", r)
 
 
+def _png_pixel(path, x, y):
+    """RGB of one pixel of an 8-bit RGB/RGBA PNG (stdlib only; enough for the tiling regression below)."""
+    import struct
+    import zlib
+    with open(path, "rb") as fh:
+        d = fh.read()
+    i, idat = 8, b""
+    while i < len(d):
+        n, t = struct.unpack(">I4s", d[i:i + 8])
+        c = d[i + 8:i + 8 + n]
+        if t == b"IHDR":
+            w, _, _, ct = struct.unpack(">IIBB", c[:10])
+        elif t == b"IDAT":
+            idat += c
+        i += 12 + n
+    raw, bpp = zlib.decompress(idat), (4 if ct == 6 else 3)
+    stride, prev = w * bpp, bytearray(w * bpp)
+    for row in range(y + 1):
+        f, line = raw[row * (stride + 1)], bytearray(raw[row * (stride + 1) + 1:(row + 1) * (stride + 1)])
+        for k in range(stride):
+            a = line[k - bpp] if k >= bpp else 0
+            b, c = prev[k], (prev[k - bpp] if k >= bpp else 0)
+            pa, pb, pc = abs(b - c), abs(a - c), abs(a + b - 2 * c)
+            line[k] = (line[k] + (0, a, b, (a + b) >> 1, a if pa <= pb and pa <= pc else b if pb <= pc else c)[f]) & 255
+        prev = line
+    return tuple(prev[x * bpp:x * bpp + 3])
+
+
+@unittest.skipUnless(BROWSER, "no Chromium-based browser")
+class TestHiDpiScreenshot(unittest.TestCase):
+    """A 2x screenshot shows the whole page: Brave 157 headless with --disable-gpu repeated the top-left tile."""
+
+    def test_2x_is_not_tiled(self):
+        tmp = tempfile.mkdtemp(prefix="bi-hidpi-test-")
+        self.addCleanup(shutil.rmtree, tmp, ignore_errors=True)
+        html, out = os.path.join(tmp, "t.html"), os.path.join(tmp, "t.png")
+        with open(html, "w", encoding="utf-8") as fh:
+            fh.write("<!doctype html><body style='margin:0;display:flex;height:100vh'>"
+                     "<div style='flex:1;background:#cc0000'></div><div style='flex:1;background:#0000cc'></div>")
+        rp.screenshot_html(html, out, width=1600, height=1000, scale=2)
+        self.assertEqual(rp.png_size(out), (3200, 2000))
+        self.assertEqual(_png_pixel(out, 400, 1500), (204, 0, 0))
+        self.assertEqual(_png_pixel(out, 2800, 1500), (0, 0, 204))
+
+
 if __name__ == "__main__":
     unittest.main()

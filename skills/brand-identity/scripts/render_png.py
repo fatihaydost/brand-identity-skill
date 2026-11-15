@@ -383,7 +383,8 @@ def exited(browser, proc, profile):
 
 
 def _launch_once(browser, profile, timeout, no_sandbox):
-    cmd = [browser, "--headless" if _is_shell(browser) else "--headless=new", "--disable-gpu", "--hide-scrollbars",
+    # software GL through ANGLE, not --disable-gpu: Brave 157 headless repeats the top-left tile at 2x with that flag
+    cmd = [browser, "--headless" if _is_shell(browser) else "--headless=new", "--use-angle=swiftshader", "--hide-scrollbars",
            "--no-first-run", "--no-default-browser-check", "--disable-extensions", "--mute-audio",
            "--use-mock-keychain", "--password-store=basic", "--disable-background-networking",
            "--disable-component-update", "--disable-sync", "--force-color-profile=srgb",

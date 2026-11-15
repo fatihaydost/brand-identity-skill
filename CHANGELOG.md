@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- **Screenshots:** the headless browser starts with software GL through ANGLE (`--use-angle=swiftshader`) instead
+  of `--disable-gpu`. With that flag Brave 157 repeated the top-left tile across every 2x screenshot, so cards, the
+  logo sheet and the review board came out tiled while every gate still passed.
 - **GIMP palette export:** palette and colour names are flattened to one line in `palette.gpl`, so a name with a
   line break can no longer end its row early or add a stray colour row.
 - **Kit PDF:** the typography page's code sample is set in the brand's mono face, or its text face when the set has
