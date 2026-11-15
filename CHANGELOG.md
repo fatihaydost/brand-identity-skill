@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- **Language data:** refreshed from gflanguages 0.7.12 (was 0.7.11): two new records, `gvr_Gukh` and `unr_Onao`;
+  `gvr` now resolves to `gvr_Gukh`. The font catalog's language index is unchanged (both are under its 1M-speaker
+  threshold and carry no exemplars).
 - **Screenshots:** the headless browser starts with software GL through ANGLE (`--use-angle=swiftshader`) instead
   of `--disable-gpu`. With that flag Brave 157 repeated the top-left tile across every 2x screenshot, so cards, the
   logo sheet and the review board came out tiled while every gate still passed.
